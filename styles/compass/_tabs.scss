@@ -1,0 +1,72 @@
+.flight-search, .flight-results, .upgrades, .tools {
+
+  .module {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .tabs {
+
+    .nav {
+      background: #E2F1FB;
+
+      &.nav-tabs {
+        border-bottom: 0px;
+
+        .icon {
+
+          &.icons-close-5 {
+            margin: 0 0 0 8px;
+            vertical-align: -1px;
+          }
+
+        }
+
+        & > li {
+
+          &.active {
+
+            a {
+              background: #fff;
+              color: #003399;
+              border: 1px solid #fff;
+              border-bottom: 0px;
+            }
+
+          }
+
+          &.add-tab {
+            a {
+              color: #003399;
+              background: #fff;
+              border-color: transparent;
+
+            }
+          }
+        }
+
+        & > li > a {
+          background: #4b72a2;
+          color: #FFF;
+          font-weight:700;
+          font-size:1.1rem;
+          margin-right: 5px;
+          border: 1px solid #004499;
+          border-bottom: 0px;
+        }
+      }
+    }
+  }
+  // End Flight Search
+
+  .flight-results {
+    &.module {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .tabs {
+      background: #E2F1FB;
+    }
+  }
+}

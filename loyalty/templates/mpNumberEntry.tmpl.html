@@ -1,0 +1,167 @@
+<div class="compass-modal compass-modal__mpNumberEntry">
+    <section class="">
+        <div class="overlay-loading" data-bind="visible: pinpass.spinner">
+            <button class="abort-btn close-btn" data-bind="click: pinpass.abortSpinner">X</button>
+        </div>
+
+        <!-- Start: Modal Header and Title Bar -->
+        <header class="compass-modal__header">
+            <h3>MileagePlus Account</h3>
+            <a href="#" class="icon icons-close-3 ir" data-bind="click: function(){pinpass.cancelMpModal();}">Close</a>
+        </header>
+        <!-- End: Modal Header and Title Bar -->
+        <!-- Start: Modal Content -->
+        <section class="compass-modal__content">
+            <section class="section-main">
+                <div class="prompt prompt-error" data-bind="visible:errorMessage">
+                    <div class="prompt-icon"></div>
+                    <div class="prompt-message" data-bind="text:errorMessage"></div>
+                </div>
+                <!--ko if: pinpass.isOn() -->
+                <!--ko if: pinpass.showErrorMessage-->
+                <div class="prompt prompt-error">
+                    <div class="prompt-message" data-bind="text: pinpass.errorMessage"></div>
+                </div>
+                <!--/ko-->
+                <!--ko if: pinpass.showInvalidMpNumberMessage-->
+                <div class="prompt prompt-error">
+                    <div class="prompt-message">
+                        Invalid MileagePlus Number
+                    </div>
+                </div>
+                <!--/ko-->
+                <!--ko if: pinpass.showSuccess-->
+                <div class="prompt prompt-success">
+                    <div class="prompt-icon"></div>
+                    <div class="prompt-message">
+                        Authentication Verified
+                    </div>
+                </div>
+                <!--/ko-->
+                <!--ko if: pinpass.showEmailSentMessage-->
+                <div class="prompt prompt-success">
+                    <div class="prompt-icon"></div>
+                    <div class="prompt-message">
+                        Email sent
+                    </div>
+                </div>
+                <!--/ko-->
+                <!--ko if: pinpass.isMpNumberChangeMessageVisible-->
+                <div class="prompt prompt-error">
+                    <div class="prompt-message">
+                        Changing MileagePlus number will require re-authentication
+                    </div>
+                </div>
+                <!--/ko-->
+                <!--ko if: pinpass.showForgotSecurityQuestionsMessage-->
+                <div class="prompt prompt-error">
+                    <div class="prompt-message">
+                        Please log into .com with password. Go to manage profile page > Reset security questions
+                    </div>
+                </div>
+                <!--/ko-->
+                <!--ko if: pinpass.isNotAuthenticatedMessageVisible-->
+                <div class="prompt prompt-error">
+                    <div class="prompt-message">
+                        NOT Authenticated
+                    </div>
+                </div>
+                <!--/ko-->
+                <!--ko if: pinpass.isAccountLockedMessageVisible-->
+                <div class="locked">
+                    <div class="prompt prompt-error">
+                        <div class="prompt-message">
+                            <strong>Account Locked</strong>
+                        </div>
+                    </div>
+                </div>
+                <!--/ko-->
+                <!--ko if: pinpass.isAccountClosedMessageVisible-->
+                <div class="locked">
+                    <div class="prompt prompt-error">
+                        <div class="prompt-message">
+                            <strong>Account Closed</strong>
+                        </div>
+                    </div>
+                </div>
+                <!--/ko-->
+                <!--/ko-->
+                <div class="prompt prompt-confirm" data-bind="visible: pinpass.alertMsg">
+                    <div class="prompt-message" data-bind="html: pinpass.alertMsg"></div>
+                </div>
+                <div class="prompt prompt-confirm" data-bind="visible: pinpass.reshopWarnMsg">
+                    <div class="prompt-message" data-bind="text: pinpass.reshopWarnMsg"></div>
+                </div>
+                <div class="field-item-testfield clearfix">
+                    <div>
+                        <label>
+                            UA MileagePlus Number
+                        </label>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-8">
+                            <input id="mpNumberId" class="form-control txt-upper" type="text" data-bind="hasfocus: ko.observable(true), autocomplete: $data.previousLoyaltyIdList,textInput:$data.newMileagePlus, valueUpdate: 'afterkeydown',event: { focus: showAutoComplete, blur:pinpass.checkForMpChange },  attr: {placeholder: 'Enter MileagePlus Number'}, executeOnEnter: pinpass.onChangeMP.bind($data)">
+                        </div>
+                        <div class="col-md-4">
+                            <!--ko if: pinpass.isOn()-->
+                            <a id="authenticateBtnId" href="#" class="btn btn-warning" style="width:100%" data-bind="click: pinpass.onAuthenticateClick.bind($data), css: { disabled: pinpass.isAuthenticateButtonDisabled() || !$data.newMileagePlus() }">Authenticate</a>
+                            <!--/ko-->
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="field-item-testcheckbox1">
+                    <!--ko if:pinpass.hasInitMpValueFlag()-->
+                    <a href="#" class="#" data-bind="click: onClickMpSearch">Need to search for a MP#?</a>
+                    <!--/ko-->
+                    <!--ko ifnot:pinpass.hasInitMpValueFlag()-->
+                    <a href="#" class="#" data-bind="click: (onClickMpSearch)()">Need to search for a MP#?</a>
+                    <!--/ko-->
+                    <br><br>
+                    <label><input name="some-checkbox1" type="checkbox" data-bind="checked: pinpass.isSponsorNotTraveling">Is Not Traveling</label>
+                    <!--ko if: pinpass.isOn()-->
+                    <div class="link-options success-link-options">
+                        <a href="#" class="#" data-bind="css: { disabled: !$data.newMileagePlus() }, click: pinpass.onClickUnlockAccount.bind($data, $data.newMileagePlus())">Unlock Account</a><br>
+                        <a href="#" data-bind="css: { disabled: !$data.newMileagePlus() }, click: pinpass.onClickForgotPassword.bind($data, $data.newMileagePlus())">Forgot Password</a><br>
+                        <a href="#" data-bind="css: { disabled: !$data.newMileagePlus() }, click: pinpass.onClickForgotSecurityQuestions.bind($data, $data.newMileagePlus())">Forgot Security Questions</a>
+                    </div>
+                    <!--/ko-->
+
+                </div>
+            </section>
+
+            <section data-bind="visible:$data.mpMemberList().length >0">
+                <b> Select a Traveler to change sponsor</b>
+                <section class="group-wrapper search-results" data-bind="foreach:$data.mpMemberList">
+                    <div class="field-item field-item-testcheckbox1">
+                        <!--<label><input name="some-checkbox1" type="checkbox" />SMITH, JANE</label>-->
+                        <!--<label><input type="radio" data-bind="checked: $parent.paxSelected, value: $data, click:$parent.checkForSubmitBtn"/><span data-bind="text:$data.fields.lastName"></span>, <span data-bind="text:$data.fields.firstName"></span></label>-->
+                        <label class="clear">
+                            <input type="radio" data-bind="checked: $parent.paxSelected, value: $data, click:$parent.checkForSubmitBtn">
+                            <span class="float-left t-name">
+                                <span data-bind="text:$data.fields.lastName"></span>,
+                                <span data-bind="text:$data.fields.firstName"></span>
+                            </span>
+                            <span class="float-left t-mileage-plus-number" data-bind="text:$data.fields.accountNo"></span>
+                            <span class="float-left t-miles" data-bind="text:$data.fields.accBalance"></span>
+                            <span class="icon t-badge" data-bind="css:$data.fields.badgeType"></span>
+                        </label>
+                    </div>
+                    <div class="clearfix"></div>
+                </section><!-- /.group-wrapper -->
+
+            </section>
+
+        </section>
+        <!-- End: Modal Content -->
+
+
+        <div class="compass-modal__footer">
+            <a href="#" class="btn btn-warning" data-bind="click: function(){pinpass.cancelMpModal();}">Cancel</a>
+            <a id="loyaltysubmitBtnId" href="#" class="btn btn-primary" data-bind="css: { disabled: pinpass.isSubmitDisabled()||(!$data.newMileagePlus() && !pinpass.checkForMpDelete($data))  }, click: function(data, event){pinpass.onSubmitClick(data);}">Submit</a>
+        </div>
+
+    </section>
+</div>

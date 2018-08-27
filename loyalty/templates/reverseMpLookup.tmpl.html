@@ -1,0 +1,109 @@
+<div class="compass-modal compass-modal__reverseMpLookup">
+    <section class=" ">
+
+        <!-- Start: Modal Header and Title Bar -->
+        <header class="compass-modal__header">
+            <h3>MileagePlus Search</h3>
+            <!--ko if:$parent.pinpass.hasInitMpValueFlag()-->
+            <a href="#" class="icon icons-close-3 ir" data-bind="click: onClickCancel">Close</a>
+            <!-- /ko -->
+            <!--ko ifnot:$parent.pinpass.hasInitMpValueFlag()-->
+            <a href="#" class="icon icons-close-3 ir" data-bind="click: function(){$parent.pinpass.cancelMpModal();}">Close</a>
+            <!-- /ko -->
+            
+        </header>
+        <!-- End: Modal Header and Title Bar -->
+        <!-- Start: Modal Content -->
+        <section class="compass-modal__content">
+
+
+            <div class="prompt prompt-error" data-bind="visible:errorMessage">
+                <div class="prompt-icon"></div>
+                <div class="prompt-message" data-bind="text:errorMessage">
+                </div>
+                <br>
+            </div>
+
+            <p>Search for the MP number by the first and last name, and with either the zip and/or phone number.</p>
+
+            <div class="justify-center align-center">
+                <form name="mpVM.searchName" novalidate="" class="">
+                    <div class="row">
+
+                        <div class="col-sm-6">
+                            <label>First Name</label>
+                            <input name="firstName" type="text" required="" data-bind="value:$data.firstName, hasfocus:ko.observable(true), css: { error: ($data.isFirstNameInvalid)}" class="form-control col-sm-8 invalid-false">
+                            <span class="required">Required *</span>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <label>Last Name</label>
+                            <input name="lastName" type="text" required="" data-bind="value:$data.lastName, css: { error: ($data.isLastNameInvalid)}" class="form-control col-sm-8 invalid-false">
+                            <span class="required">Required *</span>
+                        </div>
+                    </div>
+
+                    <br />
+
+                    <div class="row">
+
+                        <div class="col-sm-6">
+                            <label>Zip Code (Optional)</label>
+                            <input class="form-control col-sm-8" type="text" data-bind="value:$data.zipCode" name="">
+                        </div>
+
+                        <div class="col-sm-6">
+
+                            <label>Phone Number (Optional)</label>
+                            <input class="form-control col-sm-8" type="text" data-bind="value:$data.phoneNumber" name="">
+                        </div>
+                    </div>
+
+                    <div class="compass-modal__footer">
+                        <!--ko if:$parent.pinpass.hasInitMpValueFlag()-->
+                        <button type="button" class="btn btn-warning" data-bind="click: onClickCancel">Cancel</button>
+                        <!-- /ko -->
+                        <!--ko ifnot:$parent.pinpass.hasInitMpValueFlag()-->
+                        <button type="button" class="btn btn-warning" data-bind="click: function(){$parent.pinpass.cancelMpModal();}">Cancel</button>
+                        <!-- /ko -->
+                        <button type="submit" class="btn btn-primary" data-bind="click: onClickSearch">Search</button>
+                    </div>
+                </form>
+            </div>
+            <hr>
+
+            <!-- end main --><br />
+
+            <!--ko if: showSearchResults-->
+            <div class="mileageplus__search__content clearfix">
+                <div class="col-sm-12">
+
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <td>Traveler Name</td>
+                                <td>MP #</td>
+                                <td>Address</td>
+                                <td>Zip Code</td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <!--ko foreach: searchResults-->
+                            <tr data-bind="click:$parent.onClickSearchResult.bind($data, $parents)">
+                                <td data-bind="text: $data.fullName"></td>
+                                <td data-bind="text: $data.mpNumber"></td>
+                                <td data-bind="text: $data.address"></td>
+                                <td data-bind="text: $data.zipCode"></td>
+                            </tr>
+                            <!--/ko-->
+                        </tbody>
+
+                    </table>
+
+                </div>
+            </div>
+            <!--/ko-->
+        </section><!-- end module -->
+    </section>
+</div>

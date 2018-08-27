@@ -1,0 +1,3970 @@
+﻿// Start: Critical Mass Stylguide Icons
+
+.icon {
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+// Start: Corner Toggle Styles 
+.corner-toggle-show,
+.corner-toggle-hide {
+    background-image: -webkit-gradient(linear, 0% 100%, 100% 0%, color-stop(0%, #ebebeb ), color-stop(50%, #ebebeb ), color-stop(51%, rgba(235, 235, 235, 0)), color-stop(100%, rgba(235, 235, 235, 0)));
+    background-image: -webkit-linear-gradient(left bottom, #ebebeb 0%, #ebebeb 50%, rgba(235, 235, 235, 0) 51%, rgba(235, 235, 235, 0) 100%);
+    background-image: -moz-linear-gradient(left bottom, #ebebeb 0%, #ebebeb 50%, rgba(235, 235, 235, 0) 51%, rgba(235, 235, 235, 0) 100%);
+    background-image: -o-linear-gradient(left bottom, #ebebeb 0%, #ebebeb 50%, rgba(235, 235, 235, 0) 51%, rgba(235, 235, 235, 0) 100%);
+    background-image: -ms-linear-gradient(left bottom, #ebebeb 0%, #ebebeb 50%, rgba(235, 235, 235, 0) 51%, rgba(235, 235, 235, 0) 100%);
+    /* for IE11  added by kulbhushan*/
+    background-image: linear-gradient(left bottom, #ebebeb 0%, #ebebeb 50%, rgba(235, 235, 235, 0) 51%, rgba(235, 235, 235, 0) 100%);
+    height: 24px;
+    width: 24px;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/* Subscription Indicator Icon*/
+
+.subscription-indicator-icon {
+    vertical-align:-6px;
+    font-size: 1.1rem;
+    color: #fff;
+    font-style: normal;
+    background: #004499;
+    line-height: 16px;
+    border: 1px solid #004499;
+    padding: 0 4px;
+    border-radius: 8px
+}
+
+
+/* line 653, ../sass/_shared-buttons-icons.scss */
+.corner-toggle-show:before, 
+.corner-toggle-hide:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 2px;
+    bottom: 2px;
+}
+
+// End: Corner Toggle Styles
+
+
+
+/* Fare Lock Icons */
+.icon-fare-lock-lock,
+.icon-fare-lock-logo,
+.icon-logo-fare-lock-158x32,
+.icon-logo-fare-lock-140x28,
+.icon-logo-fare-lock-128x26,
+.icon-logo-fare-lock-109x22 {
+    background: url('../assets/icons-farelock.png') no-repeat;
+}
+
+
+
+.icon-fare-lock-lock {
+    background-position: -1px -358px;
+    width: 16px;
+    height: 20px
+}
+
+.icon-fare-lock-logo {
+    background-position: -4px -188px;
+    width: 99px;
+    height: 21px
+}
+
+.icon-logo-fare-lock-158x32 {
+    background-position: -5px -4px;
+    width: 159px;
+    height: 33px
+}
+
+.icon-logo-fare-lock-140x28 {
+    background-position: -5px -39px;
+    width: 141px;
+    height: 30px
+}
+
+.icon-logo-fare-lock-128x26 {
+    background-position: -5px -68px;
+    width: 129px;
+    height: 27px
+}
+
+.icon-logo-fare-lock-109x22 {
+    background-position: -5px -94px;
+    width: 110px;
+    height: 23px
+}
+
+
+
+/* End: Fare Lock Icons */
+
+
+
+
+.icons-sprite, .icons-add-2, 
+.corner-toggle-show:before,
+.corner-toggle-hide:before, 
+.icons-add-3, 
+.icons-add, 
+.icons-aero-logo, 
+.icons-airplane-grey, 
+.icons-airplane-red, 
+.icons-alert-test, 
+.icons-alert, 
+.icons-arrow-box-bottom-left-2-expanded, .icons-arrow-box-bottom-left-expanded, .icons-arrow-box-bottom-left, .icons-arrow-box-top-right-white, .icons-arrow-box-top-right, .icons-arrow-circle-right, .icons-arrow-opposite-directions, .icons-arrow-right-purple, .icons-arrow-serif-black-right, .icons-arrow-serif-down, .icons-arrow-serif-left, .icons-arrow-serif-right, .icons-arrow-serif-up, .icons-arrow-type1-next, .icons-arrow_umnr_left, .icons-arrow_umnr_right, .icons-back-to-top-button, .icons-badge--g, .icons-badge--k-g, .icons-badge—k, .icons-badge--s, .icons-badge-chase, .icons-badge-gl-g, .icons-badge-g1, .icons-badge-gs-g, .icons-badge-gs, .icons-badge-mp, .icons-badge-other-s, .icons-badge-, .icons-badge-pl-g-no-border, .icons-badge-pl-g, .icons-badge-reac, .icons-badge-sl-s, .icons-badge-sl, .icons-bg-calendar, .icons-boarded, .icons-cancel, .icons-cap, .icons-caret-black-down, .icons-caret-black-left, .icons-caret-black-up, .icons-caret-blue-down, .icons-caret-blue-left, .icons-caret-blue-right, .icons-caret-blue-shadow-down, .icons-caret-blue-shadow-up, .icons-caret-blue-up, .icons-caret-dark-blue-down, .icons-caret-dark-blue-up, .icons-caret-light-blue-down, .icons-caret-light-blue-up, .icons-caret-white-down, .icons-caret-white-right, .icons-caret-white-up, .icons-caret, .expand-collapse-tertiary .expand-collapse-trigger-icon, .icons-close-2, .icons-close-3, .icons-close-4, .icons-close-5, .icons-close, .icons-coffee-cup-grey, .icons-cog-inline, .icons-compass, .icons-component-header-plane, .icons-connect, .icons-control-closed-active, .icons-control-closed-hover, .icons-control-closed-static, .icons-control-nope-active, .icons-control-nope-hover, .icons-control-nope-static, .icons-control-plane-active, .icons-control-plane-hover, .icons-control-plane-static, .icons-control-release-seat-active, .icons-control-release-seat-hover, .icons-control-release-seat-static, .icons-control-unlocked-active, .icons-control-unlocked-hover, .icons-control-unlocked-static, .icons-customer-alert, .icons-datepicker, .icons-dm-datepicker, .icons-double-arrow-disclosure, .icons-drop-arrow-right, .icons-electric-plug-grey, .icons-empty-alert-btn-icon, .icons-envelope, .icons-error-drawer-handle, .icons-eticket, .icons-expired-alert-box, .icons-expired-alert-btn-icon, .icons-expired-alert-clock, .icons-fare-display, .icons-fare-lock, .icons-fare, .icons-filters-big-yellow, .icons-filters-big, .icons-filters, .icons-flag-benefits-chart, .icons-flight-segment-divider-down, .icons-flight-segment-divider, .icons-flight-status-arrived, .icons-flight-status-boarding, .icons-flight-status-cancelled, .icons-flight-status-delayed, .icons-flight-status-on-time, .icons-form-checkbox-blue-checked, .icons-form-checkbox-blue-unchecked, .icons-form-radio-blue-selected, .icons-form-radio-blue-unselected, .icons-global-framework-check-in-blue, .icons-global-framework-check-in, .icons-global-framework-flights-blue, .icons-global-framework-flights, .icons-global-framework-toggle-close-2, .icons-global-framework-toggle-close, .icons-global-framework-toggle-hover, .icons-global-framework-toggle-open-2, .icons-global-framework-toggle-open-3, .icons-global-framework-toggle-open, .icons-grippable, .icons-magnifier-black, .icons-magnifier-blue, .icons-magnifier-red, .icons-minus-2, .icons-money, .icons-movie-projector-grey, .icons-nav-top-level-awaiting-seats-f, .icons-nav-top-level-awaiting-seats-j, .icons-nav-top-level-awaiting-seats-y, .icons-nav-top-level-awaiting-seats, .icons-nav-top-level-plane, .icons-nav-top-level-walking-luggage, .icons-not-applicable, .icons-packages-epe, .icons-packages-eps, .icons-passenger-type, .icons-passenger, .icons-pencil-disabled, .icons-pencil-edit, .icons-pencil, .icons-pending, .icons-person-in-seat-grey, .icons-plate-silverware-grey, .icons-plus, .icons-prompt-error, .icons-prompt-success, .icons-ps-flag-icon, .icons-question-mark, .icons-recon-check, .icons-red-alert, .icons-refresh-active, .icons-refresh-hover, .icons-refresh-small, .icons-refresh-static, .icons-seat-grey, .icons-seat-map-jump-sm, .icons-seat-map-jump, .icons-seating-reac, .icons-select-caret, .icons-ssr-alert, .icons-star-alliance, .icons-status-error, .icons-status-pending, .icons-status-success, .icons-success-alert-btn-icon, .icons-suitcase-bg-transparent, .icons-suitcase-blue, .icons-suitcase-selected, .icons-suitcase, .icons-table-sort-arrow-default, .icons-table-sort-arrow-down, .icons-table-sort-arrow-up, .icons-toggle-arrow-black-open, .icons-toggle-arrow-blue-closed, .icons-toggle-blue-minus, .icons-toggle-blue-plus, .icons-toggle-size2-blue-minus, .icons-toggle-size2-blue-plus, .icons-tool-box, .icons-trash-can-2, .icons-trash-can, .icons-travel-option-alt-economy-plus, .icons-travel-option-alt-flight-options, .icons-travel-option-alt-premier-access, .icons-travel-option-alt-upgrades, .icons-travel-option-economy-plus, .icons-travel-option-flight-options, .icons-travel-option-premier-access, .icons-travel-option-upgrades-2, .icons-travel-option-upgrades, .icons-up-down-arrows, .icons-upgrade-icons-confirmed, .icons-upgrade-icons-declined, .icons-upgrade-icons-pending, .icons-upgrade-icons-wait-list, .icons-wrench, .icons-x, .icons-add-3-hover, a.icons-add-3:hover,
+span.icons-add-3:hover, .icons-add-hover, a.icons-add:hover,
+span.icons-add:hover, .corner-toggle-show:hover:before, .icons-arrow-opposite-directions-hover, a.icons-arrow-opposite-directions:hover,
+span.icons-arrow-opposite-directions:hover, .icons-back-to-top-button-hover, .icons-cap-hover, a.icons-cap:hover,
+span.icons-cap:hover, .icons-close-2-hover, a.icons-close-2:hover,
+span.icons-close-2:hover, .icons-close-4-hover, a.icons-close-4:hover,
+span.icons-close-4:hover, .icons-close-5-hover, a.icons-close-5:hover,
+span.icons-close-5:hover, .icons-compass-hover, a.icons-compass:hover,
+span.icons-compass:hover, .icons-fare-display-hover, a.icons-fare-display:hover,
+span.icons-fare-display:hover, .icons-fare-hover, a.icons-fare:hover,
+span.icons-fare:hover, .icons-minus-2-hover, .corner-toggle-hide:hover:before, .icons-pencil-hover, a.icons-pencil:not(.disabled):hover,
+span.icons-pencil:not(.disabled):hover, a.icons-pencil.disabled,
+span.icons-pencil.disabled, .icons-refresh-small-hover, a.icons-refresh-small:hover,
+span.icons-refresh-small:hover, .icons-suitcase-hover, .icons-trash-can-2-hover, a.icons-trash-can-2:not(.disabled):hover,
+span.icons-trash-can-2:not(.disabled):hover, a.icons-trash-can-2.disabled,
+span.icons-trash-can-2.disabled, .app-header-view .flight-search-dropdown a.flight-search:link, .app-header-view .flight-search-dropdown a.flight-search:visited, .app-header-view .flight-search-dropdown a.flight-search:hover, .app-header-view .flight-search-dropdown a.flight-search:active, .app-header-view .flight-search-dropdown a.flight-search:focus, .app-header-view a.flight-closed-control.flight-closed:link, .app-header-view a.flight-closed-control.flight-closed:visited, .app-header-view a.flight-closed-control.flight-closed:hover, .app-header-view a.flight-closed-control.flight-closed:active, .app-header-view a.flight-closed-control.flight-closed:focus, .app-header-view a.flight-closed-control.flight-restricted:link, .app-header-view a.flight-closed-control.flight-restricted:visited, .app-header-view a.flight-closed-control.flight-restricted:hover, .app-header-view a.flight-closed-control.flight-restricted:active, .app-header-view a.flight-closed-control.flight-restricted:focus, .app-header-view a.flight-closed-control.flight-open:link, .app-header-view a.flight-closed-control.flight-open:visited, .app-header-view a.flight-closed-control.flight-open:hover, .app-header-view a.flight-closed-control.flight-open:active, .app-header-view a.flight-closed-control.flight-open:focus, .app-header-view a.flight-closed-control.release-seat:link, .app-header-view a.flight-closed-control.release-seat:visited, .app-header-view a.flight-closed-control.release-seat:hover, .app-header-view a.flight-closed-control.release-seat:active, .app-header-view a.flight-closed-control.release-seat:focus, .app-header-view a.release-seat:link, .app-header-view a.release-seat:visited, .app-header-view a.release-seat:hover, .app-header-view a.release-seat:active, .app-header-view a.release-seat:focus, .app-header-view div.recon-status.recon-complete:after, .status-window.success span.icon, .status-window.success span.btn-alert:before, .status-window.error span.icon, .status-window.error span.btn-alert:before, .btn-alert.btn-alert-success:before, .btn-alert.btn-alert-expired:before, .btn-alert.btn-alert-empty:before, a.refresh, a.refresh:link, a.refresh:visited, a.refresh:hover, a.refresh:active, a.refresh:focus, .icon-attention, .remove-item, .prompt-success .prompt-icon, .prompt-error .prompt-icon, .prompt-success-dropdown .prompt-icon, .prompt-error-dropdown .prompt-icon, .search .search-btn, .search .search-clear {
+  background: url('../assets/icons-s1c3da0ed6b.png') no-repeat;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-add-2, .corner-toggle-show:before,
+.corner-toggle-hide:before {
+  background-position: 0 -6470px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-add-3 {
+  background-position: 0 -5974px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-add {
+  background-position: 0 -6490px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-aero-logo {
+  background-position: 0 -2612px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-airplane-grey {
+  background-position: 0 -1505px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-airplane-red {
+  background-position: 0 -197px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-alert-test {
+  background-position: 0 -4619px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-alert {
+  background-position: 0 -4587px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-arrow-box-bottom-left-2-expanded {
+  background-position: 0 -5430px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-arrow-box-bottom-left-expanded {
+  background-position: 0 -2942px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-arrow-box-bottom-left {
+  background-position: 0 -892px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-arrow-box-top-right-white {
+  background-position: 0 -835px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-arrow-box-top-right {
+  background-position: 0 -918px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-arrow-circle-right {
+  background-position: 0 -5742px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-arrow-opposite-directions {
+  background-position: 0 -5632px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-arrow-right-purple {
+  background-position: 0 -2471px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-arrow-serif-black-right {
+  background-position: 0 -4894px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-arrow-serif-down {
+  background-position: 0 -4670px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-arrow-serif-left {
+  background-position: 0 -4691px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-arrow-serif-right {
+  background-position: 0 -4753px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-arrow-serif-up {
+  background-position: 0 -4711px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-arrow-type1-next {
+  background-position: 0 -4019px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-arrow_umnr_left {
+  background-position: 0 -1272px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-arrow_umnr_right {
+  background-position: 0 -1339px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-back-to-top-button {
+  background-position: 0 -578px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-badge--g {
+  background-position: 0 -2114px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-badge--k-g, .icons-badge—k {
+  background-position: 0 -2350px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-badge--s {
+  background-position: 0 -2288px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-badge-chase {
+  background-position: 0 -2083px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-badge-gl-g, .icons-badge-g1 {
+  background-position: 0 -2006px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-badge-gs-g, .icons-badge-gs {
+  background-position: 0 -2222px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-badge-mp {
+  background-position: 0 -2581px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-badge-other-s, .icons-badge- {
+  background-position: 0 -1766px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-badge-pl-g-no-border {
+  background-position: 0 -1797px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-badge-pl-g {
+  background-position: 0 -2145px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-badge-reac {
+  background-position: 0 -688px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-badge-sl-s, .icons-badge-sl {
+  background-position: 0 -2319px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-bg-calendar {
+  background-position: 0 -6421px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-boarded {
+  background-position: 0 -715px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-cancel {
+  background-position: 0 -5876px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-cap {
+  background-position: 0 -3541px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-caret-black-down {
+  background-position: 0 -249px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-caret-black-left {
+  background-position: 0 -269px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-caret-black-up {
+  background-position: 0 -290px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-caret-blue-down {
+  background-position: 0 -378px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-caret-blue-left {
+  background-position: 0 -6000px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-caret-blue-right {
+  background-position: 0 -5900px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-caret-blue-shadow-down {
+  background-position: 0 -4473px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-caret-blue-shadow-up {
+  background-position: 0 -4651px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-caret-blue-up {
+  background-position: 0 -4869px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-caret-dark-blue-down {
+  background-position: 0 -4089px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-caret-dark-blue-up {
+  background-position: 0 -4377px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-caret-light-blue-down {
+  background-position: 0 -4732px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-caret-light-blue-up {
+  background-position: 0 -5114px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-caret-white-down {
+  background-position: 0 -3588px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-caret-white-right {
+  background-position: 0 -3777px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-caret-white-up {
+  background-position: 0 -6131px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-caret, .expand-collapse-tertiary .expand-collapse-trigger-icon {
+  background-position: 0 -3869px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-close-2 {
+  background-position: 0 -5607px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-close-3 {
+  background-position: 0 -5267px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-close-4 {
+  background-position: 0 -6319px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-close-5 {
+  background-position: 0 -6339px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-close {
+  background-position: 0 -5766px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-coffee-cup-grey {
+  background-position: 0 -1406px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-cog-inline {
+    background-position: 0 -48px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-compass {
+  background-position: 0 -5365px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-component-header-plane {
+  background-position: 0 -2912px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-connect {
+  background-position: 0 -3565px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-control-closed-active {
+  background-position: 0 -1174px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-control-closed-hover {
+  background-position: 0 -1587px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-control-closed-static {
+  background-position: 0 -1433px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-control-nope-active {
+  background-position: 0 -1914px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-control-nope-hover {
+  background-position: 0 -2176px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-control-nope-static {
+  background-position: 0 -1960px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-control-plane-active {
+  background-position: 0 -3022px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-control-plane-hover {
+  background-position: 0 -4171px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-control-plane-static {
+  background-position: 0 -2489px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-control-release-seat-active {
+  background-position: 0 -3068px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-control-release-seat-hover {
+  background-position: 0 -3823px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-control-release-seat-static {
+  background-position: 0 -2691px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-control-unlocked-active {
+  background-position: 0 -2037px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-control-unlocked-hover {
+  background-position: 0 -2535px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-control-unlocked-static {
+  background-position: 0 -1868px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-customer-alert {
+  background-position: 0 -3324px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-datepicker {
+  background-position: 0 -2822px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-dm-datepicker {
+  background-position: 0 -2968px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-double-arrow-disclosure {
+  background-position: 0 -1123px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-drop-arrow-right {
+  background-position: 0 -1728px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-electric-plug-grey {
+  background-position: 0 -1312px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-empty-alert-btn-icon {
+  background-position: 0 -3361px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-envelope {
+  background-position: 0 -5249px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-error-drawer-handle {
+  background-position: 0 -549px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-eticket {
+  background-position: 0 -802px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-expired-alert-box {
+    background-position: 0 -72px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-expired-alert-btn-icon {
+	background-position: 0 -310px;
+	height: 16px;
+	width: 14px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-expired-alert-clock {
+  background-position: 0 -225px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-fare-display {
+  background-position: 0 -663px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-fare-lock {
+  background-position: 0 -2434px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-fare {
+  background-position: 0 -425px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-filters-big-yellow {
+  background-position: 0 -4448px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-filters-big {
+  background-position: 0 -4397px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-filters {
+  background-position: 0 -4847px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-flag-benefits-chart {
+  background-position: 0 -4519px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-flight-segment-divider-down {
+  background-position: 0 -5517px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-flight-segment-divider {
+  background-position: 0 -4914px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-flight-status-arrived {
+  background-position: 0 -4280px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-flight-status-boarding {
+  background-position: 0 -4314px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-flight-status-cancelled {
+  background-position: 0 -5656px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-flight-status-delayed {
+  background-position: 0 -5396px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-flight-status-on-time {
+  background-position: 0 -4246px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-form-checkbox-blue-checked {
+  background-position: 0 -2796px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-form-checkbox-blue-unchecked {
+  background-position: 0 -3239px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-form-radio-blue-selected {
+  background-position: 0 -2770px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-form-radio-blue-unselected {
+  background-position: 0 -2886px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-global-framework-check-in-blue {
+  background-position: 0 -517px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-global-framework-check-in {
+  background-position: 0 -861px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-global-framework-flights-blue {
+  background-position: 0 -636px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-global-framework-flights {
+  background-position: 0 -1097px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-global-framework-toggle-close-2 {
+  background-position: 0 -3294px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-global-framework-toggle-close {
+  background-position: 0 -1479px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-global-framework-toggle-hover {
+  background-position: 0 -3481px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-global-framework-toggle-open-2 {
+  background-position: 0 -3511px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-global-framework-toggle-open-3 {
+  background-position: 0 -4065px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-global-framework-toggle-open {
+  background-position: 0 -1746px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-grippable {
+  background-position: 0 -6530px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-magnifier-black {
+  background-position: 0 -5088px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-magnifier-blue {
+  background-position: 0 -5796px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-magnifier-red {
+  background-position: 0 -5822px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-minus-2, .corner-toggle-hide:before {
+  background-position: 0 -6562px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-money {
+  background-position: 0 -4422px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-movie-projector-grey {
+  background-position: 0 -1532px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-nav-top-level-awaiting-seats-f {
+  background-position: 0 -3423px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-nav-top-level-awaiting-seats-j {
+  background-position: 0 -3452px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-nav-top-level-awaiting-seats-y {
+  background-position: 0 -3265px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-nav-top-level-awaiting-seats {
+  background-position: 0 -4348px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-nav-top-level-plane {
+  background-position: 0 -4492px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-nav-top-level-walking-luggage {
+  background-position: 0 -4217px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-not-applicable {
+  background-position: 0 -5323px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-packages-epe {
+    background-position: 0 -161px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-packages-eps {
+    background-position: 0 -125px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-passenger-type {
+  background-position: 0 -453px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-passenger {
+  background-position: 0 -3609px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-pencil-disabled {
+  background-position: 0 -6153px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-pencil-edit {
+  background-position: 0 -1055px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-pencil {
+  background-position: 0 -6207px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-pending {
+    background-position: 0 0;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-person-in-seat-grey {
+  background-position: 0 -1379px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-plate-silverware-grey {
+  background-position: 0 -1245px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-plus {
+  background-position: 0 -5287px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-prompt-error {
+  background-position: 0 -2639px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-prompt-success {
+  background-position: 0 -6234px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-ps-flag-icon {
+  background-position: 0 -2849px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-question-mark {
+  background-position: 0 -1220px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-recon-check {
+  background-position: 0 -4793px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-red-alert {
+  background-position: 0 -5848px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-refresh-active {
+  background-position: 0 -5208px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-refresh-hover {
+  background-position: 0 -5167px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-refresh-small {
+  background-position: 0 -5690px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-refresh-static {
+  background-position: 0 -5541px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-seat-grey {
+  background-position: 0 -1147px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-seat-map-jump-sm {
+  background-position: 0 -2737px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-seat-map-jump {
+  background-position: 0 -477px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-seating-reac {
+  background-position: 0 -944px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-select-caret {
+  background-position: 0 -5477px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-ssr-alert {
+  background-position: 0 -976px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-star-alliance {
+  background-position: 0 -1827px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-status-error {
+  background-position: 0 -2665px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-status-pending {
+  background-position: 0 -5456px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-status-success {
+  background-position: 0 -6258px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-success-alert-btn-icon {
+  background-position: 0 -2994px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-suitcase-bg-transparent {
+  background-position: 0 -4109px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-suitcase-blue {
+  background-position: 0 -6359px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-suitcase-selected {
+  background-position: 0 -3957px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-suitcase {
+  background-position: 0 -3889px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-table-sort-arrow-default {
+  background-position: 0 -1633px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-table-sort-arrow-down {
+  background-position: 0 -1678px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-table-sort-arrow-up {
+  background-position: 0 -1703px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-toggle-arrow-black-open {
+  background-position: 0 -1658px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-toggle-arrow-blue-closed {
+  background-position: 0 -1559px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-toggle-blue-minus {
+  background-position: 0 -3991px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-toggle-blue-plus {
+  background-position: 0 -3637px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-toggle-size2-blue-minus {
+  background-position: 0 -6384px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-toggle-size2-blue-plus {
+  background-position: 0 -6282px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-tool-box {
+    background-position: 0 -26px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-trash-can-2 {
+  background-position: 0 -6103px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-trash-can {
+  background-position: 0 -1013px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-travel-option-alt-economy-plus {
+  background-position: 0 -5136px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-travel-option-alt-flight-options {
+  background-position: 0 -3665px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-travel-option-alt-premier-access {
+  background-position: 0 -3737px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-travel-option-alt-upgrades {
+  background-position: 0 -4810px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-travel-option-economy-plus {
+  background-position: 0 -3697px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-travel-option-flight-options {
+  background-position: 0 -2253px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-travel-option-premier-access {
+  background-position: 0 -2381px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-travel-option-upgrades-2 {
+  background-position: 0 -3192px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-travel-option-upgrades {
+  background-position: 0 -3145px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-up-down-arrows {
+  background-position: 0 -3389px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-upgrade-icons-confirmed {
+  background-position: 0 -334px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-upgrade-icons-declined {
+  background-position: 0 -356px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-upgrade-icons-pending {
+  background-position: 0 -403px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-upgrade-icons-wait-list {
+    background-position: 0 -103px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-wrench {
+  background-position: 0 -5950px;
+}
+
+/* line 60, ../../../../../../../../home/teamcity/.rvm/gems/ruby-1.9.3-p484/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-x {
+  background-position: 0 -4567px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-add-2, .corner-toggle-show:before,
+.corner-toggle-hide:before {
+  background-position: 0 -6470px;
+    height: 10px;
+    width: 10px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-add-3-hover, a.icons-add-3:hover,
+span.icons-add-3:hover, a.icons-add-3.disabled {
+    background-position: 0 -6025px;
+    height: 16px;
+    width: 16px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-add-3 {
+  background-position: 0 -5974px;
+    height: 16px;
+    width: 16px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-add-hover, a.icons-add:hover,
+span.icons-add:hover, .corner-toggle-show:hover:before {
+  background-position: 0 -6490px;
+    height: 10px;
+    width: 10px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-add {
+  background-position: 0 -6490px;
+    height: 10px;
+    width: 10px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-aero-logo {
+  background-position: 0 -2612px;
+    height: 17px;
+    width: 54px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-airplane-grey {
+  background-position: 0 -1505px;
+    height: 17px;
+    width: 20px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-airplane-red {
+  background-position: 0 -197px;
+  height: 18px;
+  width: 20px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-alert-test {
+  background-position: 0 -4619px;
+    height: 22px;
+    width: 23px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-alert {
+  background-position: 0 -4587px;
+    height: 22px;
+    width: 23px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-arrow-box-bottom-left-2-expanded {
+  background-position: 0 -5430px;
+    height: 16px;
+    width: 16px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-arrow-box-bottom-left-expanded {
+  background-position: 0 -2942px;
+    height: 16px;
+    width: 16px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-arrow-box-bottom-left {
+  background-position: 0 -892px;
+    height: 16px;
+    width: 16px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-arrow-box-top-right-white {
+  background-position: 0 -835px;
+    height: 16px;
+    width: 16px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-arrow-box-top-right {
+  background-position: 0 -918px;
+    height: 16px;
+    width: 16px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-arrow-circle-right {
+  background-position: 0 -5742px;
+    height: 14px;
+    width: 14px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-arrow-opposite-directions-hover, a.icons-arrow-opposite-directions:hover,
+span.icons-arrow-opposite-directions:hover {
+  background-position: 0 -6051px;
+    height: 14px;
+    width: 17px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-arrow-opposite-directions {
+  background-position: 0 -5632px;
+    height: 14px;
+    width: 17px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-arrow-right-purple {
+  background-position: 0 -2471px;
+    height: 8px;
+    width: 10px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-arrow-serif-black-right {
+  background-position: 0 -4894px;
+    height: 10px;
+    width: 10px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-arrow-serif-down {
+  background-position: 0 -4670px;
+    height: 11px;
+    width: 10px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-arrow-serif-left {
+  background-position: 0 -4691px;
+    height: 10px;
+    width: 11px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-arrow-serif-right {
+  background-position: 0 -4753px;
+    height: 10px;
+    width: 11px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-arrow-serif-up {
+  background-position: 0 -4711px;
+    height: 11px;
+    width: 10px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-arrow-type1-next {
+  background-position: 0 -4019px;
+    height: 36px;
+    width: 12px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-arrow_umnr_left {
+  background-position: 0 -1272px;
+    height: 30px;
+    width: 9px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-arrow_umnr_right {
+  background-position: 0 -1339px;
+    height: 30px;
+    width: 9px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-back-to-top-button-hover {
+  background-position: 0 -744px;
+    height: 48px;
+    width: 50px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-back-to-top-button {
+  background-position: 0 -578px;
+    height: 48px;
+    width: 50px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-badge--g {
+  background-position: 0 -2114px;
+    height: 21px;
+    width: 72px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-badge--k-g, .icons-badge—k {
+  background-position: 0 -2350px;
+    height: 21px;
+    width: 72px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-badge--s {
+  background-position: 0 -2288px;
+    height: 21px;
+    width: 72px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-badge-chase {
+  background-position: 0 -2083px;
+    height: 21px;
+    width: 72px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-badge-gl-g, .icons-badge-g1 {
+  background-position: 0 -2006px;
+    height: 21px;
+    width: 72px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-badge-gs-g, .icons-badge-gs {
+  background-position: 0 -2222px;
+    height: 21px;
+    width: 72px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-badge-mp {
+  background-position: 0 -2581px;
+    height: 21px;
+    width: 72px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-badge-other-s, .icons-badge- {
+  background-position: 0 -1766px;
+    height: 21px;
+    width: 72px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-badge-pl-g-no-border {
+  background-position: 0 -1797px;
+    height: 20px;
+    width: 62px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-badge-pl-g {
+  background-position: 0 -2145px;
+    height: 21px;
+    width: 72px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-badge-reac {
+  background-position: 0 -688px;
+    height: 17px;
+    width: 42px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-badge-sl-s, .icons-badge-sl {
+  background-position: 0 -2319px;
+    height: 21px;
+    width: 72px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-bg-calendar {
+  background-position: 0 -6421px;
+    height: 19px;
+    width: 18px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-boarded {
+  background-position: 0 -715px;
+    height: 19px;
+    width: 19px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-cancel {
+  background-position: 0 -5876px;
+    height: 14px;
+    width: 14px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-cap-hover, a.icons-cap:hover,
+span.icons-cap:hover {
+  background-position: 0 -3799px;
+    height: 14px;
+    width: 29px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-cap {
+  background-position: 0 -3541px;
+    height: 14px;
+    width: 29px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-caret-black-down {
+  background-position: 0 -249px;
+    height: 10px;
+    width: 11px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-caret-black-left {
+  background-position: 0 -269px;
+    height: 11px;
+    width: 10px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-caret-black-up {
+  background-position: 0 -290px;
+    height: 10px;
+    width: 11px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-caret-blue-down {
+  background-position: 0 -378px;
+    height: 15px;
+    width: 15px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-caret-blue-left {
+  background-position: 0 -6000px;
+    height: 15px;
+    width: 15px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-caret-blue-right {
+  background-position: 0 -5900px;
+    height: 15px;
+    width: 15px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-caret-blue-shadow-down {
+  background-position: 0 -4473px;
+    height: 9px;
+    width: 9px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-caret-blue-shadow-up {
+  background-position: 0 -4651px;
+    height: 9px;
+    width: 9px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-caret-blue-up {
+  background-position: 0 -4869px;
+    height: 15px;
+    width: 15px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-caret-dark-blue-down {
+  background-position: 0 -4089px;
+    height: 10px;
+    width: 16px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-caret-dark-blue-up {
+  background-position: 0 -4377px;
+    height: 10px;
+    width: 16px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-caret-light-blue-down {
+  background-position: 0 -4732px;
+    height: 11px;
+    width: 12px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-caret-light-blue-up {
+  background-position: 0 -5114px;
+    height: 12px;
+    width: 13px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-caret-white-down {
+  background-position: 0 -3588px;
+    height: 11px;
+    width: 12px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-caret-white-right {
+  background-position: 0 -3777px;
+    height: 12px;
+    width: 11px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-caret-white-up {
+  background-position: 0 -6131px;
+    height: 12px;
+    width: 13px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-caret, .expand-collapse-tertiary .expand-collapse-trigger-icon {
+  background-position: 0 -3869px;
+    height: 10px;
+    width: 12px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-close-2-hover, a.icons-close-2:hover,
+span.icons-close-2:hover {
+  background-position: 0 -5925px;
+    height: 15px;
+    width: 15px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-close-2 {
+  background-position: 0 -5607px;
+    height: 15px;
+    width: 15px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-close-3 {
+  background-position: 0 -5267px;
+    height: 10px;
+    width: 10px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-close-4-hover, a.icons-close-4:hover,
+span.icons-close-4:hover {
+  background-position: 0 -6450px;
+    height: 10px;
+    width: 10px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-close-4 {
+  background-position: 0 -6319px;
+    height: 10px;
+    width: 10px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-close-5-hover, a.icons-close-5:hover,
+span.icons-close-5:hover {
+  background-position: 0 -6339px;
+    height: 10px;
+    width: 10px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-close-5 {
+  background-position: 0 -6339px;
+    height: 10px;
+    width: 10px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-close {
+  background-position: 0 -5766px;
+    height: 20px;
+    width: 20px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-coffee-cup-grey {
+  background-position: 0 -1406px;
+    height: 17px;
+    width: 20px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-cog-inline {
+    background-position: 0 -48px;
+    height: 14px;
+    width: 37px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-compass-hover, a.icons-compass:hover,
+span.icons-compass:hover {
+  background-position: 0 -3114px;
+    height: 21px;
+    width: 21px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-compass {
+  background-position: 0 -5365px;
+    height: 21px;
+    width: 21px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-component-header-plane {
+  background-position: 0 -2912px;
+    height: 20px;
+    width: 19px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-connect {
+  background-position: 0 -3565px;
+    height: 13px;
+    width: 13px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-control-closed-active {
+  background-position: 0 -1174px;
+    height: 36px;
+    width: 36px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-control-closed-hover {
+  background-position: 0 -1587px;
+    height: 36px;
+    width: 36px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-control-closed-static {
+  background-position: 0 -1433px;
+    height: 36px;
+    width: 36px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-control-nope-active {
+  background-position: 0 -1914px;
+    height: 36px;
+    width: 36px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-control-nope-hover {
+  background-position: 0 -2176px;
+    height: 36px;
+    width: 36px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-control-nope-static {
+  background-position: 0 -1960px;
+    height: 36px;
+    width: 36px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-control-plane-active {
+  background-position: 0 -3022px;
+    height: 36px;
+    width: 36px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-control-plane-hover {
+  background-position: 0 -4171px;
+    height: 36px;
+    width: 36px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-control-plane-static {
+  background-position: 0 -2489px;
+    height: 36px;
+    width: 36px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-control-release-seat-active {
+  background-position: 0 -3068px;
+    height: 36px;
+    width: 36px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-control-release-seat-hover {
+  background-position: 0 -3823px;
+    height: 36px;
+    width: 36px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-control-release-seat-static {
+  background-position: 0 -2691px;
+    height: 36px;
+    width: 36px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-control-unlocked-active {
+  background-position: 0 -2037px;
+    height: 36px;
+    width: 36px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-control-unlocked-hover {
+  background-position: 0 -2535px;
+    height: 36px;
+    width: 36px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-control-unlocked-static {
+  background-position: 0 -1868px;
+    height: 36px;
+    width: 36px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-customer-alert {
+  background-position: 0 -3324px;
+    height: 27px;
+    width: 24px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-datepicker {
+  background-position: 0 -2822px;
+    height: 17px;
+    width: 17px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-dm-datepicker {
+  background-position: 0 -2968px;
+    height: 16px;
+    width: 16px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-double-arrow-disclosure {
+  background-position: 0 -1123px;
+    height: 14px;
+    width: 14px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-drop-arrow-right {
+  background-position: 0 -1728px;
+    height: 8px;
+    width: 13px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-electric-plug-grey {
+  background-position: 0 -1312px;
+    height: 17px;
+    width: 20px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-empty-alert-btn-icon {
+  background-position: 0 -3361px;
+    height: 18px;
+    width: 18px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-envelope {
+  background-position: 0 -5249px;
+    height: 8px;
+    width: 13px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-error-drawer-handle {
+  background-position: 0 -549px;
+    height: 19px;
+    width: 100px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-eticket {
+  background-position: 0 -802px;
+    height: 23px;
+    width: 87px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-expired-alert-box {
+    background-position: 0 -72px;
+    height: 21px;
+    width: 72px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-expired-alert-clock {
+  background-position: 0 -225px;
+    height: 14px;
+    width: 14px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-fare-display-hover, a.icons-fare-display:hover,
+span.icons-fare-display:hover {
+  background-position: 0 -5582px;
+    height: 15px;
+    width: 21px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-fare-display {
+  background-position: 0 -663px;
+    height: 15px;
+    width: 21px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-fare-hover, a.icons-fare:hover,
+span.icons-fare:hover {
+  background-position: 0 -4143px;
+    height: 18px;
+    width: 20px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-fare-lock {
+  background-position: 0 -2434px;
+    height: 27px;
+    width: 131px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-fare {
+  background-position: 0 -425px;
+    height: 18px;
+    width: 20px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-filters-big-yellow {
+  background-position: 0 -4448px;
+    height: 15px;
+    width: 15px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-filters-big {
+  background-position: 0 -4397px;
+    height: 15px;
+    width: 15px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-filters {
+  background-position: 0 -4847px;
+    height: 12px;
+    width: 12px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-flag-benefits-chart {
+  background-position: 0 -4519px;
+    height: 38px;
+    width: 36px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-flight-segment-divider-down {
+  background-position: 0 -5517px;
+    height: 14px;
+    width: 51px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-flight-segment-divider {
+  background-position: 0 -4914px;
+    height: 164px;
+    width: 26px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-flight-status-arrived {
+  background-position: 0 -4280px;
+    height: 24px;
+    width: 40px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-flight-status-boarding {
+  background-position: 0 -4314px;
+    height: 24px;
+    width: 40px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-flight-status-cancelled {
+  background-position: 0 -5656px;
+    height: 24px;
+    width: 40px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-flight-status-delayed {
+  background-position: 0 -5396px;
+    height: 24px;
+    width: 40px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-flight-status-on-time {
+  background-position: 0 -4246px;
+    height: 24px;
+    width: 40px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-form-checkbox-blue-checked {
+  background-position: 0 -2796px;
+    height: 16px;
+    width: 16px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-form-checkbox-blue-unchecked {
+  background-position: 0 -3239px;
+    height: 16px;
+    width: 16px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-form-radio-blue-selected {
+  background-position: 0 -2770px;
+    height: 16px;
+    width: 16px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-form-radio-blue-unselected {
+  background-position: 0 -2886px;
+    height: 16px;
+    width: 16px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-global-framework-check-in-blue {
+  background-position: 0 -517px;
+    height: 22px;
+    width: 37px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-global-framework-check-in {
+  background-position: 0 -861px;
+    height: 21px;
+    width: 37px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-global-framework-flights-blue {
+  background-position: 0 -636px;
+    height: 17px;
+    width: 45px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-global-framework-flights {
+  background-position: 0 -1097px;
+    height: 16px;
+    width: 45px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-global-framework-toggle-close-2 {
+  background-position: 0 -3294px;
+    height: 20px;
+    width: 30px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-global-framework-toggle-close {
+  background-position: 0 -1479px;
+    height: 16px;
+    width: 20px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-global-framework-toggle-hover {
+  background-position: 0 -3481px;
+    height: 20px;
+    width: 30px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-global-framework-toggle-open-2 {
+  background-position: 0 -3511px;
+    height: 20px;
+    width: 30px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-global-framework-toggle-open-3 {
+  background-position: 0 -4065px;
+    height: 14px;
+    width: 27px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-global-framework-toggle-open {
+  background-position: 0 -1746px;
+    height: 10px;
+    width: 20px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-grippable {
+  background-position: 0 -6530px;
+    height: 25px;
+    width: 8px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-magnifier-black {
+  background-position: 0 -5088px;
+    height: 16px;
+    width: 15px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-magnifier-blue {
+  background-position: 0 -5796px;
+    height: 16px;
+    width: 15px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-magnifier-red {
+  background-position: 0 -5822px;
+    height: 16px;
+    width: 15px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-minus-2-hover, .corner-toggle-hide:hover:before {
+  background-position: 0 -6582px;
+    height: 10px;
+    width: 10px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-minus-2, .corner-toggle-hide:before {
+  background-position: 0 -6562px;
+    height: 10px;
+    width: 10px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-money {
+  background-position: 0 -4422px;
+    height: 16px;
+    width: 16px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-movie-projector-grey {
+  background-position: 0 -1532px;
+    height: 17px;
+    width: 20px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-nav-top-level-awaiting-seats-f {
+  background-position: 0 -3423px;
+    height: 19px;
+    width: 20px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-nav-top-level-awaiting-seats-j {
+  background-position: 0 -3452px;
+    height: 19px;
+    width: 20px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-nav-top-level-awaiting-seats-y {
+  background-position: 0 -3265px;
+    height: 19px;
+    width: 20px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-nav-top-level-awaiting-seats {
+  background-position: 0 -4348px;
+    height: 19px;
+    width: 20px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-nav-top-level-plane {
+  background-position: 0 -4492px;
+    height: 17px;
+    width: 17px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-nav-top-level-walking-luggage {
+  background-position: 0 -4217px;
+    height: 19px;
+    width: 19px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-not-applicable {
+  background-position: 0 -5323px;
+    height: 32px;
+    width: 32px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-packages-epe {
+    background-position: 0 -161px;
+    height: 26px;
+    width: 27px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-packages-eps {
+    background-position: 0 -125px;
+    height: 26px;
+    width: 27px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-passenger-type {
+  background-position: 0 -453px;
+    height: 14px;
+    width: 14px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-passenger {
+  background-position: 0 -3609px;
+    height: 18px;
+    width: 12px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-pencil-disabled {
+  background-position: 0 -6153px;
+    height: 17px;
+    width: 17px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-pencil-edit {
+  background-position: 0 -1055px;
+    height: 32px;
+    width: 32px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-pencil-hover, a.icons-pencil:not(.disabled):hover,
+span.icons-pencil:not(.disabled):hover, a.icons-pencil.disabled,
+span.icons-pencil.disabled {
+  background-position: 0 -6180px;
+    height: 17px;
+    width: 17px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-pencil {
+  background-position: 0 -6207px;
+    height: 17px;
+    width: 17px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-pending {
+    background-position: 0 0;
+    height: 16px;
+    width: 16px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-person-in-seat-grey {
+  background-position: 0 -1379px;
+    height: 17px;
+    width: 20px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-plate-silverware-grey {
+  background-position: 0 -1245px;
+    height: 17px;
+    width: 20px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-plus {
+  background-position: 0 -5287px;
+    height: 26px;
+    width: 26px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-prompt-error {
+  background-position: 0 -2639px;
+    height: 16px;
+    width: 4px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-prompt-success {
+  background-position: 0 -6234px;
+    height: 14px;
+    width: 15px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-ps-flag-icon {
+  background-position: 0 -2849px;
+    height: 27px;
+    width: 22px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-question-mark {
+  background-position: 0 -1220px;
+    height: 15px;
+    width: 15px;
+    vertical-align: middle;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-recon-check {
+  background-position: 0 -4793px;
+    height: 7px;
+    width: 8px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-red-alert {
+  background-position: 0 -5848px;
+    height: 18px;
+    width: 20px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-refresh-active {
+  background-position: 0 -5208px;
+    height: 31px;
+    width: 31px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-refresh-hover {
+  background-position: 0 -5167px;
+    height: 31px;
+    width: 31px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-refresh-small-hover, a.icons-refresh-small:hover,
+span.icons-refresh-small:hover {
+  background-position: 0 -5716px;
+    height: 16px;
+    width: 18px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-refresh-small {
+  background-position: 0 -5690px;
+    height: 16px;
+    width: 18px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-refresh-static {
+  background-position: 0 -5541px;
+    height: 31px;
+    width: 31px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-seat-grey {
+  background-position: 0 -1147px;
+    height: 17px;
+    width: 20px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-seat-map-jump-sm {
+  background-position: 0 -2737px;
+    height: 23px;
+    width: 24px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-seat-map-jump {
+  background-position: 0 -477px;
+    height: 30px;
+    width: 30px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-seating-reac {
+  background-position: 0 -944px;
+    height: 22px;
+    width: 15px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-select-caret {
+  background-position: 0 -5477px;
+    height: 30px;
+    width: 26px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-ssr-alert {
+  background-position: 0 -976px;
+    height: 27px;
+    width: 24px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-star-alliance {
+  background-position: 0 -1827px;
+    height: 31px;
+    width: 33px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-status-error {
+  background-position: 0 -2665px;
+    height: 16px;
+    width: 4px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-status-pending {
+  background-position: 0 -5456px;
+  height: 11px;
+  width: 15px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-status-success {
+  background-position: 0 -6258px;
+    height: 14px;
+    width: 15px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-success-alert-btn-icon {
+  background-position: 0 -2994px;
+    height: 18px;
+    width: 18px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-suitcase-bg-transparent {
+  background-position: 0 -4109px;
+    height: 24px;
+    width: 33px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-suitcase-blue {
+  background-position: 0 -6359px;
+    height: 15px;
+    width: 17px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-suitcase-hover {
+  background-position: 0 -3923px;
+    height: 24px;
+    width: 33px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-suitcase-selected {
+  background-position: 0 -3957px;
+    height: 24px;
+    width: 33px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-suitcase {
+  background-position: 0 -3889px;
+    height: 24px;
+    width: 33px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-table-sort-arrow-default {
+  background-position: 0 -1633px;
+    height: 15px;
+    width: 10px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-table-sort-arrow-down {
+  background-position: 0 -1678px;
+    height: 15px;
+    width: 10px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-table-sort-arrow-up {
+  background-position: 0 -1703px;
+    height: 15px;
+    width: 10px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-toggle-arrow-black-open {
+  background-position: 0 -1658px;
+    height: 10px;
+    width: 7px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-toggle-arrow-blue-closed {
+  background-position: 0 -1559px;
+    height: 18px;
+    width: 7px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-toggle-blue-minus {
+  background-position: 0 -3991px;
+    height: 18px;
+    width: 19px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-toggle-blue-plus {
+  background-position: 0 -3637px;
+    height: 18px;
+    width: 19px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-toggle-size2-blue-minus {
+  background-position: 0 -6384px;
+    height: 27px;
+    width: 26px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-toggle-size2-blue-plus {
+  background-position: 0 -6282px;
+    height: 27px;
+    width: 26px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-tool-box {
+    background-position: 0 -26px;
+    height: 12px;
+    width: 17px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-trash-can-2-hover, a.icons-trash-can-2:not(.disabled):hover,
+span.icons-trash-can-2:not(.disabled):hover, a.icons-trash-can-2.disabled,
+span.icons-trash-can-2.disabled {
+  background-position: 0 -6075px;
+    height: 18px;
+    width: 15px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-trash-can-2 {
+  background-position: 0 -6103px;
+    height: 18px;
+    width: 15px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-trash-can {
+  background-position: 0 -1013px;
+    height: 32px;
+    width: 32px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-travel-option-alt-economy-plus {
+  background-position: 0 -5136px;
+    height: 21px;
+    width: 31px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-travel-option-alt-flight-options {
+  background-position: 0 -3665px;
+    height: 22px;
+    width: 43px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-travel-option-alt-premier-access {
+  background-position: 0 -3737px;
+    height: 30px;
+    width: 32px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-travel-option-alt-upgrades {
+  background-position: 0 -4810px;
+    height: 27px;
+    width: 26px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-travel-option-economy-plus {
+  background-position: 0 -3697px;
+    height: 30px;
+    width: 42px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-travel-option-flight-options {
+  background-position: 0 -2253px;
+    height: 25px;
+    width: 69px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-travel-option-premier-access {
+  background-position: 0 -2381px;
+    height: 43px;
+    width: 44px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-travel-option-upgrades-2 {
+  background-position: 0 -3192px;
+    height: 37px;
+    width: 36px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-travel-option-upgrades {
+  background-position: 0 -3145px;
+    height: 37px;
+    width: 36px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-up-down-arrows {
+  background-position: 0 -3389px;
+    height: 24px;
+    width: 24px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-upgrade-icons-confirmed {
+  background-position: 0 -334px;
+    height: 12px;
+    width: 12px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-upgrade-icons-declined {
+  background-position: 0 -356px;
+    height: 12px;
+    width: 12px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-upgrade-icons-pending {
+  background-position: 0 -403px;
+    height: 12px;
+    width: 12px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-upgrade-icons-wait-list {
+    background-position: 0 -103px;
+    height: 12px;
+    width: 12px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-wrench {
+  background-position: 0 -5950px;
+    height: 14px;
+    width: 14px;
+}
+
+/* line 14, ../sass/_shared-icons.scss */
+.icons-x {
+  background-position: 0 -4567px;
+    height: 10px;
+    width: 10px;
+}
+
+
+// End: Critical Mass Styleguide Icons
+
+/* Icons from Shared folder */
+
+/* Icons for merchandising*/
+
+.icon-line-arrow,
+.icon-bullet,
+.icon-check-list,
+.icon-renew-green,
+.icon-arrow-right,
+.icon-info-message,
+.icon-info-greenCheck,
+.icon-cards-checbok,
+.icon-info-message-small,
+.icon-baggage-fee,
+.icon-beneficiaries-subscription,
+.icon-pad-lock,
+.icon-gift,
+.icon-cards-left,
+.icon-region,
+.icon-baggage-handling,
+.icon-line-arrow,
+.icon-bullet,
+.icon-renew-green,
+.icon-arrow-right,
+.icon-info-message,
+.icon-info-greenCheck,
+.icon-cards-checbok,
+.icon-info-message-small,
+.icon-baggage-fee,
+.icon-beneficiaries-subscription,
+.icon-pad-lock,
+.icon-gift,
+.icon-cards-left,
+.icon-region,
+.icon-baggage-handling {
+   /* background-image: url("../assets/merchandise/Sprite.png");*/
+}
+
+.icon-line-arrow {
+    background-position: -208px 0;
+}
+
+.icon-bullet {
+    background-position: -144px -2px;
+}
+
+.icon-check-list {
+    background-position: -176px 0;
+}
+
+.icon-renew-green {
+    background-position: -224px 0;
+}
+.icon-arrow-right {
+    background-position: -240px 0;
+}
+.icon-info-message {
+    background-position: -3px -55px;
+}
+.icon-info-greenCheck {
+    background-position: -42px -45px;
+}
+.icon-cards-checbok {
+    background-position: -248px -50px;
+}
+.icon-info-message-small {
+    background-position: -300px -50px;
+}
+.icon-baggage-fee {
+    background-position: -144px -40px;
+}
+.icon-beneficiaries-subscription {
+    background-position: -96px -40px;
+}
+.icon-pad-lock {
+    background-position: 0px -96px;
+}
+.icon-gift {
+    background-position: -24px -96px;
+}
+.icon-cards-left {
+    background-position: 0px -192px;
+}
+.icon-region {
+    background-position: -55px -132px;
+}
+.icon-baggage-handling {
+    background-position: 0 -128px;
+}
+
+.icons-wifi-logo, .icon-power, .icon-logo-direcTV {
+    background-image: url("../assets/icons-com.png");
+}
+
+
+/* Start: united.com Icons */
+
+.icon-plane-departure-small-grey {
+    background-position: -21px -278px;
+    width: 17px;
+    height: 17px;
+    display:inline-block;
+    line-height:14px;
+    vertical-align:text-top;
+    background-image:url('../assets/icons-com.png');
+    background:no-repeat;
+    background-color:transparent;
+    margin-top:1px;
+}
+
+/* Micro COG Icon */
+
+.icon-com {
+    background-image:url('../assets/icons-com.png');
+    margin: 0 5px;
+    height:9px;
+    width:25px;
+}
+.icon-close-white {
+    background-position: -116px -215px;
+    width: 13px;
+    height: 13px
+}
+.icon-close-gray,
+.icon-close {
+    background-position: -75px -34px;
+    width: 13px;
+    height: 13px
+}
+.icon-li-hotel {
+    background-position: -161px -169px;
+    width: 13px;
+    height: 12px
+}
+.icon-li-car {
+    background-position: -181px -170px;
+    width: 13px;
+    height: 10px
+}
+.icon-li-cruise {
+    background-position: -201px -169px;
+    width: 13px;
+    height: 13px
+}
+.icon-li-vacation {
+    background-position: -139px -248px;
+    width: 17px;
+    height: 17px
+}
+.icon-langs {
+    background-position: -215px -2px;
+    width: 17px;
+    height: 16px
+}
+.icon-sitesearch {
+    background-position: -104px -22px;
+    width: 21px;
+    height: 21px
+}
+.head-tools .icon-sitesearch {
+    background-position: -104px -43px
+}
+.icon-mail {
+    background-position: -72px 0
+}
+.icon-bag-fee {
+    background-position: -200px -150px;
+    width: 15px;
+    height: 13px
+}
+.icon-tooltip {
+    width: 13px;
+    height: 13px;
+    background-position: -112px -381px;
+    vertical-align: middle;
+    margin-top: -.16667em
+}
+.icon-tooltip-large-clear-bg {
+    background-position: -159px -185px;
+    width: 17px;
+    height: 17px
+}
+button.icon-tooltip,
+button.icon-tooltip-large-clear-bg {
+    color: inherit;
+    line-height: inherit;
+    background-color: transparent
+}
+button.icon-tooltip:focus,
+button.icon-tooltip-large-clear-bg:focus {
+    outline: 2px dotted #003057;
+    outline-offset: 1px
+}
+.icon-check-small {
+    width: 13px;
+    height: 13px;
+    background-position: -75px -249px
+}
+.icon-exclamation,
+.icon-advisory-off-small {
+    background-position: -115px -230px;
+    width: 16px;
+    height: 16px
+}
+.icon-exclamation-large-white {
+    background-position: -142px -84px;
+    height: 25px;
+    width: 25px
+}
+.icon-information-large-white {
+    background-position: -6px -56px;
+    height: 25px;
+    width: 25px
+}
+.icon-information-large-gold {
+    background-position: -34px -56px;
+    height: 25px;
+    width: 25px
+}
+.icon-information-large-024 {
+    background-position: -180px -299px;
+    height: 25px;
+    width: 25px
+}
+.icon-information-large-gray {
+    background-position: -151px -271px;
+    height: 25px;
+    width: 25px
+}
+.icon-information-large-blue {
+    background-position: -151px -271px;
+    height: 25px;
+    width: 25px
+}
+.icon-validation-summary,
+.icon-page-error {
+    background-position: -70px -161px;
+    float: left;
+    margin-right: 6px;
+    width: 25px;
+    height: 25px
+}
+.icon-prev-arrow-white {
+    background-position: -201px -3px;
+    width: 9px;
+    height: 12px
+}
+.icon-next-arrow-white {
+    background-position: -190px -3px;
+    width: 9px;
+    height: 12px
+}
+.icon-next-arrow-blue {
+    background-position: -145px -3px;
+    width: 9px;
+    height: 12px
+}
+.icon-prev-arrow-blue {
+    background-position: -156px -3px;
+    width: 9px;
+    height: 12px
+}
+.icon-next-arrow-gray {
+    background-position: -167px -3px;
+    width: 9px;
+    height: 12px
+}
+.icon-prev-arrow-gray {
+    background-position: -178px -3px;
+    width: 9px;
+    height: 12px
+}
+.icon-circle-check-large-blue,
+.icon-confirmation-check {
+    background-position: -37px -161px;
+    width: 25px;
+    height: 25px
+}
+.icon-confirmation-check-printer-friendly {
+    background-position: -180px -271px;
+    width: 25px;
+    height: 25px
+}
+.icon-departure-plane-white {
+    background-position: -218px -145px;
+    width: 24px;
+    height: 25px
+}
+.icon-print {
+    background-position: -2px -401px;
+    width: 17px;
+    height: 16px
+}
+.icon-download-arrow {
+    background-position: -43px -400px;
+    width: 17px;
+    height: 17px
+}
+.icon-email {
+    background-position: -23px -404px;
+    width: 17px;
+    height: 13px
+}
+.icon-gear {
+    background-position: -7px -111px;
+    width: 20px;
+    height: 20px
+}
+.icon-userbody-blue {
+    background-position: -110px -159px;
+    width: 25px;
+    height: 25px
+}
+.icon-advisory-warning {
+    background-position: -142px -84px
+}
+.icon-advisory-hurricane {
+    background-position: -84px -112px
+}
+.icon-advisory-storm {
+    background-position: -221px -84px
+}
+.icon-advisory-snow {
+    background-position: -195px -84px
+}
+.icon-plane-departure-small {
+    background-position: -3px -278px;
+    width: 17px;
+    height: 17px
+}
+.icon-plane-departure-small-grey {
+    background-position: -21px -278px;
+    width: 17px;
+    height: 17px
+}
+.icon-plane-departure-small-white {
+    background-position: -39px -278px;
+    width: 17px;
+    height: 17px
+}
+.icon-plane-return-small {
+    background-position: -3px -297px;
+    width: 17px;
+    height: 17px
+}
+.icon-plane-return-small-grey {
+    background-position: -21px -297px;
+    width: 17px;
+    height: 17px
+}
+.icon-plane-return-small-white {
+    background-position: -39px -297px;
+    width: 17px;
+    height: 17px
+}
+.icon-waitlisted-small {
+    background-position: -20px -380px;
+    width: 17px;
+    height: 17px
+}
+.icon-waitlisted-large {
+    background-position: -4px -161px;
+    width: 25px;
+    height: 25px
+}
+.icon-advisory-on-small {
+    background-position: -57px -380px;
+    width: 17px;
+    height: 17px
+}
+.icon-logo-united-small {
+    background-position: -74px -362px;
+    width: 16px;
+    height: 13px
+}
+.icon-logo-star-alliance {
+    background-position: -53px -361px;
+    width: 14px;
+    height: 14px
+}
+.icon-wifi {
+    background-position: -1px -215px;
+    width: 17px;
+    height: 16px
+}
+.icon-wifi-black {
+    background-position: -1px -236px;
+    width: 17px;
+    height: 16px
+}
+.icon-power {
+    background-position: -41px -216px;
+    width: 12px;
+    height: 17px
+}
+.icon-power-black {
+    background-position: -41px -236px;
+    width: 12px;
+    height: 17px
+}
+.icon-logo-direcTV {
+    background-position: -21px -216px;
+    width: 17px;
+    height: 14px
+}
+.icon-logo-direcTV-black {
+    background-position: -21px -236px;
+    width: 17px;
+    height: 14px
+}
+.icon-upgrade {
+    background-position: -114px -111px;
+    width: 25px;
+    height: 25px
+}
+.icon-upgrade-avail-eligible {
+    background-position: -179px -205px;
+    width: 17px;
+    height: 17px
+}
+.icon-upgrade-waitlist-not-eligible {
+    background-position: -199px -205px;
+    width: 17px;
+    height: 17px
+}
+.icon-seat {
+    background-position: -169px -112px;
+    width: 20px;
+    height: 24px
+}
+.icon-seat-small-black,
+.icon-epu {
+    background-position: -2px -258px;
+    width: 16px;
+    height: 15px
+}
+.icon-seat-club-small-black,
+.icon-united-club,
+.icon-ctp {
+    background-position: -40px -258px;
+    width: 16px;
+    height: 17px
+}
+.icon-boarding-sign,
+.icon-premier-access,
+.icon-pas {
+    background-position: -60px -258px;
+    width: 16px;
+    height: 16px
+}
+.icon-plus-circle-black,
+.icon-bmi {
+    background-position: -79px -258px;
+    width: 17px;
+    height: 16px
+}
+.icon-standby {
+    background-position: -191px -111px;
+    width: 16px;
+    height: 24px
+}
+.icon-amenities {
+    background-position: -142px -112px;
+    width: 22px;
+    height: 24px
+}
+.icon-boarding-pass {
+    background-position: -212px -111px;
+    height: 24px;
+    width: 24px
+}
+.icon-magnifying-glass {
+    background-position: -169px -83px;
+    height: 25px;
+    width: 25px
+}
+.icon-clock {
+    background-position: -86px -83px;
+    height: 25px;
+    width: 25px
+}
+.icon-check-mark-circle {
+    background-position: -57px -83px;
+    height: 26px;
+    width: 26px
+}
+.icon-suitcase-large {
+    background-position: -114px -83px;
+    width: 26px;
+    height: 26px
+}
+.icon-suitcase-small-black,
+.icon-exb {
+    background-position: -21px -258px;
+    width: 16px;
+    height: 14px
+}
+.icon-suitcase-small-white,
+.icon-bag-fee {
+    background-position: -200px -150px;
+    width: 15px;
+    height: 13px
+}
+.icon-plane-up-small {
+    width: 17px;
+    height: 17px;
+    background-position: -210px -276px
+}
+.icon-plane-up-large {
+    background-position: -30px -83px;
+    height: 26px;
+    width: 26px
+}
+.icon-hotel-large {
+    background-position: -60px -112px;
+    height: 26px;
+    width: 26px
+}
+.icon-car-large {
+    background-position: -30px -111px;
+    width: 25px;
+    height: 18px
+}
+.icon-vacation-large {
+    background-position: -119px -269px;
+    width: 26px;
+    height: 26px
+}
+.icon-car-small {
+    background-position: -181px -170px;
+    width: 13px;
+    height: 10px
+}
+.icon-important-notice {
+    width: 16px;
+    height: 16px;
+    background-position: -62px -401px;
+    padding-right: 6px;
+    vertical-align: -3px
+}
+.icon-connection-city-tab-close {
+    background-position: -184px -23px;
+    width: 10px;
+    height: 9px
+}
+.icon-red-x {
+    background-position: -179px -149px;
+    width: 17px;
+    height: 17px
+}
+.icon-blue-check {
+    background-position: -179px -226px;
+    width: 17px;
+    height: 15px
+}
+.icon-red-x-large {
+    background-position: -47px -3px;
+    width: 20px;
+    height: 20px
+}
+.icon-blue-check-large {
+    background-position: -73px -3px;
+    width: 24px;
+    height: 20px
+}
+.icon-information-small-gray {
+    background-position: -139px -225px;
+    width: 17px;
+    height: 17px
+}
+.icon-information-small-green {
+    background-position: -159px -225px;
+    width: 16px;
+    height: 16px
+}
+.icon-information-small-gold {
+    background-position: -95px -230px;
+    width: 17px;
+    height: 16px
+}
+.icon-question-white-transparent {
+    background-position: -219px -185px;
+    width: 17px;
+    height: 17px
+}
+.icon-question-blue-transparent {
+    background-position: -179px -185px;
+    width: 17px;
+    height: 17px
+}
+.icon-pdf {
+    background-position: -155px -301px;
+    width: 16px;
+    height: 17px
+}
+.icon-tool-tip-cart-msg {
+    background-position: -114px -248px;
+    width: 19px;
+    height: 17px
+}
+.icon-corner-toggle-expand {
+    background-position: -142px -36px;
+    width: 22px;
+    height: 22px
+}
+.icon-corner-toggle-collapse {
+    background-position: -142px -59px;
+    width: 22px;
+    height: 22px
+}
+.icon-pencil-blue {
+    background-position: -115px -299px;
+    width: 17px;
+    height: 17px
+}
+.icon-pencil-narrow-blue {
+    background-position: -21px -316px;
+    width: 18px;
+    height: 18px
+}
+.icon-pencil-narrow-white {
+    background-position: -1px -316px;
+    width: 18px;
+    height: 18px
+}
+.icon-pencil-narrow-grey {
+    background-position: -41px -316px;
+    width: 18px;
+    height: 18px
+}
+.icon-revert-circle {
+    background-position: -228px -248px;
+    width: 18px;
+    height: 18px
+}
+.icon-cancel-circle-blue {
+    background-position: -95px -211px;
+    width: 18px;
+    height: 18px
+}
+.icon-toggle-arrow-right-gray {
+    background-position: -2px -3px;
+    width: 10px;
+    height: 10px
+}
+.icon-toggle-arrow-down-gray {
+    background-position: -2px -19px;
+    width: 10px;
+    height: 10px
+}
+.icon-toggle-arrow-up-gray {
+    background-position: -2px -33px;
+    width: 10px;
+    height: 10px
+}
+.icon-toggle-arrow-right-white {
+    background-position: -16px -3px;
+    width: 10px;
+    height: 10px
+}
+.icon-toggle-arrow-down-white {
+    background-position: -16px -19px;
+    width: 10px;
+    height: 10px
+}
+.icon-toggle-arrow-up-white {
+    background-position: -16px -33px;
+    width: 10px;
+    height: 10px
+}
+.icon-toggle-arrow-right-blue {
+    background-position: -30px -3px;
+    width: 10px;
+    height: 10px
+}
+.icon-toggle-arrow-down-blue {
+    background-position: -30px -19px;
+    width: 10px;
+    height: 10px
+}
+.icon-toggle-arrow-up-blue {
+    background-position: -30px -33px;
+    width: 10px;
+    height: 10px
+}
+.icon-sort-arrow-up-blue {
+    background-position: -198px -23px;
+    width: 7px;
+    height: 8px
+}
+.icon-sort-arrow-up-white {
+    background-position: -206px -23px;
+    width: 7px;
+    height: 8px
+}
+.icon-sort-arrow-up-grey {
+    background-position: -215px -23px;
+    width: 7px;
+    height: 8px
+}
+.icon-sort-arrow-down-blue {
+    background-position: -222px -23px;
+    width: 7px;
+    height: 8px
+}
+.icon-sort-arrow-down-white {
+    background-position: -230px -23px;
+    width: 7px;
+    height: 8px
+}
+.icon-sort-arrow-down-grey {
+    background-position: -238px -23px;
+    width: 7px;
+    height: 8px
+}
+
+.icon-mileageplus-premier-silver {
+    background-position: 0 0
+}
+.icon-mileageplus-premier-gold {
+    background-position: 0 -70px
+}
+.icon-mileageplus-premier-platinum {
+    background-position: 0 -140px
+}
+.icon-mileageplus-premier-1k {
+    background-position: 0 -210px
+}
+.icon-mileageplus-premier-global-services {
+    background-position: 0 -280px
+}
+.icon-star-alliance-status-silver {
+    background-position: -61px 0
+}
+.icon-star-alliance-status-gold {
+    background-position: -61px -19px
+}
+.icon-million-miler-1mm {
+    background-position: -61px -37px
+}
+.icon-million-miler-2mm {
+    background-position: -61px -55px
+}
+.icon-million-miler-3mm {
+    background-position: -61px -73px
+}
+.icon-million-miler-4mm {
+    background-position: -61px -91px
+}
+.icon-million-miler-5mm {
+    background-position: -61px -109px
+}
+.icon-million-miler-6mm {
+    background-position: -61px -127px
+}
+.icon-million-miler-7mm {
+    background-position: -61px -145px
+}
+.icon-million-miler-8mm {
+    background-position: -61px -163px
+}
+.icon-million-miler-9mm {
+    background-position: -61px -181px
+}
+.icon-million-miler-10mm {
+    background-position: -61px -199px
+}
+.icon-million-miler-11mm {
+    background-position: -61px -217px
+}
+.icon-million-miler-12mm {
+    background-position: -61px -235px
+}
+.icon-million-miler-13mm {
+    background-position: -61px -253px
+}
+.icon-million-miler-14mm {
+    background-position: -61px -271px
+}
+.icon-weather-cond0 {
+    background-position: -19px -442px;
+    width: 16px;
+    height: 16px
+}
+.icon-weather-cond1 {
+    background-position: -19px -442px;
+    width: 16px;
+    height: 16px
+}
+.icon-weather-cond2 {
+    background-position: -37px -442px;
+    width: 14px;
+    height: 16px
+}
+.icon-weather-cond3 {
+    background-position: -19px -442px;
+    width: 16px;
+    height: 16px
+}
+.icon-weather-cond4 {
+    background-position: -19px -442px;
+    width: 16px;
+    height: 16px
+}
+.icon-weather-cond5 {
+    background-position: -89px -442px;
+    width: 16px;
+    height: 16px
+}
+.icon-weather-cond6 {
+    background-position: -89px -442px;
+    width: 16px;
+    height: 16px
+}
+.icon-weather-cond7 {
+    background-position: -107px -442px;
+    width: 16px;
+    height: 16px
+}
+.icon-weather-cond8 {
+    background-position: -89px -442px;
+    width: 16px;
+    height: 16px
+}
+.icon-weather-cond9 {
+    background-position: -53px -442px;
+    width: 16px;
+    height: 16px
+}
+.icon-weather-cond10 {
+    background-position: -89px -442px;
+    width: 16px;
+    height: 16px
+}
+.icon-weather-cond11 {
+    background-position: -71px -442px;
+    width: 17px;
+    height: 16px
+}
+.icon-weather-cond12 {
+    background-position: -71px -442px;
+    width: 16px;
+    height: 16px
+}
+.icon-weather-cond13 {
+    background-position: -107px -442px;
+    width: 16px;
+    height: 16px
+}
+.icon-weather-cond14 {
+    background-position: -107px -442px;
+    width: 16px;
+    height: 16px
+}
+.icon-weather-cond15 {
+    background-position: -107px -442px;
+    width: 16px;
+    height: 16px
+}
+.icon-weather-cond16 {
+    background-position: -107px -442px;
+    width: 16px;
+    height: 16px
+}
+.icon-weather-cond17 {
+    background-position: -143px -442px;
+    width: 16px;
+    height: 16px
+}
+.icon-weather-cond18 {
+    background-position: -143px -442px;
+    width: 16px;
+    height: 16px
+}
+.icon-weather-cond19 {
+    background-position: -161px -443px;
+    width: 16px;
+    height: 14px
+}
+.icon-weather-cond20 {
+    background-position: -161px -443px;
+    width: 16px;
+    height: 14px
+}
+.icon-weather-cond21 {
+    background-position: -161px -443px;
+    width: 16px;
+    height: 14px
+}
+.icon-weather-cond22 {
+    background-position: -161px -443px;
+    width: 16px;
+    height: 14px
+}
+.icon-weather-cond23 {
+    background-position: -1px -443px;
+    width: 16px;
+    height: 14px
+}
+.icon-weather-cond24 {
+    background-position: -1px -443px;
+    width: 16px;
+    height: 14px
+}
+.icon-weather-cond25 {
+    background-position: -1px -443px;
+    width: 16px;
+    height: 14px
+}
+.icon-weather-cond26 {
+    background-position: -210px -422px;
+    width: 17px;
+    height: 16px
+}
+.icon-weather-cond27 {
+    background-position: -141px -422px;
+    width: 16px;
+    height: 16px
+}
+.icon-weather-cond28 {
+    background-position: -37px -422px;
+    width: 16px;
+    height: 16px
+}
+.icon-weather-cond29 {
+    background-position: -123px -422px;
+    width: 16px;
+    height: 16px
+}
+.icon-weather-cond30 {
+    background-position: -19px -422px;
+    width: 16px;
+    height: 16px
+}
+.icon-weather-cond31 {
+    background-position: -1px -422px;
+    width: 16px;
+    height: 16px
+}
+.icon-weather-cond32 {
+    background-position: -1px -422px;
+    width: 16px;
+    height: 16px
+}
+.icon-weather-cond33 {
+    background-position: -19px -422px;
+    width: 16px;
+    height: 16px
+}
+.icon-weather-cond34 {
+    background-position: -123px -422px;
+    width: 16px;
+    height: 16px
+}
+.icon-weather-cond35 {
+    background-position: -125px -441px;
+    width: 16px;
+    height: 16px
+}
+.icon-weather-cond36 {
+    background-position: -1px -422px;
+    width: 16px;
+    height: 16px
+}
+.icon-weather-cond37 {
+    background-position: -19px -442px;
+    width: 16px;
+    height: 16px
+}
+.icon-weather-cond38 {
+    background-position: -19px -442px;
+    width: 16px;
+    height: 16px
+}
+.icon-weather-cond39 {
+    background-position: -19px -442px;
+    width: 16px;
+    height: 16px
+}
+.icon-weather-cond40 {
+    background-position: -55px -422px;
+    width: 16px;
+    height: 16px
+}
+.icon-weather-cond41 {
+    background-position: -71px -442px;
+    width: 16px;
+    height: 16px
+}
+.icon-weather-cond42 {
+    background-position: -193px -422px;
+    width: 16px;
+    height: 16px
+}
+.icon-weather-cond43 {
+    background-position: -107px -442px;
+    width: 16px;
+    height: 16px
+}
+.icon-weather-cond44 {
+    background-position: -9999px -9999px
+}
+.icon-weather-cond45 {
+    background-position: -159px -422px;
+    width: 16px;
+    height: 16px
+}
+.icon-weather-cond46 {
+    background-position: -193px -422px;
+    width: 16px;
+    height: 16px
+}
+.icon-weather-cond47 {
+    background-position: -89px -442px;
+    width: 16px;
+    height: 16px
+}
+.icon-weather-cond999 {
+    background-position: -9999px -9999px
+}
+.icon-social-mobile {
+    background-position: -1px -138px
+}
+.icon-social-hub {
+    background-position: -20px -138px
+}
+.icon-social-facebook {
+    background-position: -39px -138px
+}
+.icon-social-twitter {
+    background-position: -58px -138px
+}
+.icon-social-youtube {
+    background-position: -77px -138px
+}
+.icon-social-instagram {
+    background-position: -96px -138px
+}
+.icon-social-linkedin {
+    background-position: -115px -138px
+}
+.icon-payment-type-visa {
+    background-position: -2px -119px;
+    width: 61px;
+    height: 40px
+}
+.icon-payment-type-visa-small {
+    background-position: -2px -69px;
+    width: 34px;
+    height: 23px
+}
+.icon-payment-type-mastercard {
+    background-position: -65px -119px;
+    width: 61px;
+    height: 41px
+}
+.icon-payment-type-mastercard-small {
+    background-position: -38px -70px;
+    width: 34px;
+    height: 23px
+}
+.icon-payment-type-american-ex {
+    background-position: -128px -119px;
+    width: 41px;
+    height: 40px
+}
+.icon-payment-type-american-ex-small {
+    background-position: -74px -69px;
+    width: 23px;
+    height: 23px
+}
+.icon-payment-type-discover {
+    background-position: -171px -119px;
+    width: 64px;
+    height: 40px
+}
+.icon-payment-type-discover-small {
+    background-position: -99px -69px;
+    width: 35px;
+    height: 23px
+}
+.icon-payment-type-diners-club {
+    background-position: -2px -161px;
+    width: 41px;
+    height: 40px
+}
+.icon-payment-type-diners-club-small {
+    background-position: -137px -69px;
+    width: 23px;
+    height: 23px
+}
+.icon-payment-type-UATP {
+    background-position: -47px -171px;
+    width: 59px;
+    height: 17px
+}
+.icon-payment-type-UATP-small {
+    background-position: -162px -75px;
+    width: 33px;
+    height: 10px
+}
+.icon-payment-type-JCB {
+    background-position: -107px -161px;
+    width: 53px;
+    height: 40px
+}
+.icon-payment-type-JCB-small {
+    background-position: -196px -69px;
+    width: 29px;
+    height: 23px
+}
+.icon-payment-type-paypal {
+    background-position: -2px -233px;
+    width: 61px;
+    height: 41px
+}
+.icon-payment-type-paypal-small {
+    background-position: -2px -95px;
+    width: 34px;
+    height: 22px
+}
+.icon-payment-type-paypal-large {
+    background-position: -69px -318px;
+    width: 121px;
+    height: 42px
+}
+.icon-payment-type-bill-me-later-logo {
+    background-position: -65px -233px;
+    width: 61px;
+    height: 41px
+}
+.icon-payment-type-bill-me-later {
+    background-position: -65px -233px;
+    width: 61px;
+    height: 41px
+}
+.icon-payment-type-bill-me-later-small {
+    background-position: -37px -94px;
+    width: 34px;
+    height: 23px
+}
+.icon-payment-type-UTO {
+    background-position: -95px -203px;
+    width: 89px;
+    height: 28px
+}
+.icon-payment-type-UTO-small {
+    background-position: -123px -95px;
+    width: 49px;
+    height: 16px
+}
+.icon-payment-type-verisign {
+    background-position: -3px -30px;
+    width: 56px;
+    height: 28px
+}
+.icon-payment-type-verified-by-visa {
+    background-position: -63px -30px;
+    width: 66px;
+    height: 38px
+}
+.icon-payment-type-western-union {
+    background-position: -2px -203px;
+    width: 91px;
+    height: 28px
+}
+.icon-payment-type-western-union-small {
+    background-position: -72px -95px;
+    width: 49px;
+    height: 15px
+}
+.icon-payment-type-cash {
+    background-position: -162px -161px;
+    width: 49px;
+    height: 15px
+}
+.icon-payment-type-cash-small {
+    background-position: -174px -94px;
+    width: 49px;
+    height: 15px
+}
+.icon-payment-type-check-small {
+    background-position: -135px -41px;
+    width: 69px;
+    height: 24px
+}
+.icon-payment-type-visa-checkout-small {
+    background-position: -187px -203px;
+    width: 35px;
+    height: 23px
+}
+.icon-payment-type-visa-checkout {
+    background-position: -128px -232px;
+    width: 65px;
+    height: 41px
+}
+.icon-payment-type-mc-secure {
+    background-position: -130px -276px;
+    width: 66px;
+    height: 24px
+}
+.icon-payment-visa-checkout-brand-small {
+    background: no-repeat;
+    background-size: 34px 23px;
+    width: 34px;
+    height: 23px;
+    margin-top: -3px
+}
+.icon-payment-visa-checkout-brand {
+    background: no-repeat;
+    background-size: 65px 41px;
+    width: 65px;
+    height: 41px
+}
+.icon-confirmation-visa-checkout-brand-small {
+    background: no-repeat;
+    background-size: 34px 23px;
+    width: 34px;
+    height: 23px;
+    display: inline-block;
+    margin-top: -4px;
+    margin-left: 2px;
+    margin-right: 6px
+}
+.icon-payment-type-alipay {
+    background-position: -2px -340px;
+    width: 61px;
+    height: 32px
+}
+.icon-payment-type-alipay-small {
+    background-position: -2px -320px;
+    width: 34px;
+    height: 18px
+}
+.icon-payment-type-alipay-large {
+    background-position: -3px -375px;
+    width: 121px;
+    height: 64px
+}
+.icon-seatmap-exitdoor {
+    background-position: -98px -2px;
+    width: 8px;
+    height: 8px
+}
+.icon-seatmap-exitrow {
+    background-position: -110px -2px;
+    width: 25px;
+    height: 5px
+}
+.icon-seatmap-globalFirst {
+    background-position: -77px -2px;
+    width: 16px;
+    height: 13px
+}
+.icon-seatmap-businessFirst {
+    background-position: -57px -2px;
+    width: 16px;
+    height: 13px
+}
+.icon-seatmap-economyplus {
+    background-position: -20px -2px;
+    width: 14px;
+    height: 14px
+}
+.icon-seatmap-economy {
+    background-position: -37px -2px;
+    width: 14px;
+    height: 14px
+}
+.icon-seatmap-unavailable {
+    background-position: -2px -1px;
+    width: 14px;
+    height: 14px
+}
+.icon-seatmap-business,
+.icon-seatmap-first {
+    background-position: -2px -17px;
+    width: 13px;
+    height: 13px
+}

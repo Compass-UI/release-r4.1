@@ -1,0 +1,189 @@
+
+.ssr {
+    margin:15px 0;
+    section.row{
+        background:white;
+    }
+    .module__header{
+        h3{
+            padding-left:0;
+        }
+    }
+
+    &__cancel-save{
+        text-align:right;
+        padding:0;
+		.cancel_save_section{
+		padding: 5px 15px
+		}
+    }
+
+    &__prompt-info{
+        color:#003399;
+        cursor:pointer;
+        padding:5px;
+        margin-top:15px;
+        margin-bottom:0;
+        ul{
+            list-style:none;
+            ul{
+                padding-left:10px;
+            }
+        }
+        i {
+            margin-right:10px;
+        }
+        &-OA {
+            margin: 15px;
+            font-weight: 600;
+        }
+        &-content{
+           padding:0 35px;
+           >h5{
+               font-size:1.3rem;
+           }
+            .icon{
+                margin:0;
+                width:16px;
+                display:block;
+            }
+            .item{
+                border:1px solid gainsboro;
+                padding:10px;
+                border-radius:3px;
+                margin-bottom:5px;
+                background-color:ivory;
+                height:65px;
+            }
+            .col-md-11{
+                >span{
+                    font-weight:600;
+                }
+            }
+            .col-md-6:nth-child(odd){
+                padding-right:5px;
+            }
+            .col-md-6:nth-child(even){
+                padding-left:5px;
+            }
+           
+        }
+        
+
+    }
+    .panel-primary{
+            border-color:#345a7a;
+            margin-top:15px;
+            >.panel-heading{
+                background-color:#345a7a;
+                border-color:#345a7a;
+                h4{
+                    margin:0;
+                }
+            }
+       }
+       &__mp-preferences,&__general-ssr,&__wheelchair,&__meal-request{
+        .panel-heading{
+            cursor:pointer;
+            h4{
+                display:inline-block;
+            }
+            i{
+                margin-top:4px;
+            }
+        }
+        .flight-selection{
+            &__content{
+                border:1px solid #345a7a;
+                border-radius:3px;
+                list-style:none;
+                padding:10px;
+                color:#345a7a;
+            }
+        }
+        .special-service-request{
+            &__list{
+                height:150px;
+                overflow-y:scroll;
+                margin-left:15px;
+                width:95%;
+                margin-top:15px;
+                border:1px solid #345a7a;
+                cursor:pointer;
+                border-radius:3px;
+                .row .col-md-3{
+                    margin-left:5px;
+                }
+                .selected{
+                    background-color:#1676c6;
+                    color:white;
+                }
+            }
+            &__list:nth-child(2){
+                margin-top:0;
+                height:136px;
+            }
+            &__add{
+                text-align:right;
+                padding-top:15px;
+            }
+            &__select{
+                input{
+                    width:100% !important;
+                }
+                span{
+                    width:100% !important;
+                    font-weight: 600;
+                }
+                ul.ui-select-choices{
+                    margin: 0;
+                }
+                .highlighted{
+                    background:none;
+                    font-weight:700;
+                  
+                }
+            }
+        }
+    }
+    &__wheelchair{
+        .suitable-option{
+            &__list{
+                list-style:none;
+                padding:0;
+                .col-md-6, .col-lg-5{
+                    margin-bottom:5px;
+                }
+            }
+            &__add{
+                text-align:right;
+                 padding-top:15px;
+            }
+            .wheelchair_code {
+                margin-left: 5px;
+                font-weight: 600;
+            }
+        }
+    }
+    &__mp-preferences{
+        .panel-body{
+            padding: 0;
+            >.table thead tr th{
+              font-weight: bold;
+              width: 50%;
+            }
+            .ssr-code{
+                margin-right: 10px;
+            }
+        }
+    }
+    .GST-modal {
+        width: 400px !important;
+    }
+    .gst-email-txt {
+        width: 300px !important;
+    }
+    .gst-response-box{
+        word-wrap: break-word;
+    }
+}

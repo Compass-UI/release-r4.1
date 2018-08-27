@@ -1,0 +1,2933 @@
+.pnrsummary {
+	background:#FFFFFF;
+	clear:both;
+
+	&--lite {
+		width:calc(75% - 30px);
+		margin:15px 15px;
+	}
+
+	&--ngrp {
+		padding-top:15px;
+		// Start: Temporary Fixes for NGRP To Be Removed later
+		.total {
+			margin-top:10px;
+		}
+
+		input[type="checkbox"] {
+			float:none !important;
+		}
+		// End: Temporary Fixes for NGRP To Be Removed later
+	}
+
+	&__container {
+		position:relative;
+	}
+
+	&__crawl {
+		position:fixed;
+		bottom:3%;
+		right:2%;
+		color:#345A7A;
+		opacity:0.5;
+		cursor:pointer;
+		z-index:100;
+
+		&:hover {
+			color:#345A7A;
+			opacity:1;
+		}
+
+		.fa {
+			@include font-size(56);
+		}
+	}
+
+	.corner-toggle {
+		background-image:-webkit-gradient(
+		linear,
+		0% 100%,
+		100% 0%,
+		color-stop(0%, #EBEBEB),
+		color-stop(50%, #EBEBEB),
+		color-stop(51%, rgba(235, 235, 235, 0)),
+		color-stop(100%, rgba(235, 235, 235, 0))
+		);
+		background-image:-webkit-linear-gradient(
+		left bottom,
+		#EBEBEB 0%,
+		#EBEBEB 50%,
+		rgba(235, 235, 235, 0) 51%,
+		rgba(235, 235, 235, 0) 100%
+		);
+		background-image:   -moz-linear-gradient(
+		left bottom,
+		#EBEBEB 0%,
+		#EBEBEB 50%,
+		rgba(235, 235, 235, 0) 51%,
+		rgba(235, 235, 235, 0) 100%
+		);
+		background-image:     -o-linear-gradient(
+		left bottom,
+		#EBEBEB 0%,
+		#EBEBEB 50%,
+		rgba(235, 235, 235, 0) 51%,
+		rgba(235, 235, 235, 0) 100%
+		);
+		background-image:        linear-gradient(
+		left bottom,
+		#EBEBEB 0%,
+		#EBEBEB 50%,
+		rgba(235, 235, 235, 0) 51%,
+		rgba(235, 235, 235, 0) 100%
+		);
+		background:linear-gradient(
+		45deg,
+		#EBEBEB 0%,
+		#EBEBEB 50%,
+		transparent 51%,
+		transparent 100%
+		); /* Linear Gradient for IE10 +*/
+		content:"";
+		display:block;
+		position:absolute;
+		height:24px;
+		width:24px;
+		left:0;
+		bottom:0;
+
+		&-show {
+			&:before {
+				background:url("../assets/icons-s6ca6e738d7.png") no-repeat;
+				background-position:0 -6441px;
+				content:"";
+				position:absolute;
+				left:2px;
+				bottom:2px;
+				height:10px;
+				width:10px;
+			}
+		}
+
+		&-hide {
+			&:before {
+				background:url("../assets/icons-s6ca6e738d7.png") no-repeat;
+				background-position:0 -6533px;
+				content:"";
+				position:absolute;
+				left:2px;
+				bottom:2px;
+				height:10px;
+				width:10px;
+			}
+		}
+	}
+
+	.corner-toggle-disabled {
+		pointer-events:none !important;
+	}
+
+	a {
+		cursor:pointer;
+	}
+
+	.alert-delimit {
+		font-weight:900;
+		@include font-size(14);
+	}
+
+	&__module-toggles {
+		padding:15px 0;
+		background:#FFFFFF;
+
+		&__menu {
+			display:flex;
+			flex-direction:row;
+			justify-content:space-between;
+			flex-wrap:nowrap;
+			align-items:center;
+
+			.fa-refresh {
+				@include font-size(16);
+				color:#2F6A9A;
+				border:1px solid;
+				border-radius:3px;
+				border-top-color:#012A4C;
+				border-bottom-color:#2F6A9A;
+				cursor:pointer;
+				max-height:30px;
+			}
+
+			.btn-style-2 {
+				padding:5px 10px;
+			}
+
+			label {
+				&.active {
+					background-color:#2F6A9A;
+					border-top-color:#012A4C;
+					border-bottom-color:#2F6A9A;
+					color:#FFFFFF;
+				}
+			}
+		}
+	}
+	// End: pnrsummary__module-toggles
+	&__pnr-alert {
+		margin-bottom:15px;
+		background:#F5F5F5;
+		width:100%;
+		height:auto;
+		color:#990100;
+		display:flex;
+
+		&__icon {
+			width:25px;
+			background:#FED8D8;
+			display:flex;
+			align-items:center;
+
+			.fa {
+				display:inline-block;
+				width:25px;
+				text-align:center;
+				@include font-size(14);
+			}
+		}
+
+		&__message {
+			@include font-size(12);
+			line-height:1.5;
+			padding:5px 10px;
+			display:flex;
+			flex-direction:column;
+			justify-content:center;
+			align-content:center;
+		}
+	}
+
+	&__modules {
+		background:#FFFFFF;
+		//padding:15px;
+		margin-bottom:15px;
+
+		.module {
+			margin:0 0 20px 0;
+
+			&:last-child {
+				margin-bottom:0;
+			}
+
+			&:after {
+				display:block;
+				height:20px;
+				content:"";
+			}
+
+			.table {
+				padding-left:1px; // Fix Me Globally
+				padding-right:1px; // Fix Me Globally
+				.column-total {
+					background-color:#E3F2FB;
+				}
+
+				&__head {
+					border-bottom:none;
+					text-align:center;
+
+					th {
+						padding:5px;
+
+						&.t-heading-totals {
+							text-align:left;
+							width:70%;
+						}
+
+						&.t-subtotal {
+							text-align:right;
+							width:30%;
+						}
+
+						&.t-history-type {
+							width:30%;
+						}
+
+						&.t-history-details {
+							width:70%;
+						}
+
+						&.t-security-name {
+							width:50%;
+							text-align:left;
+						}
+
+						&.t-security-status {
+							width:25%;
+						}
+
+						&.t-security-edit-btn {
+							width:25%;
+						}
+					}
+				}
+				// End: table__head
+				&__content {
+					text-align:center;
+
+					&.itinerary-segment {
+						border-bottom:3px solid #345A7A;
+					}
+
+					&.itinerary-segment:nth-child(odd) {
+						background:url(../assets/bg-table.png);
+					}
+
+					tr {
+						&.t-flight-row {
+							/*&:last-child {
+                                  td {
+                                      border-bottom: 1px solid #ddd;
+                                  }
+                              }*/
+							&.t-flight-row--overview:not(first-child) {
+								border-top:1px solid #DDDDDD;
+							}
+						}
+
+						.expand-col {
+							position:relative;
+							padding-left:20px;
+						}
+
+						td {
+							vertical-align:middle;
+							border-top:0;
+							padding:5px 8px;
+
+							p {
+								&.details {
+									@include font-size(9);
+									line-height:12px;
+								}
+							}
+
+							&.t-flight {
+								position:relative;
+
+								.icon {
+									&.icons-airplane-red {
+										vertical-align:2px;
+									}
+								}
+
+								.view-seat-map {
+									color:#337AB7;
+									cursor:pointer;
+									text-decoration:underline;
+								}
+							}
+
+							&.t-details {
+								.flight-details {
+									display:inline-block;
+									padding-top:2px;
+
+									.airport {
+										@include media-adjust-font-size(16, 12, 992, 1120);
+									}
+
+									.time {
+										@include media-adjust-font-size(14, 10, 992, 1120);
+									}
+
+									.date {
+										@include media-adjust-font-size(14, 10, 992, 1120);
+									}
+
+									.time {
+										@include media-adjust-font-size(14, 10, 992, 1120);
+										color:#3C3C3C;
+
+										&.line-through {
+											text-decoration:line-through;
+										}
+									}
+
+									.error {
+										@include media-adjust-font-size(14, 10, 992, 1120);
+										font-weight:bold;
+									}
+
+									.middle {
+										.fa-long-arrow-right {
+											vertical-align:-3px;
+										}
+
+										.icons-cog-inline {
+											vertical-align:-6px;
+										}
+
+										.icon-plane-departure-small-grey {
+											background-position:-21px -278px;
+											background-image:url("../assets/icons-com.png");
+											background-color:transparent;
+											width:17px;
+											height:17px;
+											display:inline-block;
+											line-height:14px;
+											vertical-align:-13px;
+											margin-top:1px;
+										}
+									}
+								}
+
+								.link {
+									font-weight:600;
+									text-decoration:underline;
+
+									&.delayed {
+										color:#990100;
+									}
+
+									&.scheduled {
+										color:#228B22;
+									}
+								}
+							}
+
+							&.t-duration {
+								text-transform:lowercase;
+							}
+
+							&.t-cabin {
+								.fa-arrow-circle-up {
+									margin-left:2px;
+								}
+
+								.icon {
+									vertical-align:-2px;
+									margin-left:2px;
+								}
+
+								.segment {
+									padding:10px 0 10px 0;
+								}
+							}
+
+							&.t-status {
+								max-width:125px;
+
+								.segment {
+									padding:10px 0 10px 0;
+								}
+							}
+
+							&.t-remove {
+								width:30px;
+							}
+
+							&.t-fare-quote-summary {
+								text-align:left;
+								padding:20px;
+
+								p {
+									margin-bottom:10px;
+								}
+							}
+
+							&.t-heading-totals {
+								text-align:left;
+								width:60%;
+								border-right:1px solid #CCCCCC;
+
+								&--cumulative {
+									font-weight:bold;
+									text-transform:uppercase;
+									text-align:right;
+								}
+							}
+
+							&.t-subtotal {
+								text-align:right;
+								width:40%;
+							}
+
+							&.t-history-type {
+								width:30%;
+							}
+
+							&.t-history-details {
+								width:70%;
+							}
+
+							&.t-label {
+								width:25%;
+								padding:2px 8px;
+								border-right:1px solid #CCCCCC;
+
+								&--right {
+									width:40%;
+									padding:2px 8px;
+									border-right:1px solid #CCCCCC;
+								}
+							}
+
+							&.t-security-information {
+								width:75%;
+								padding:2px 8px;
+
+								&--right {
+									width:60%;
+									padding:2px 8px;
+								}
+							}
+						}
+					}
+				}
+				// End: table__content
+			}
+			// End: Table
+			&--comments {
+				th {
+					border:0;
+					font-weight:600;
+				}
+
+				.t-attn , .t-comment {
+					text-align:left;
+					cursor:move;
+
+					&:hover {
+						background:#FAFAFA;
+					}
+				}
+
+				.add-button {
+					width:100%;
+				}
+
+				.icons-grippable {
+					vertical-align:-7px;
+					margin-right:5px;
+				}
+
+				.fa-trash {
+					@include font-size(15);
+					margin-right:10px;
+					cursor:pointer;
+				}
+			}
+			// END: --comments
+			&--fare-difference {
+				&__comparison {
+					margin-top:10px;
+
+					.line-item {
+						margin-bottom:3px;
+						margin-top:3px;
+
+						&:last-child {
+							border-bottom:none;
+						}
+					}
+
+					.description {
+						font-weight:bold;
+					}
+
+					.price {
+						text-align:right;
+					}
+				}
+			}
+
+			&--itinerary {
+				position:relative;
+
+				.flown {
+					opacity:0.6;
+				}
+
+				.modify-btn {
+					margin-top:5px;
+					margin-right:5px;
+				}
+
+				.married-segment-indicator {
+					position:absolute;
+					color:#990100;
+					font-size:36px;
+					font-weight:700;
+					height:40px;
+					left:30px;
+					bottom:-20px;
+				}
+
+				.corner-toggle {
+					background-image:-webkit-gradient(
+					linear,
+					0% 100%,
+					100% 0%,
+					color-stop(0%, #EBEBEB),
+					color-stop(50%, #EBEBEB),
+					color-stop(51%, rgba(235, 235, 235, 0)),
+					color-stop(100%, rgba(235, 235, 235, 0))
+					);
+					background-image:-webkit-linear-gradient(
+					left bottom,
+					#EBEBEB 0%,
+					#EBEBEB 50%,
+					rgba(235, 235, 235, 0) 51%,
+					rgba(235, 235, 235, 0) 100%
+					);
+					background-image:   -moz-linear-gradient(
+					left bottom,
+					#EBEBEB 0%,
+					#EBEBEB 50%,
+					rgba(235, 235, 235, 0) 51%,
+					rgba(235, 235, 235, 0) 100%
+					);
+					background-image:     -o-linear-gradient(
+					left bottom,
+					#EBEBEB 0%,
+					#EBEBEB 50%,
+					rgba(235, 235, 235, 0) 51%,
+					rgba(235, 235, 235, 0) 100%
+					);
+					background-image:        linear-gradient(
+					left bottom,
+					#EBEBEB 0%,
+					#EBEBEB 50%,
+					rgba(235, 235, 235, 0) 51%,
+					rgba(235, 235, 235, 0) 100%
+					);
+					background:linear-gradient(
+					45deg,
+					#EBEBEB 0%,
+					#EBEBEB 50%,
+					transparent 51%,
+					transparent 100%
+					); /* Linear Gradient for IE10 +*/
+					content:"";
+					display:block;
+					position:absolute;
+					height:24px;
+					width:24px;
+					left:0;
+					bottom:0;
+
+					&-show {
+						&:before {
+							background:url("../assets/icons-s6ca6e738d7.png") no-repeat;
+							background-position:0 -6441px;
+							content:"";
+							position:absolute;
+							left:2px;
+							bottom:2px;
+							height:10px;
+							width:10px;
+						}
+					}
+
+					&-hide {
+						&:before {
+							background:url("../assets/icons-s6ca6e738d7.png") no-repeat;
+							background-position:0 -6533px;
+							content:"";
+							position:absolute;
+							left:2px;
+							bottom:2px;
+							height:10px;
+							width:10px;
+						}
+					}
+				}
+
+				.flight-results {
+					&__flights-expand {
+						position:relative;
+						border-bottom:1px solid #DDDDDD;
+
+						.code-share {
+							color:#1676C6;
+							font-weight:600;
+							float:left;
+							margin-left:25px;
+						}
+					}
+
+					&__flights-table {
+						&__additional-information {
+							.segment {
+								&__summary {
+									float:left;
+								}
+
+								&__advisories {
+									float:right;
+								}
+
+								&__amenities {
+									margin:20px 0 0;
+
+									table {
+										width:100%;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			// End: --itinerary
+			&--alerts {
+				padding-right:0 !important;
+			}
+			// End: --alerts
+			&--ticketing {
+				&__summary {
+					.ticketing-details {
+						td {
+							text-align:center;
+							border-bottom:1px solid #CCCCCC;
+						}
+					}
+
+					.ticketing-additional-details {
+						border-bottom:1px solid #000000;
+
+						.selectable {
+							td {
+								text-align:center;
+							}
+						}
+					}
+
+					td {
+						text-align:left;
+						padding-top:7px !important;
+						padding-bottom:7px !important;
+					}
+
+					.ticketing {
+						margin:0 0 20px;
+
+						&:last-child {
+							&:after {
+								display:none;
+							}
+						}
+
+						&__header {
+							padding:0 10px;
+
+							h4 {
+								color:#013159;
+								@include font-size(13);
+								font-weight:bold;
+								display:inline-block;
+								min-width:200px;
+							}
+
+							.document-number {
+								display:inline;
+							}
+						}
+					}
+				}
+			}
+			// End: --ticketing
+			&--award-tool {
+				&__summary {
+					.payment-manager-details td {
+						border-bottom:1px solid #CCCCCC;
+
+						.fa.fa-info-circle {
+							padding-right:10px;
+						}
+
+						.fa {
+							font-size:1.4rem;
+						}
+
+						.fa:hover {
+							cursor:pointer;
+						}
+					}
+				}
+			}
+
+
+			// End: --fare-quote
+
+			// End: --upgrades
+
+			// End: --tcd
+			&--seats {
+				a {
+					cursor:pointer;
+				}
+
+				.total {
+					margin:0 10px;
+					line-height:32px;
+					@include font-size(14);
+					color:#013159;
+				}
+
+				.table {
+					&__content {
+						.corner-toggle {
+							background-image:-webkit-gradient(
+							linear,
+							0% 100%,
+							100% 0%,
+							color-stop(0%, #EBEBEB),
+							color-stop(50%, #EBEBEB),
+							color-stop(51%, rgba(235, 235, 235, 0)),
+							color-stop(100%, rgba(235, 235, 235, 0))
+							);
+							background-image:-webkit-linear-gradient(
+							left bottom,
+							#EBEBEB 0%,
+							#EBEBEB 50%,
+							rgba(235, 235, 235, 0) 51%,
+							rgba(235, 235, 235, 0) 100%
+							);
+							background-image:   -moz-linear-gradient(
+							left bottom,
+							#EBEBEB 0%,
+							#EBEBEB 50%,
+							rgba(235, 235, 235, 0) 51%,
+							rgba(235, 235, 235, 0) 100%
+							);
+							background-image:     -o-linear-gradient(
+							left bottom,
+							#EBEBEB 0%,
+							#EBEBEB 50%,
+							rgba(235, 235, 235, 0) 51%,
+							rgba(235, 235, 235, 0) 100%
+							);
+							background-image:        linear-gradient(
+							left bottom,
+							#EBEBEB 0%,
+							#EBEBEB 50%,
+							rgba(235, 235, 235, 0) 51%,
+							rgba(235, 235, 235, 0) 100%
+							);
+							background:linear-gradient(
+							45deg,
+							#EBEBEB 0%,
+							#EBEBEB 50%,
+							transparent 51%,
+							transparent 100%
+							); /* Linear Gradient for IE10 +*/
+							content:"";
+							display:block;
+							position:absolute;
+							height:24px;
+							width:24px;
+							left:0;
+							bottom:0;
+
+							&-show {
+								&:before {
+									background:url("../assets/icons-s6ca6e738d7.png") no-repeat;
+									background-position:0 -6441px;
+									content:"";
+									position:absolute;
+									left:2px;
+									bottom:2px;
+									height:10px;
+									width:10px;
+								}
+							}
+
+							&-hide {
+								&:before {
+									background:url("../assets/icons-s6ca6e738d7.png") no-repeat;
+									background-position:0 -6533px;
+									content:"";
+									position:absolute;
+									left:2px;
+									bottom:2px;
+									height:10px;
+									width:10px;
+								}
+							}
+						}
+
+						tr {
+							text-align:left;
+
+							&:nth-child(odd) {
+								td:last-child {
+									text-align:right;
+
+									span {
+										padding:5px;
+									}
+
+									a {
+										vertical-align:middle;
+									}
+								}
+							}
+
+							td {
+								padding:10px 10px 5px;
+								border-bottom:1px solid #DDDDDD;
+							}
+
+							td.flight-number {
+								position:relative;
+								padding-left:30px;
+							}
+
+							td.traveler-details {
+								border-bottom:1px solid #000000;
+
+								li:first-child {
+									font-weight:bold;
+									@include font-size(12);
+									text-decoration:underline;
+								}
+
+								li {
+									list-style:none;
+									line-height:2em;
+
+									.fee-waived {
+										color:#FF0000;
+										font-weight:600;
+									}
+
+									.price {
+										text-align:right;
+									}
+
+									.seatNumber {
+										text-align:center;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			// END: --sears
+			&--contact-details {
+				.table__content {
+					.t-title {
+						width:30%;
+						font-weight:600;
+						text-align:left;
+						padding:10px;
+						border-bottom:1px solid #DDDDDD;
+					}
+
+					.t-value {
+						width:70%;
+						text-align:left;
+						padding:10px;
+						border-bottom:1px solid #DDDDDD;
+					}
+				}
+			}
+			// END: --contact-details
+			&--ancillary , &--ssr , &--osi {
+				&__summary {
+					.ssr_table th {
+						cursor:pointer;
+					}
+
+					.fa-sort {
+						padding:0 5px;
+					}
+
+					td.t-type , td.t-flight , td.t-code , td.t-status {
+						text-align:center;
+					}
+
+					td.t-format {
+						width:30%;
+					}
+
+					.panel-default {
+						border:none;
+						box-shadow:none;
+					}
+
+					.panel-heading {
+						padding:0 !important;
+						border:0 solid #FFFFFF;
+					}
+
+					.panel-body {
+						border:none !important;
+					}
+
+					.panel-collapse {
+						border:1px solid #FFFFFF;
+					}
+
+					.heading-title {
+						width:70%;
+						display:inline-block;
+						float:left;
+					}
+				}
+
+				.table {
+					&__content {
+						text-align:left;
+
+						td {
+							border-bottom:1px solid #DDDDDD;
+						}
+					}
+				}
+
+				.heading-total {
+					width:30%;
+					display:inline-block;
+					float:left;
+				}
+			}
+			// END: --ancillary, --ssr, --osi
+			&--pricing {
+				.popover--fare-breakdown , .popover--fees-detail , .popover--upgrades , .popover--uto , .popover--total {
+					width:100%;
+					max-width:none;
+				}
+
+				.popover__detail {
+					border:none;
+					padding:0;
+
+					.toggle-content-wrapper {
+						border-bottom:1px solid #000000;
+						margin-bottom:15px;
+						padding-bottom:15px;
+					}
+
+					&__header {
+						border-radius:0;
+						border:none;
+						border-bottom:1px solid #EEEEEE;
+						background:#FFFFFF;
+						margin-bottom:0;
+						position:relative;
+
+						h4 {
+							padding:0 20px;
+							font-weight:normal;
+						}
+
+						.icon-travelers {
+							margin:0 10px;
+							cursor:pointer;
+							@include font-size(18);
+						}
+					}
+
+					&__header:last-child {
+						border-bottom:0;
+					}
+				}
+
+				.table {
+					&.fixed-layout {
+						margin-bottom:5px;
+					}
+
+					.table__head {
+						th {
+							background-color:#EEEEEE;
+							font-weight:bold;
+							border-width:0;
+							padding-left:8px;
+							padding-right:8px;
+
+							&.text-left {
+								text-align:left;
+							}
+
+							&.text-right {
+								text-align:right;
+							}
+						}
+					}
+					// .table__head
+				}
+				// .table
+			}
+			// modules--pricing
+			&--history {
+				.table {
+					&__head {
+						th {
+							text-align:left;
+						}
+					}
+
+					&__content {
+						td {
+							text-align:left;
+						}
+					}
+				}
+			}
+			// END: --history
+			&--ssr {
+				.upgrade-btn {
+					margin-top:5px;
+					margin-right:5px;
+				}
+
+				.upgrade-btn:focus {
+					outline:0;
+				}
+			}
+			// END: --ssr
+			&--umnr {
+				.fa-info-circle {
+					color:#FFFFFF;
+					margin:9px 4px;
+					@include font-size(14);
+					cursor:default;
+				}
+
+				.table {
+					&__content {
+						tr {
+							td {
+								padding:10px;
+								border-bottom:1px solid #DDDDDD;
+							}
+
+							.flight-date {
+								position:relative;
+							}
+
+							.title {
+								@include font-size(13);
+								font-weight:600;
+							}
+
+							.umnr-details {
+								border-bottom:1px solid #000000;
+								vertical-align:top;
+								text-align:left;
+								padding:10px 20px;
+							}
+						}
+					}
+				}
+			}
+			// END: --umnr
+			&--security {
+				&__summary {
+					&__expanded-information {
+						background:#FEF4DD;
+						padding:15px;
+
+						.left-section {
+							border-right:1px solid #A7A7A7;
+							display:inline-block;
+							float:left;
+							padding:0 10px;
+							width:50%;
+						}
+
+						.right-section {
+							float:left;
+							display:inline-block;
+							padding:0 10px;
+							width:50%;
+						}
+					}
+
+					.panel-default {
+						border:none;
+						box-shadow:none;
+					}
+
+					.panel-heading {
+						padding:0 !important;
+						border:1px solid #FFFFFF;
+					}
+
+					.panel-body {
+						border:none !important;
+					}
+
+					.panel-collapse {
+						border:1px solid #FFFFFF;
+					}
+
+					.heading-title {
+						width:70%;
+						display:inline-block;
+						float:left;
+					}
+
+					.heading-total {
+						width:30%;
+						display:inline-block;
+						float:left;
+					}
+
+					.table {
+						&__head {
+							th {
+								.icon {
+									vertical-align:-3px;
+									margin-left:5px;
+
+									&.icons-prompt-error {
+										margin-left:11px;
+										padding-right:10px;
+									}
+								}
+							}
+						}
+
+						&__content {
+							text-align:left;
+						}
+					}
+				}
+			}
+			// END: --security
+			&--loyalty {
+				&__summary {
+					.traveler-details {
+						td {
+							border-bottom:1px solid #CCCCCC;
+						}
+					}
+
+					.traveler-additional-details {
+						border-bottom:1px solid #000000;
+					}
+
+					td {
+						text-align:center;
+						padding-top:7px !important;
+						padding-bottom:7px !important;
+					}
+
+					.traveler {
+						margin:0 0 20px;
+
+						&-flight {
+							width:20%;
+						}
+
+						&-miles {
+							width:20%;
+						}
+
+						&-points {
+							width:15%;
+						}
+
+						&:last-child {
+							&:after {
+								display:none;
+							}
+						}
+
+						&__header {
+							padding:0 10px;
+
+							h4 {
+								color:#013159;
+								@include font-size(13);
+								font-weight:bold;
+								display:inline-block;
+								min-width:200px;
+							}
+
+							.mp-info {
+								display:inline;
+
+								.icon {
+									vertical-align:-5px;
+									margin:0 10px;
+								}
+							}
+
+							.mp-no {
+								@include font-size(11);
+								font-weight:bold;
+							}
+
+							.status {
+								color:#FFA202;
+								@include font-size(12);
+								font-weight:bold;
+								margin-left:5px;
+							}
+
+							.tools {
+								margin:6px 10px 0 0;
+
+								.icon {
+									margin:0 8px;
+									vertical-align:-5px;
+								}
+
+								.btn {
+									margin-right:10px;
+								}
+							}
+						}
+					}
+				}
+			}
+			// END: --loyalty
+		}
+		// End: Module (Single)
+		.btn-group {
+			.btn {
+				padding:6px 10px;
+				background-color:#F5F5F5;
+				border-color:#DDDDDD;
+				color:#000000;
+
+				&.active {
+					background-color:#EDB72B;
+				}
+			}
+		}
+
+		.selected {
+			background-color:#FEF4DD;
+		}
+
+		.panel-body {
+			padding:0;
+		}
+
+		.panel-heading {
+			background:#CCCCCC;
+			padding:5px 15px;
+		}
+	}
+	// End: pnrsummary__modules (Wrapper)
+	&__travelers {
+		//padding-left:0px;
+		&__wrapper {
+			//padding-right:0px;
+		}
+
+		.panel-body {
+			padding:0 5px;
+		}
+
+		&__icon-wrapper {
+			float:right;
+			margin-top:0;
+
+			.icon {
+				margin-left:5px;
+				cursor:pointer;
+			}
+		}
+		// icon-wrapper
+		&__list {
+			.edit-icons {
+				position:absolute;
+				right:5px;
+				top:5px;
+
+				.icon {
+					margin-right:5px;
+				}
+			}
+
+			.item {
+				display:block;
+				border-bottom:1px solid #DADADA;
+				float:none;
+				padding:5px;
+				position:relative;
+
+				&:last-child {
+					border-bottom:0;
+				}
+
+				p {
+					margin:5px 0;
+
+					&.badges {
+						.icon {
+							margin:0 !important;
+							vertical-align:-6px;
+						}
+					}
+				}
+
+				.icon {
+					margin:0;
+
+					&.icons-trash-can-2 {
+						vertical-align:-10px;
+					}
+
+					&.icons-close-2 {
+						vertical-align:-7px;
+					}
+				}
+				// End Icon
+			}
+			// End: item
+		}
+	}
+	// End pnrsummary__travelers
+	&__identifiers {
+		.item {
+			&__content {
+				p:nth-child(even) {
+					float:right;
+				}
+
+				&__icon , &__description {
+					float:left;
+					margin:10px 0;
+				}
+
+				&__description {
+					@include font-size(18);
+					font-weight:600;
+					padding:5px;
+				}
+			}
+		}
+	}
+
+	&__identifiers , &__alerts {
+		background:transparent;
+
+		.module__content {
+			background:#FFFFFF;
+			padding:0;
+		}
+
+		&__list {
+			display:block;
+			padding:0;
+			margin:0;
+			list-style-type:none;
+
+			.item {
+				background:#EEEEEE;
+				border:1px solid #EEEEEE;
+				display:block;
+				min-height:80px;
+				width:100%;
+				font-weight:600;
+				margin-bottom:10px;
+
+				&__header {
+					height:25px;
+					background:#BBBBBB;
+					padding:5px 10px;
+					top:0;
+					left:0;
+					width:100%;
+					font-weight:600;
+					color:#000000;
+					@include font-size(12);
+
+					&__subheader {
+						font-weight:600;
+						text-decoration:underline;
+					}
+				}
+
+				&__content {
+					padding:10px;
+				}
+
+				&:nth-child(even) {
+					background:#FFFFFF;
+				}
+			}
+		}
+	}
+	// End: pnrsummary__alerts
+	&__fix-header {
+		top:60px;
+		border-width:0 0 1px;
+		width:73.45% !important;
+		/*margin-left: 15px !important;*/
+		position:fixed;
+		z-index:666;
+	}
+	&__reshop-fix-header {
+		top:60px;
+		border-width:0 0 1px;
+		width:100%;
+		position:sticky;
+		z-index:666;
+	}
+	//Alert user input error mesaages for TFS# 729919
+	.alert.alert-warning {
+		color:#F08C00 !important;
+		background-color:rgba(240, 140, 0, 0.15);
+		margin-left:15px;
+		margin-right:15px;
+		border:2px solid #FBE2BF;
+	}
+
+	.alert div.iconContainer {
+		display:inline-block;
+		margin-right:15px;
+	}
+
+	.alert div.messageContainer {
+		display:inline-block;
+		vertical-align:top;
+		width:85%;
+	}
+
+	.alert span.errorMessage {
+		display:inline-block;
+		vertical-align:top;
+		font-size:16px;
+		color:#000000;
+	}
+
+	.alert span.agentSpeak {
+		font-style:italic;
+		font-size:14px;
+		color:#000000;
+	}
+	.alert-ttltl30.close {
+		margin-top:-10px;
+		margin-right:-5px;
+	}
+	.pnrsummary .alert.alert-warning.alert-ttltl30 {
+		margin:12px 1px 0 10%;
+	}
+} // End: pnrsummary
+
+// Start New Skin PNR-Summary
+
+.pnr-summary {
+	padding:75px 15px;
+
+	&__menu {
+		display:flex;
+		flex-direction:row;
+		margin-top:15px;
+		border-bottom:2px solid #257DC2;
+
+		.tab-link {
+			height:50px;
+			width:175px;
+			background:#E9E9E9;
+			color:#717171;
+			@include font-size(16);
+			border-right:1px solid #CCCCCC;
+			text-decoration:none;
+			padding:5px;
+
+			&.active {
+				background:#257DC2;
+				color:#FFFFFF;
+			}
+		}
+	}
+
+	&__body {
+		padding-left:15px;
+		padding-right:15px;
+	}
+
+	.module {
+		display:flex;
+		flex-direction:column;
+		margin-top:15px;
+
+		// Start: __header
+		&__header {
+			display:flex;
+			height:35px;
+			height:100%;
+			width:100%;
+			display:flex;
+			background-color:#082749;
+			color:#FFFFFF;
+			@include font-size(14);
+			font-weight:bold;
+			align-items:center;
+			justify-content:stretch;
+			padding:0;
+			margin-bottom:0;
+			border-radius:3px;
+			border:0;
+
+			a {
+				color:#FFFFFF;
+			}
+
+			.title {
+				display:flex;
+				padding:0 10px;
+				flex-grow:1;
+				flex-basis:1;
+				border-radius:3px;
+			}
+
+			.action {
+				cursor:pointer;
+				display:flex;
+				height:35px;
+				width:35px;
+				background:#3BB8E8;
+				align-items:center;
+				justify-content:center;
+			}
+
+			.left {
+				border-radius:3px 0 0 3px;
+			}
+
+			.right {
+				border-radius:0 3px 3px 0;
+			}
+
+			.section-total {
+				display:flex;
+				padding:0 15px;
+			}
+
+			&.reshop {
+				background:#FFC658;
+			}
+
+			&__buttons {
+				display:flex;
+				margin-right:15px;
+
+				.btn {
+					text-align:right;
+					height:25px;
+					line-height:10px;
+
+					&:not(:last-child) {
+						margin-right:5px;
+					}
+				}
+			}
+		}
+		// End: __header
+
+		// Start: module__sub-header {
+		&__sub-header {
+			height:35px;
+			border:0;
+			width:100%;
+			display:flex;
+			background-color:#E9E9E9;
+			color:#000000;
+			@include font-size(14);
+			font-weight:bold;
+			align-items:center;
+			justify-content:stretch;
+			padding:0;
+			margin-bottom:5px;
+			border-radius:3px;
+	
+			&:first-child {
+				margin-top:5px;
+			}
+	
+			.title {
+				display:flex;
+				padding:0 5px;
+				flex-grow:1;
+				flex-basis:1;
+			}
+	
+			.action {
+				display:flex;
+				cursor:pointer;
+				height:35px;
+				width:35px;
+				background:#3BB8E8;
+				color:#FFFFFF;
+				align-items:center;
+				justify-content:center;
+			}
+			.left {
+				border-radius:3px 0 0 3px;
+				background:#2172BA;
+			}
+	
+			.right {
+				border-radius:0 3px 3px 0;
+			}
+		}
+		// End: module__sub-header
+
+		//Start: module__sub-content
+		&__sub-content {
+			width:100%;
+			margin-bottom:15px;
+			table , .table {
+				border-radius:3px;
+			}
+
+
+
+
+
+			tr {
+				background-color:#FFFFFF;
+				&.umnr {
+					line-height:1.5rem;
+				}
+				&.umnr-details {
+					height:100px;
+				}
+				&.fare-calc-data {
+					min-height:150px;
+					p {
+						line-height:2rem;
+					}
+				}
+			}
+
+			th {
+				background-color:#FFFFFF;
+				font-weight:600;
+				border-right:none !important;
+				border-top:none !important;
+				border-bottom:2px solid #082749;
+				border-left:1px solid #FFFFFF;
+				font-size:16px;
+				color:#082749;
+
+				&.right {
+					text-align:right;
+				}
+				&.left {
+					text-align:left;
+					.wide {
+						min-width:300px;
+					}
+				}
+				&.center {
+					text-align:center;
+				}
+				&.fares {
+					width:25%;
+				}
+				&.uto {
+					width:16.6%;
+				}
+				&.loyalty {
+					width:20%;
+				}
+
+				&.umnr {
+					width:20%;
+				}
+				&.toggle {
+					width:25px;
+				}
+				&.drop-off , &.pick-up {
+					min-width:175px;
+				}
+			}
+
+			td {
+				font-size:16px;
+				line-height:0.8rem;
+				border:none;
+				font-weight:400;
+				&.right {
+					text-align:right;
+				}
+				&.total {
+					font-weight:600;
+				}
+			}
+
+
+			.cost {
+				margin-right:15px;
+			}
+		}
+		//End: module__sub-content
+
+		// Start: module__content
+		&__content {
+			display:flex;
+			padding:5px;
+			width:100%;
+		}
+
+		&__actions-buttons {
+			width:100%;
+			text-align:right;
+			padding:0 5px;
+		}
+
+		// End: module__content
+
+		&__select-action {
+			display:flex;
+			flex-direction:row;
+			align-items:center;
+			justify-content:flex-end;
+			padding:0 15px 15px;
+
+			.btn {
+				display:flex;
+				margin-left:0;
+				&:not(last-child) {
+					margin-left:10px;
+				}
+			}
+		}
+		// End: select-action
+
+		&__footer {
+			background:#FFFFFF;
+			border-radius:0 0 3px 3px;
+			margin-bottom:15px;
+			padding:15px;
+			text-align:right;
+		}
+		// End: footer
+
+		// Start: module modifiers
+		&--overview-panel {
+			margin-top:0;
+			display:flex;
+
+			&.travel-ready {
+				.module__header {
+					background:#3E7D3B;
+				}
+			}
+
+			&.attention {
+				.module__header {
+					background:#F16321;
+				}
+			}
+
+			.module__content > * {
+				display:flex;
+				flex-basis:0;
+				flex-grow:1;
+				&:last-child {
+					margin-right:0;
+				}
+			}
+
+			.section {
+				display:flex;
+				flex-grow:1;
+				flex-basis:0;
+				margin-right:10px;
+
+				// &:last-child {
+				//     margin-right: 0;
+				// }
+
+				&--cost {
+					display:flex;
+					flex-basis:0;
+					flex-grow:1;
+					flex-direction:column;
+					justify-content:stretch;
+					font-weight:700;
+
+
+
+					.fare-calc {
+						font-weight:600;
+						@include font-size(14);
+						margin:15px 0;
+						font-family:"Courier New", Courier, monospace;
+					}
+
+					.pnr-cost-header {
+						display:flex;
+						flex-direction:row;
+						justify-content:space-between;
+						border-bottom:2px solid #000000;
+						line-height:2rem;
+					}
+
+					.pnr-cost-panel {
+						height:165px;
+						overflow-x:hidden;
+					}
+
+					.pnr-cost-content {
+						display:flex;
+						flex-direction:row;
+						justify-content:space-between;                        // line-height: 3.5rem;
+						border-bottom:1px solid #EFEFEF;
+						margin-bottom:10px;
+
+						.fare-total {
+							@include font-size(28);
+						}
+
+						.base-fare {
+							@include font-size(18);
+							display:flex;
+							align-items:center;
+						}
+
+						.taxes {
+							@include font-size(18);
+						}
+					}
+				}
+				// End: section--cost
+
+				&--travelers {
+					display:flex;
+					flex-basis:0;
+					flex-grow:1;
+					flex-direction:column;
+
+					.traveler-details-panel {
+						height:165px;
+						overflow-x:hidden;
+					}
+
+					.table-header {
+						display:flex;
+						flex-direction:row;
+						justify-content:space-between;
+						border-bottom:2px solid #000000;
+						line-height:2rem;
+
+						.name-header {
+							display:flex;
+							flex-direction:column;
+							justify-content:center;
+							flex-basis:40%;
+							@include font-size(14);
+							font-weight:700;
+						}
+						.mp-number-header {
+							display:flex;
+							align-items:center;
+							@include font-size(13);
+							min-width:80px;
+							// flex-basis: 10%; 
+							// justify-content: center;
+						}
+						.mp-indicator-header {
+							display:flex;
+							align-items:center;
+							@include font-size(13);
+							min-width:70px;
+
+							// flex-basis: 10%;
+							// justify-content: center;
+						}
+
+						.ticket-number-header {
+							display:flex;
+							align-items:center;
+							@include font-size(13);
+							min-width:100px;
+							flex-basis:20%;
+							// justify-content: flex-end;
+						}
+					}
+
+					.traveler {
+						display:flex;
+						flex-direction:row;
+						justify-content:space-between;
+						border-bottom:1px solid #EFEFEF;
+						line-height:2rem;
+						// height: 40px;
+
+						& > div {
+							display:flex;
+							flex-basis:0;
+							// flex-grow:1;
+						}
+
+						&:last-child {
+							margin-bottom:0;
+						}
+
+						.action {
+							display:flex;
+							flex-shrink:0;
+							height:35px;
+							width:35px;
+							background:#3BB8E8;
+							color:#FFFFFF;
+							align-items:center;
+							justify-content:center;
+						}
+
+						.indicator {
+							display:flex;
+							align-items:center;
+							justify-content:center;
+							width:100px;
+							flex-shrink:0;
+
+							.status {
+								display:flex;
+								align-items:center;
+								justify-content:center;
+								height:20px;
+								border-radius:10px;
+								border:1px solid #3BB8E8;
+								background:#DBF1FB;
+								color:#4786A3;
+								@include font-size(11);
+								font-weight:600;
+								width:80px;
+							}
+						}
+
+						.name {
+							display:flex;
+							flex-direction:column;
+							justify-content:center;
+							flex-basis:45%;
+							@include font-size(14);
+							font-weight:600;
+
+							.type {
+								@include font-size(12);
+								font-weight:400;
+							}
+
+							.lap-infant {
+								@include font-size(12);
+								margin-left:5px;
+							}
+						}
+
+						.mp-number {
+							display:flex;
+							align-items:center;
+							padding-top:5px;
+							font-size:1.3rem;
+							flex-basis:10%;
+						}
+
+						.mp-indicator {
+							display:flex;
+							align-items:center;
+							@include font-size(13);
+							flex-basis:13%;
+							// justify-content: center;
+						}
+
+						.ticket-number {
+							display:flex;
+							align-items:center;
+							@include font-size(13);
+							flex-basis:20%;
+							// justify-content: flex-end;
+						}
+					}
+					// End: traveler
+				}
+				// End: section--travelers
+
+				&--alerts {
+					display:flex;
+					flex-direction:column;
+
+					.pnr-alert {
+						display:flex;
+						flex-direction:row;
+						margin-bottom:5px;
+
+						&:last-child {
+							margin-bottom:0;
+						}
+
+						.action {
+							display:flex;
+							flex-shrink:0;
+							height:35px;
+							width:35px;
+							background:#3BB8E8;
+							color:#FFFFFF;
+							align-items:center;
+							justify-content:center;
+						}
+
+						.indicator {
+							display:flex;
+							align-items:center;
+							justify-content:center;
+							width:100px;
+							flex-shrink:0;
+
+							.status {
+								display:flex;
+								align-items:center;
+								justify-content:center;
+								height:20px;
+								border-radius:10px;
+								border:1px solid #3BB8E8;
+								background:#DBF1FB;
+								color:#4786A3;
+								@include font-size(11);
+								font-weight:600;
+								width:80px;
+
+								&.scheduling {
+									color:#508B27;
+									border:1px solid #70BD00;
+									background:#E3F2D6;
+								}
+
+								&.weather {
+									color:#A0A0A0;
+									background:#FFFFFF;
+									border:1px solid #F59600;
+								}
+							}
+						}
+
+						.description {
+							display:flex;
+							flex-direction:column;
+							justify-content:center;
+							flex-grow:1;
+							@include font-size(12);
+						}
+
+						.detail {
+							display:flex;
+							flex-direction:column;
+							align-items:center;
+							@include font-size(12);
+
+							.on-time {
+								color:green;
+							}
+
+							.delayed {
+								color:red;
+							}
+						}
+					}
+					// End: traveler
+				}
+				// End: seaction--alerts
+			}
+			// End: section
+		}
+		// End: overview
+
+		&--itinerary-panel {
+			margin-top:0;
+			padding-top:15px;
+
+			.module__content {
+				flex-direction:column;
+				padding-left:0;
+				padding-right:0;
+				padding-top:0;
+				background:transparent;
+			}
+
+			.module__sub-header:first-child {
+				margin-top:0;
+			}
+
+			.itinerary-headers {
+				background-color:#FFFFFF;
+				display:flex;
+				flex-direction:row;
+				flex-grow:1;
+				height:40px;
+				align-items:center;
+
+				.flight-info {
+					display:flex;
+					flex-direction:row;
+					min-width:350px;
+					width:calc(30%);
+				}
+
+				.columns-wrapper {
+					width:calc(70%);
+					display:flex;
+					flex-grow:1;
+					align-items:stretch;
+					justify-content:space-between;
+					padding:5px 10px;
+					border-bottom:2px solid #082749;
+					flex-direction:row;
+					@include font-size(16);
+					font-weight:600;
+
+					@media (max-width: 1199px) {
+						@include font-size(14);
+					}
+
+					& > div {
+						display:flex;
+						flex-grow:1;
+						flex-basis:0;
+
+						&.flight-time {
+							max-width:125px;
+						}
+
+						&.fare-class-status {
+							max-width:175px;
+						}
+
+						&.seats {
+							max-width:115px;
+						}
+					}
+				}
+			}
+		}
+		// End: itinerary-panel
+
+		&--modify-search-panel {
+			.module__content {
+				&.search-form {
+					display:flex;
+					flex-direction:row;
+
+					.modify-search {
+						display:flex;
+						flex-direction:column;
+
+						label {
+							margin-right:20px;
+						}
+
+						&__round-trip-travel {
+							display:flex;
+							flex-direction:column;
+							margin-top:15px;
+
+							.city-pair {
+								display:flex;
+
+								&__city-value {
+									.airport-lookup {
+										background-color:transparent;
+										border:none;
+									}
+								}
+							}
+
+							.travel-details {
+								display:flex;
+								margin:15px;
+
+								.origin-date {
+									width:50%;
+									margin-left:-15px;
+
+									label {
+										width:30%;
+									}
+
+									.calendar {
+										display:flex;
+									}
+								}
+
+								.destination-date {
+									width:50%;
+									margin-left:15px;
+
+									label {
+										width:30%;
+									}
+
+									.calendar {
+										display:flex;
+									}
+								}
+
+								.origin-time {
+									width:15%;
+								}
+
+								.airports-within {
+									width:15%;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&--pricing-panel {
+			background-color:#FFFFFF;
+
+			.module__content {
+				&.pricing {
+					display:flex;
+					flex-direction:column;
+
+					.module__sub-header {
+						&:first-child {
+							margin-top:0;
+						}
+
+						&:last-child {
+							margin-bottom:0;
+						}
+					}
+				}
+
+				&.grand-total {
+					align-items:center;
+					justify-content:flex-end;
+					font-weight:bold;
+					@include font-size(14);
+					padding-top:0;
+
+					.btn {
+						margin-right:15px;
+					}
+					.cost {
+						margin-right:15px;
+					}
+				}
+			}
+
+			.module__sub-header {
+				.section-total {
+					display:flex;
+					padding:0 15px;
+				}
+			}
+		}
+
+		&--seats-panel {
+			background-color:#FFFFFF;
+
+			.module__content {
+				&.seats {
+					display:flex;
+					flex-direction:column;
+
+					.module__sub-header {
+						&:first-child {
+							margin-top:0;
+						}
+
+						&:last-child {
+							margin-bottom:0;
+						}
+					}
+				}
+
+				&.grand-total {
+					align-items:center;
+					justify-content:flex-end;
+					font-weight:bold;
+					@include font-size(14);
+					padding-top:0;
+
+					.btn {
+						margin-right:15px;
+					}
+					.cost {
+						margin-right:15px;
+					}
+				}
+			}
+
+			.module__sub-header {
+				.section-total {
+					display:flex;
+					padding:0 15px;
+				}
+			}
+		}
+
+		&--fare-difference {
+			.module__content {
+				& > div {
+					display:flex;
+					flex-direction:column;
+					flex-grow:1;
+					flex-basis:0;
+					margin-right:15px;
+
+					&:last-child {
+						margin-right:0;
+					}
+				}
+
+				.module__sub-header {
+					margin-top:0;
+				}
+
+				.line-item-list {
+					padding:0;
+					display:flex;
+					flex-direction:column;
+
+					.total {
+						height:35px;
+						font-weight:bold;
+					}
+				}
+				// End: line-item-list
+
+				.line-item {
+					display:flex;
+					flex-grow:1;
+					width:100%;
+					flex-direction:row;
+					align-items:center;
+					justify-content:center;
+
+					.qty {
+						display:flex;
+						flex-grow:0;
+						flex-shrink:0;
+						align-items:center;
+						justify-content:center;
+						padding:0 5px;
+						width:35px;
+						height:25px;
+						@include font-size(16);
+						font-weight:bold;
+					}
+					.description {
+						display:flex;
+						flex-grow:1;
+						padding:0 5px;
+					}
+
+					.cost {
+						display:flex;
+						font-weight:bold;
+						padding:0 5px;
+					}
+				}
+				// End: line-item
+			}
+			// End: module__content
+		}
+		// End: fare-difference
+
+		&--purchase-summary {
+			background-color:#FFFFFF;
+
+			.module {
+				&__content {
+					display:flex;
+					padding:15px;
+					background-color:#FFFFFF;
+					flex-direction:column;
+
+					.traveler-details {
+						border-top:1px solid #EFEFEF;
+						border-bottom:1px solid #EFEFEF;
+						padding-top:15px;
+
+						.business {
+							color:#003057;
+						}
+
+						.amount-dropdown {
+							border:none;
+							border-bottom:1px solid #EFEFEF;
+							width:100%;
+							padding:6px 6px;
+							font-size:12px;
+						}
+					}
+
+					.radio {
+						display:flex;
+						flex-direction:row;
+						margin-left:15px;
+					}
+
+					.credit-card-content {
+						display:flex;
+						background-color:#FFFFFF;
+
+						& > div {
+							display:flex;
+							flex-direction:column;
+							flex-grow:1;
+							flex-basis:0;
+							margin-right:15px;
+
+							&:last-child {
+								margin-right:0;
+							}
+						}
+
+						.purchaser-info {
+							padding:10px;
+
+							.email-info {
+								padding-top:15px;
+							}
+						}
+
+						.credit-card-info {
+							padding:10px;
+
+							.exp {
+								display:flex;
+								margin-top:15px;
+
+								.expiration-dropdown {
+									border:none;
+									border-bottom:1px solid #EFEFEF;
+									width:100%;
+									padding:6px 6px;
+									font-size:12px;
+									margin-right:3%;
+								}
+							}
+						}
+
+						.card-holder-info {
+							padding:10px;
+							display:flex;
+							flex-direction:column;
+
+							& > div {
+								margin-bottom:10px;
+							}
+
+							.city-info {
+								display:flex;
+
+								& > input {
+									margin-right:3%;
+								}
+
+								.country-dropdown {
+									border:none;
+									border-bottom:1px solid #EFEFEF;
+									width:100%;
+									padding:6px 6px;
+									font-size:12px;
+								}
+							}
+						}
+
+						input {
+							border:none;
+							border-bottom:1px solid #EFEFEF;
+							width:100%;
+						}
+					}
+					// End: Cre3dit Card Content
+
+					.etc-content {
+						display:flex;
+						//padding: 15px;
+						background-color:#FFFFFF;
+
+						& > div {
+							display:flex;
+							flex-direction:column;
+							width:33% !important;
+							margin-right:15px;
+
+							&:last-child {
+								width:66% !important;
+								margin-right:0;
+							}
+						}
+
+						.purchaser-info {
+							padding:10px;
+
+							.email-info {
+								padding-top:15px;
+							}
+						}
+
+						.etc-info {
+							padding:10px;
+							display:flex;
+
+							& > div {
+								display:flex;
+								flex-direction:row;
+								flex-grow:1;
+								flex-basis:0;
+								margin-right:15px;
+
+								&:last-child {
+									margin-right:0;
+								}
+							}
+
+							.year {
+								display:flex;
+								margin-top:15px;
+							}
+						}
+
+						.etc-footer {
+							padding:15px;
+							display:flex;
+							justify-content:flex-end;
+							align-items:center;
+
+							& > div {
+								margin:5px;
+							}
+
+							.action {
+								display:flex;
+								background:#3BB8E8;
+								width:35px;
+								justify-content:center;
+								height:35px;
+								border-radius:5px;
+								color:#000000;
+								align-items:center;
+							}
+						}
+
+						input {
+							border:none;
+							border-bottom:1px solid #EFEFEF;
+							width:100%;
+						}
+					}
+					// End: ETC Content
+
+					.travel-bank-content {
+						display:flex;
+						//padding: 15px;
+						background-color:#FFFFFF;
+
+						& > div {
+							display:flex;
+							flex-direction:column;
+							width:33% !important;
+							margin-right:15px;
+
+							&:last-child {
+								width:66% !important;
+								margin-right:0;
+							}
+						}
+
+						.purchaser-info {
+							padding:10px;
+
+							.email-info {
+								padding-top:15px;
+							}
+						}
+
+						.travel-bank-info {
+							padding:10px;
+							display:flex;
+
+							& > div {
+								display:flex;
+								flex-direction:row;
+								margin-right:15px;
+
+								&:last-child {
+									margin-right:0;
+								}
+							}
+
+							.year {
+								display:flex;
+
+								.action {
+									display:flex;
+									background:#3BB8E8;
+									width:35px;
+									justify-content:center;
+									height:35px;
+									border-radius:5px;
+									color:#000000;
+									align-items:center;
+								}
+							}
+						}
+
+						.travel-bank-status {
+							padding:10px;
+							display:flex;
+							flex-direction:column;
+
+							& > div {
+								margin:5px;
+							}
+						}
+
+						input[type="text"] {
+							border:none;
+							border-bottom:1px solid #EFEFEF;
+							width:100%;
+						}
+					}
+					// End: travel-bank
+
+					.dropdown {
+						border:none;
+						border-bottom:1px solid #EFEFEF;
+						width:100%;
+						padding:6px 6px;
+						font-size:12px;
+						margin-right:3%;
+					}
+				}
+
+				&__footer {
+					margin-bottom:15px;
+					padding:15px;
+					text-align:right;
+					background-color:#FFFFFF;
+
+					.purchase {
+						width:100px;
+					}
+				}
+			}
+		}
+		// End: purchase-summary
+
+		&--loyalty-panel {
+			background-color:#FFFFFF;
+
+			.module__content {
+				&.loyalty {
+					display:flex;
+					flex-direction:column;
+
+					.module__sub-header {
+						&:first-child {
+							margin-top:0;
+						}
+
+						&:last-child {
+							margin-bottom:0;
+						}
+					}
+				}
+
+				&.grand-total {
+					align-items:center;
+					justify-content:flex-end;
+					font-weight:bold;
+					@include font-size(14);
+					padding-top:0;
+
+					.btn {
+						margin-right:15px;
+					}
+					.cost {
+						margin-right:15px;
+					}
+				}
+			}
+
+			.module__sub-header {
+				.section-total {
+					display:flex;
+					padding:0 15px;
+				}
+			}
+		}
+
+		&--fare-quote-panel {
+			background-color:#FFFFFF;
+
+			.module__content {
+				&.fare-quote {
+					display:flex;
+					flex-direction:column;
+
+					.module__sub-header {
+						&:first-child {
+							margin-top:0;
+						}
+
+						&:last-child {
+							margin-bottom:0;
+						}
+					}
+				}
+
+				&.grand-total {
+					align-items:center;
+					justify-content:flex-end;
+					font-weight:bold;
+					@include font-size(14);
+					padding-top:0;
+
+					.btn {
+						margin-right:15px;
+					}
+					.cost {
+						margin-right:15px;
+					}
+				}
+			}
+
+			.module__sub-header {
+				.section-total {
+					display:flex;
+					padding:0 15px;
+				}
+			}
+		}
+
+		&--ticketing-panel {
+			background-color:#FFFFFF;
+
+			.module__content {
+				&.ticketing {
+					display:flex;
+					flex-direction:column;
+	
+					.module__sub-header {
+						.title {
+							display:flex;
+							flex-direction:row;
+							justify-content:space-between;
+	
+							.coupon-number {
+								//margin-left: 15px;
+							}
+						}
+						&:first-child {
+							margin-top:0;
+						}
+	
+						&:last-child {
+							margin-bottom:0;
+						}
+					}
+	
+					.expand-column {
+						width:25px;
+					}
+				}
+			}
+	
+			.module__sub-header {
+				.section-total {
+					display:flex;
+					padding:0 15px;
+				}
+			}
+
+			code {
+				padding:unset;
+				color:#000;
+				background:transparent;
+				border-radius:0;
+			}
+		}
+	
+		// End: module modifiers
+	}
+}
+
+.mp-indicator , .mp-indicators {
+	display:flex;
+	padding:0 5px;
+	cursor:default;
+
+	.mp-icon , .mp-status {
+		display:flex;
+		position:relative;
+		height:20px;
+		width:75px;
+		justify-content:center;
+		margin-left:15px;
+		margin-right:15px;
+		padding:0 10px;
+		@include font-size(12);
+		font-weight:400;
+		letter-spacing:0.1rem;
+		line-height:20px;
+		z-index:100;
+
+		&:before {
+			display:flex;
+			position:absolute;
+			height:13.5px;
+			width:13.5px;
+			top:3px;
+			left:-7px;
+			content:"";
+			transform:rotate(45deg);
+			border-radius:1px;
+			z-index:99;
+		}
+
+		&:after {
+			display:flex;
+			position:absolute;
+			height:13.5px;
+			width:13.5px;
+			top:3px;
+			right:-7px;
+			content:"";
+			transform:rotate(45deg);
+			border-radius:1px;
+			z-index:99;
+		}
+
+		&.mp , .mp {
+			background:#022FA6;
+			color:#FFFFFF;
+
+			&:before , &:after {
+				background:#022FA6;
+			}
+		}
+
+
+
+		&.chase , .chase {
+			background:#117ACA;
+			color:#FFFFFF;
+			&:before , &:after {
+				background:#117ACA;
+			}
+		}
+		&.star-alliance-gold , .star-alliance-gold {
+			background:#9F7D23;
+			color:#FFFFFF;
+			&:before , &:after {
+				background:#9F7D23;
+			}
+		}
+	}
+}
+// End MP Indicators

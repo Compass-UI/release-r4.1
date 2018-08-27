@@ -1,0 +1,510 @@
+.header {
+    position: fixed;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 60px;
+    z-index: 1029;
+
+    .item {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .top-row {
+        height: 30px;
+        /*background: #fff !important;*/
+        background-color: rgb(237, 183, 43);
+        display: flex;
+        flex-direction: row;
+        // End: .menu
+        .top-row-wrapper {
+            display: flex;
+            flex-direction: row;
+            width: 75%;
+            position: relative;
+
+            .compass-logo {
+                width: 115px;
+                height: 30px;
+                background: white;
+                display: inline-block;
+                padding: 2px 15px 1px 15px;
+                margin: 0px 30px 0px 0px;
+
+                img {
+                    vertical-align: inherit !important;
+                }
+            }
+
+            .sessions-container, .session-template, #ccHeaderTabNavigation {
+                height: 100%;
+            }
+
+            .sessions-container {
+                position: absolute;
+                left: 115px;
+                padding: 0;
+            }
+
+            .sessions {
+                height: 100%;
+                width: 100%;
+                padding: 0 0 0 0;
+                overflow: visible;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-end;
+                background: transparent;
+                position: relative;
+
+                .session {
+                    position: relative;
+                    height: 100%;
+                    max-width: 175px;
+                    margin: 0 -15px 0 0;
+                    cursor: pointer;
+
+                    &:hover {
+                    }
+
+                    &.selected {
+                        z-index: 5;
+
+                        .session-box {
+                            background: #039;
+                        }
+
+                        .session-content a {
+                            color: #fff;
+                        }
+
+                        .session-content a:hover {
+                            color: #fff !important;
+                        }
+                    }
+
+                    &:last-of-type {
+                        height: 65%;
+                        width: 50px;
+                        border: none;
+                        position: relative;
+                        top: -3px;
+
+                        .session-box {
+                            border-radius: 2px;
+                            -o-transform: skew(20deg);
+                            -ms-transform: skew(20deg);
+                            -moz-transform: skew(20deg);
+                            -webkit-transform: skew(24deg);
+                        }
+
+                        .session-content {
+
+                            div {
+                                margin: 0;
+                            }
+                        }
+                    }
+
+                    &:not(:last-child) {
+                        top: 1px;
+
+                        .session-box {
+                            border-top-left-radius: 4px;
+                            border-top-right-radius: 4px;
+                            -webkit-transform: perspective(100px) rotateX(30deg);
+                            -moz-transform: perspective(100px) rotateX(30deg);
+                            -ms-transform: perspective(100px) rotateX(30deg);
+                        }
+                    }
+                    // If there are 6 tabs, hide the 6th add tab button
+                    &:nth-child(3) {
+                        display: none;
+                    }
+
+                    .session-box {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        height: 100%;
+                        background: #fff;
+                        margin: 0 10px 0;
+                        border: none;
+                    }
+
+                    .session-content {
+                        display: flex;
+                        align-items: center;
+                        align-content: center;
+                        justify-content: space-around;
+                        position: absolute;
+                        top: 0;
+                        height: 100%;
+                        width: 100%;
+                        background: transparent;
+                        padding: 0 10px;
+                        /*white-space: nowrap;*/
+                        a, a:link, a:visited {
+                            /*left: 14px;*/
+                            width: 100%;
+                            line-height: 14px;
+                            padding: 0;
+                            margin: 0;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            position: relative;
+                            text-align: center;
+                            padding: 0 20px;
+
+                            &:active {
+                                border: none;
+                            }
+
+                            &:hover {
+                                color: #333;
+                                background: transparent;
+                            }
+                        }
+
+                        span {
+                            position: absolute;
+                            right: 14px;
+                            top: 8px;
+                        }
+
+                        @media (max-width: 1300px) {
+
+                            a {
+                                width: 70%;
+                                position: absolute;
+                                font-size: 10px;
+                            }
+
+                            span {
+                                font-size: 10px;
+                            }
+                        }
+                    }
+
+                    .content {
+                        z-index: 1;
+                        padding: 100px;
+                        border: 1px solid #ccc;
+                        background: #eee;
+                        position: relative;
+                    }
+
+                    .clear {
+                        clear: both;
+                    }
+
+                    @media (max-width: 1300px) {
+                        width: 125px;
+                    }
+                }
+            }
+
+            .menu {
+                padding-left: 0;
+                margin-right: 15px;
+                height: 30px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                display: flex;
+                justify-content: flex-end;
+
+                .dropdown {
+                    height: 30px;
+                    position: relative;
+                    display: inline-block;
+                    -webkit-transition: background .15s;
+                    transition: background .15s;
+                    transition-timing-function: ease-out;
+
+                    &:hover, &.open {
+                        background: #9c9c9c;
+                        font-weight: 600;
+
+                        & > .dropdown-toggle {
+                            color: #fff;
+                        }
+                    }
+
+                    .dropdown-toggle {
+                        color: #039;
+                        background-color: transparent;
+                        border: none;
+                        height: 30px;
+                        line-height: 30px;
+                        padding: 0;
+                        border-radius: 0;
+
+                        .fa {
+                            width: 30px;
+                        }
+                    }
+                    // End: dropdown-toggle
+                    .dropdown-menu {
+                        left: auto;
+                        right: 0;
+                        z-index: 1000;
+                        min-width: 160px;
+                        padding: 0;
+                        margin: 0;
+                        font-size: 12px;
+                        text-align: left;
+                        border-radius: 0;
+                        border: 0;
+                        -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+                        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+
+                        li {
+
+                            a {
+                                line-height: 30px;
+                                height: 30px;
+                                padding: 0 15px;
+                                background: #fff;
+                                font-weight: 600;
+                                color: #039;
+
+                                &:hover {
+                                    background: #E1E1E1;
+                                    color: #333;
+                                }
+                            }
+                        }
+                    }
+                    // End: dropdown-menu
+                }
+                // End: dropdown
+            }
+        }
+    }
+
+    .bottom-row {
+        height: 30px;
+        background: #039 !important;
+
+        a {
+            color: white;
+        }
+
+        .bottom-row-wrapper {
+
+            .active-pnr {
+                height: 30px;
+                display: inline-block;
+                line-height: 30px;
+                color: #fff;
+                font-size: 15px;
+                font-weight: 700;
+            }
+
+            .pnr-status {
+                font-weight: 700;
+                font-size: 15px;
+                text-transform: uppercase;
+                padding: 0 10px;
+                position: relative;
+                display: inline-block;
+
+                &.attention {
+                    color: #ff7373;
+
+                    span:first-child {
+                        border: 1px solid #ff7373;
+                        background: #ff7373;
+                    }
+                }
+
+                &.travel-ready {
+                    color: #7fffa2;
+
+                    span:first-child {
+                        border: 1px solid #7fffa2;
+                        background: #7fffa2;
+                    }
+                }
+
+                span:first-child {
+                    width: 15px;
+                    height: 15px;
+                    position: relative;
+                    top: 2px;
+                    right: 4px;
+                    display: inline-block;
+                    border-radius: 30px;
+                }
+            }
+
+            .jumpTo {
+                position: relative;
+                display: inline-flex;
+                top: 2px;
+                left: 7px;
+            }
+
+            .jumpTo select {
+                position: relative;
+                margin: 0px;
+                float: left;
+            }
+
+
+
+            .jumpTo select, option {
+                /*font-weight: bolder;*/
+                color: #003399;
+            }
+
+            .jumpTo select, option:checked {
+                font-weight: bolder;
+            }
+
+            .textbold {
+                font-weight: bolder;
+            }
+
+            .textnobold {
+                font-weight: normal;
+            }
+
+            .jumpTo label {
+                color: #fff;
+                width: 103px;
+                margin: 3px;
+                position: relative;
+                font-size: 13px;
+                font-weight: 600;
+            }
+
+            .customer-benefit-chart {
+                font-size: 1.2rem;
+                line-height: 30px;
+                text-decoration: underline;
+                float: right;
+
+                &:hover {
+                    color: #9c9c9c;
+                }
+            }
+        }
+    }
+    // End: bottom-row
+    .close-mp-account {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+
+        @media (max-width:1199px) {
+            font-size: 1.4rem;
+            right: 5px;
+        }
+    }
+    // End: .header a
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+    ul {
+        padding: 0;
+        list-style: none;
+        background: #f2f2f2;
+    }
+
+    ul li {
+        display: inline-block;
+        position: relative;
+        line-height: 15px;
+        text-align: left;
+        width: 100%;
+    }
+
+    ul li a {
+        display: block;
+        padding: 3px 25px;
+        color: #333;
+        text-decoration: none;
+    }
+
+    ul li a:hover {
+        color: #fff;
+        background: #939393;
+    }
+
+    ul li ul.dropdown {
+        min-width: 100%; /* Set width of the dropdown */
+        background: #f2f2f2;
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+    }
+
+    ul li:hover ul.dropdown {
+        display: block; /* Display the dropdown */
+    }
+
+    ul li ul.dropdown li {
+        display: block;
+    }
+
+    .promos-link {
+        line-height: 30px;
+        position: absolute;
+        right: 26%;
+        color: white;
+        text-decoration: underline;
+    }
+}
+.modal-about-compass{
+  width: 770px;
+  border-radius: 3px;
+  top: 4%;
+  left: calc(50% - 425px);
+  background: #fafafa;
+  }
+  .close-button {
+    color: #CCCCCC;
+    float: right;
+    cursor: pointer;
+    margin-top: 13px;
+    margin-right: 10px;
+  }
+  .table--compass-info {
+     
+    tr:first-child {
+      th, td {
+        border-top: 0;
+      }
+    }
+    th{
+      width: 130px;
+      font-weight: 600;
+      vertical-align: middle !important;
+    }
+    .nested__table {
+        //padding: 0px 0px;
+      background: inherit;
+      th{
+        width: 150px;
+        padding: 0px 0px;
+      }
+      td, th{
+        border: none;
+        padding: 0px 0px;
+        //white-space: pre;
+      }
+    }
+  }
+  
+
+  
+
+// End .header
+
+

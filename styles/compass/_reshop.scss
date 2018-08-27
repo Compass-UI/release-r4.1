@@ -1,0 +1,128 @@
+.reshop {
+  margin:15px auto;
+  background:#fff;
+
+  &__header-line {
+    margin:10px auto;
+  }
+
+  &__travel-type-radio {
+    margin-right:20px;
+  }
+
+  &__clear-link {
+    margin:20px 0px 20px 20px;
+    float:right;
+  }
+
+  &__flight-line {
+
+    &--origin-city {
+
+    }
+
+    &--destination-city  {
+      margin-top:20px;
+    }
+
+    &--one-way-multi-city {
+
+      .field-item--icons {
+        a {
+          text-decoration: none;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+
+        .icon {
+          vertical-align:-20px;
+          margin-right: 10px;
+        }
+
+      }
+
+    }
+
+  }
+
+  &__round-trip-travel {
+    margin:20px auto;
+  }
+
+  &__one-way-travel {
+    margin:20px auto;
+  }
+
+  &__traveler-information {
+    margin:20px auto;
+  }
+
+  &__award-type {
+    margin:15px 0px;
+  }
+
+  &__carrier-preferences {
+    margin:15px 0px;
+  }
+
+  &__advanced-filter-toggle   {
+    margin:0px 30px;
+
+    .btn {
+      padding:7px 12px;
+    }
+  }
+
+  &__advanced-filter {
+    margin:20px auto;
+    padding:20px 0;
+    background:#f2f2f2;
+  }
+
+  &__submit  {
+    padding:10px 0 20px 0;
+    margin-right:15px;
+
+    .btn   {
+      margin-left:10px;
+      float:right;
+
+    }
+
+  }
+
+  .has-error{
+    color: red;
+  }
+}
+
+/* Moved from Reshop.css during code cleanup. Need to revisit this.. */
+.ignore-modal__footer {
+  padding-bottom: 22px;
+}
+
+.alert-danger {
+  margin: 10px;
+}
+.pnrsummary__modules .module .table__content tr.t-flight-row td.arnk-row {
+  border-top: 1px solid #d3d3d3;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+}
+.aero .packages-reshop-award-availability-calendar .uib-datepicker tbody tr td.cabin-option-one .btn-default {
+  background-color: #f7f4ad;
+  background-color: #faf2b1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#faf2b1), to(#eae3ab));
+}
+.aero .packages-reshop-award-availability-calendar .uib-datepicker tbody tr td.cabin-option-two .btn-default {
+  background-color: #62a9e3;
+  background-color: #0cb0e4;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0cb0e4), to(#01a5d9)); 
+}
+.aero .packages-reshop-award-availability-calendar .uib-datepicker tbody tr td.cabin-option-one.cabin-option-two .btn-default {
+  background-color: #7ac24b;
+  background-color: #4ec456;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4ec456), to(#43b94b));
+}

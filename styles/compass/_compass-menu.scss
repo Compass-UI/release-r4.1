@@ -1,0 +1,46 @@
+.compass-menu {
+
+    .menu-item {
+        margin-left:10px;
+        color:#02a6e2;
+
+        i.fa {
+            @include font-size(24);
+            font-style:unset;
+        }
+
+        :hover {
+            color:#006e94;
+        }
+
+        ul.dropdown-menu {
+            left:unset;
+            right:0;
+            top:34px;
+            border-top:0;
+            border-radius:0;
+            min-width:250px;
+            box-shadow:none;
+
+            li {
+                height:25px;
+                @include font-size(14);
+            }
+        }
+
+    } // menu-item
+
+    .subscription-indicator {
+        .indicator-letter {
+            color: #FFF;
+            width: 24px;
+            height: 24px;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin: 0 0 0 -15.5px;
+            vertical-align: 2px;
+        }
+    }
+
+
+} // compass-menu

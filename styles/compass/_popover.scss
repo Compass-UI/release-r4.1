@@ -1,0 +1,941 @@
+.popover {
+    background-color: #f6f5f5;
+    border: 1px solid #999999;
+    width: auto;
+    max-width: 950px;
+    z-index: 1098;
+    /*.arrow {
+
+        &:after {
+            border-left-color: #f6f5f5 !important;
+        }
+    }*/
+    // End: .arrow (BS)
+    .popover-inner {}
+    // End: .popover-inner (BS)
+    .popover-content {
+        padding: 5px;
+        color: #039;
+        text-align: center;
+    }
+    // End: popover-content (BS)
+    .table {
+        max-width: 100%;
+        font-size: 1.1rem;
+        margin-bottom: 5px;
+        &:last-child {
+            margin-bottom: 5px;
+        }
+        &__head {
+            th {
+                background-color: #e3f2fb;
+                font-weight: bold;
+                border-width: 0;
+                padding-left: 8px;
+                padding-right: 8px;
+                small {
+                    font-weight: bold;
+                    color: #337ab7;
+                }
+            }
+        }
+        &__content {
+            td {
+                padding-top: 2px;
+                padding-bottom: 2px;
+                width: 400px;
+                @media (max-width: 1199px) {
+                    padding-top: 4px;
+                    padding-bottom: 4px;
+                }
+            }
+            tr {
+                &.bold {
+                    td {
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+        .no-border {
+            border-top: 0;
+            padding: 0 8px;
+        }
+        .totals-row {
+            height: 15px;
+        }
+        .t-row-heading {
+            text-align: left;
+        }
+        .t-totals-cell {
+            padding-right: 10px;
+            text-align: right;
+            &.bold {
+                font-weight: bold;
+                font-size: 1.3rem;
+            }
+        }
+    }
+    // End: .table for popovers
+    &__detail {
+        background-color: white;
+        border: 1px solid lightgrey;
+        font-size: 1.1rem;
+        margin: 0;
+        padding: 10px;
+        &__header {
+            border: 1px solid lightgrey;
+            background: #eaf1f5 url("../assets/background-tile-1.png");
+            float: left;
+            height: 28px;
+            width: 100%;
+            &:hover {
+                .packages__header--dropdown-content {
+                    display: block;
+                    z-index: 1;
+                }
+            }
+            h4 {
+                text-align: left;
+                margin: 0 5px;
+                float: left;
+                line-height: 28px;
+                font-size: 1.4rem;
+                color: #013159;
+            }
+            .tools {
+                float: right;
+                margin-right: 10px;
+                .fa {
+                    font-size: 1.5rem;
+                    line-height: 28px;
+                    color: #039;
+                }
+            }
+            .dropdown {
+                max-width: 200px;
+                position: relative;
+                li {
+                    width: 100%;
+                }
+            }
+            .total {
+                margin: 0 10px;
+                line-height: 32px;
+                font-size: 1.4rem;
+                color: #013159;
+            }
+        }
+        // End: popover__detail
+        &.waive_scroll {
+            max-height: 330px;
+            overflow-y: auto;
+            clear: both;
+        }
+        & .paritally_avaliable {
+            position: absolute;
+            top: 100px;
+            left: 40px;
+            z-index: 9999999999;
+        }
+    }
+    // End: popover__detail
+    // Start: Custom Popover Styles -- keep in alphabetical order
+    &--fare-breakdown {
+        max-width: 760px;
+        max-height: 480px;
+        overflow-y: auto;
+        .fa-trash {
+            color: #003399;
+            cursor: pointer;
+            &.disabled {
+                cursor: not-allowed !important;
+                color: gray !important;
+            }
+        }
+        .fa-sort {
+            cursor: pointer;
+            color: #337ab7;
+        }
+        .popover__detail {
+            .table {
+                width: 100%;
+                font-size: 1.1rem;
+                &.fare-calc {
+                    a {
+                        text-decoration: underline;
+                        margin-left: 4px;
+                    }
+                    tr {
+                        &:first-child {
+                            td {
+                                border-top: 0;
+                            }
+                        }
+                        td {
+                            vertical-align: middle;
+                            text-align: center;
+                            &.t-fare-calc {
+                                text-align: left;
+                            }
+                            @media only screen and (min-width:1200px) {
+                                &.t-ptc {
+                                    width: 20%;
+                                }
+                                &.t-fare-calc {
+                                    width: 80%;
+                                }
+                            }
+                            @media only screen and (max-width:1199px) {
+                                &.t-ptc {
+                                    width: 20%;
+                                }
+                                &.t-fare-calc {
+                                    width: 80%;
+                                }
+                            }
+                        }
+                        // End: td
+                    }
+                    // End: tr
+                }
+                // End: &.fare-calc
+                &__head {
+                    th {
+                        background-color: #e3f2fb;
+                        text-align: center;
+                        font-weight: bold;
+                        border-width: 0;
+                        padding-left: 8px;
+                        padding-right: 8px;
+                    }
+                }
+                a {
+                    cursor: pointer;
+                }
+                &__content {
+                    td {
+                        text-align: center; // Aligns Prices/Decimals
+                    }
+                    /*tr:nth-child(9) > td, tr:nth-child(10) > td, tr:nth-child(11) > td {
+                        font-weight: 700;
+                    }
+
+                    tr:nth-child(11) > td.t-totals-cell {
+                        font-size: 1.3rem;
+                    }
+
+                    tr:nth-child(11) > td {
+                        border-top: 0;
+                        padding: 0 8px;
+                    }*/
+                }
+                &.fixed-layout {
+                    table-layout: fixed;
+                }
+                .totals-row {
+                    height: 15px;
+                    td {}
+                }
+                .t-row-heading {
+                    white-space: nowrap;
+                    text-align: left;
+                }
+            }
+            .view-tools {
+                font-size: 1.2rem;
+                color: #337ab7;
+                font-weight: normal;
+                cursor: pointer;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    // End: popover--fare-breakdown
+    
+// Start: popover--seats-detail
+&--seats-detail {
+    color: #333333;
+    width: 850px;
+    h4 {
+        text-align: left;
+        float: left;
+        margin-left: 10px;
+        font-size: 13px;
+        color: #013159;
+    }
+    h5 {
+        font-size: 12px;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    .total {
+        margin: 0 10px;
+        line-height: 28px;
+        font-size: 1.4rem;
+        color: #013159;
+    }
+    .popover-detail {
+        background-color: white;
+        border: 1px solid lightgrey;
+        font-size: 1.1rem;
+        margin: 0;
+        padding: 15px;
+        .popover__detail__header {
+            max-height: 30px;
+            border-radius: 3px;
+            border: 1px solid lightgrey;
+            background: #eaf1f5 url("../assets/background-tile-1.png");
+            float: left;
+            width: 100%;
+            margin-bottom: 5px;
+        }
+        .customer-detail__seats {
+            width: 100%;
+            max-height: 475px;
+            overflow-y: auto;
+            .table--seats {
+                width: 100%;
+                font-size: 1.2rem !important;
+                font-weight: 300 !important;
+                .table__head {
+                    width: 100%;
+                    border-bottom: none;
+                    tr {
+                        th.priceTitle {
+                            text-align: right;
+                            width: 21%;
+                        }
+                    }
+                    th {
+                        text-align: left;
+                        background-color: #F2F2F2;
+                        border-bottom: 4px solid #C5ab85 !important;
+                        border-left: 1px solid #FFFFFF;
+                        font-weight: normal;
+                        width:10%;
+                    }
+                }
+                .table__content {
+                    width: 100%;
+                    border-top: none !important;
+                    tr {
+                        text-align: left;
+                        td {
+                            font-weight: 400;
+                        }
+                    }
+                    .t-description-total {
+                        text-align: left;
+                        padding-top: 15px;
+                        width: 34%;                            
+                        .segment-info {
+                            text-align: left;
+                        }
+                        .pencil-icon {
+                            margin-left: 5px;
+                            vertical-align: 1px;
+                        }
+                        .traveler-name {
+                            margin: 6px 0 6px 10px;
+                        }
+                    }
+                    .t-total-column {
+                        vertical-align: middle;
+                        padding-top: 20px;
+                        padding-left: 14px;
+                        .traveler-info {
+                            margin-top: 5px;
+                        }
+                        .sub-total {
+                            text-align: right;
+                        }
+                        .seat-price {
+                            margin: 6px 0px 6px 0;
+                            text-align: right;
+                            .priceRed {
+                                color: red;
+                            }
+                        }
+                        .trash-icon {
+                            margin-left: 8px;
+                        }
+                    }
+                }
+            }
+        }
+        a {
+            cursor: pointer;
+        }
+        .icon {
+            cursor: pointer;
+            &.icons-pencil {
+                cursor: pointer;
+                margin-left: 20px;
+                vertical-align: -4px;
+            }
+            &.icons-trash-can-2 {
+                cursor: pointer;
+                margin-left: 20px;
+                vertical-align: -4px;
+            }
+        }
+    }
+}
+// End: popover--seats-detail
+    &--fees-detail {
+        width: 720px;
+        .total {
+            float: right !important;
+            margin: 0 10px;
+            line-height: 32px;
+            font-size: 1.4rem;
+            color: #013159;
+        }
+        a {
+            cursor: pointer;
+        }
+        .icon {
+            cursor: pointer;
+            &.icons-pencil {
+                cursor: pointer;
+                margin-left: 20px;
+                vertical-align: -4px;
+            }
+            &.icons-trash-can-2 {
+                cursor: pointer;
+                margin-left: 20px;
+                vertical-align: -4px;
+            }
+        }
+        .table {
+            &__head {}
+            &__content {
+                td {
+                    vertical-align: middle;
+                }
+            }
+        }
+        .t-description-total {
+            text-align: left;
+            padding-left: 15px;
+        }
+        .t-total-column {
+            text-align: right;
+            padding-right: 15px;
+        }
+    }
+    // End: popover--fees-detail
+    &--farelock {
+        width: 550px;
+        .fa {
+            color: #039;
+            &.fa-trash,
+            &.fa-pencil {
+                cursor: pointer !important;
+            }
+        }
+        .table {
+            &__head {}
+            &__content {
+                td {
+                    vertical-align: middle;
+                    text-align: left;
+                    &.selection {
+                        padding-left: 12px;
+                        padding-right: 12px;
+                    }
+                    &.currency {}
+                    &.remove-icon {
+                        width: 45px;
+                        padding-right: 12px;
+                        text-align: right !important;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+    &--flight-detail {
+        width: 720px;
+        .overbooking {
+            background-image: repeating-linear-gradient(135deg, #FFF, #FFF 3px, #ffe9b6 3px, #ffe9b6 6px);
+        }
+        .overbook-indicator {
+            font-size: 11px;
+            color: #fff;
+            background-color: #f0ad4e;
+            padding: 0px 3px;
+        }
+        &__summary {
+            .itinerary {
+                clear: left;
+                font-weight: 600;
+                line-height: 20px;
+                padding: 10px 0;
+                border-bottom: 1px solid #ccc;
+                .flight-date {
+                    font-size: 1.0rem;
+                    font-weight: 600;
+                }
+                .flight-time {
+                    font-size: 2.0rem;
+                    font-weight: 400;
+                }
+                .flight-airport {
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                }
+                &__departure {
+                    padding-left: 8px;
+                    padding-right: 8px;
+                }
+                // End: departure
+                &__spacer {
+                    width: 60px;
+                    text-align: center;
+                    padding-left: 8px;
+                    padding-right: 8px;
+                    .icon-plane-departure-small-grey {
+                        background-position: -21px -278px;
+                        background-image: url("../assets/icons-com.png");
+                        background-color: transparent;
+                        width: 17px;
+                        height: 17px;
+                        display: inline-block;
+                        line-height: 14px;
+                        vertical-align: 15px;
+                        margin-top: 1px;
+                    }
+                }
+                // End: spacer
+                &__arrival {
+                    padding-left: 8px;
+                    padding-right: 8px;
+                }
+                // End: arrival
+                &__routing {
+                    padding-left: 8px;
+                    padding-right: 8px;
+                    font-size: 1.1rem;
+                    margin: 10px 15px 0 60px;
+                    text-align: center;
+                    vertical-align: top;
+                    .heading {
+                        font-weight: 700;
+                    }
+                    &__connection {}
+                }
+                // End: routing
+            }
+            // End: itinerary
+        }
+        // End: flight-detail__divider__summary
+        &__divider {}
+        // End: flight-detail__divider
+        &__flights {
+            padding: 8px 0 0;
+            max-height: 400px;
+            overflow-y: scroll;
+            .segment {
+                padding: 8px;
+                .icon {
+                    &.icons-seat-map-jump-sm {
+                        vertical-align: -8px;
+                        margin-right: 5px;
+                    }
+                }
+                .select-seat {
+                    float: right;
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+                &__summary {
+                    &__origin-dest {
+                        line-height: 14px;
+                        margin-bottom: 5px;
+                        font-weight: 600;
+                    }
+                    &__times {
+                        font-size: 1.1rem;
+                        margin-bottom: 8px;
+                    }
+                    &__flight-equipment {
+                        margin: 10px 0 6px 0;
+                        .icon-logo-united-small {
+                            background-image: url("../assets/icons-com.png");
+                            background-position: -74px -362px;
+                            background-color: transparent;
+                            width: 16px;
+                            height: 13px;
+                            display: inline-block;
+                            line-height: 14px;
+                            margin-top: 1px;
+                            vertical-align: -2px;
+                        }
+                        // End: united logo
+                        .icon-logo-star-alliance {
+                            background-image: url("../assets/icons-com.png");
+                            background-position: -53px -361px;
+                            width: 14px;
+                            height: 14px;
+                            display: inline-block;
+                            line-height: 14px;
+                            margin-top: 1px;
+                            vertical-align: -2px;
+                        }
+                        .flight-number {
+                            //margin-left:7px;
+                            font-weight: 600;
+                        }
+                        .advisory-blue {
+                            color: #1676c6;
+                            font-weight: 600;
+                        }
+                    }
+                    // End: Flight Equipment
+                }
+                // End: Summary
+                &__advisories {
+                    float: left;
+                    list-style-image: none;
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 8px 0 0;
+                    border: 0;
+                    font-size: 1.1rem;
+                    color: #000;
+                    li {
+                        list-style-image: none;
+                        list-style-type: none;
+                        padding-right: 40px;
+                        margin-top: 5px;
+                        float: none;
+                        vertical-align: top;
+                        .icon {
+                            vertical-align: top;
+                            margin-top: 6px;
+                            margin-right: 10px;
+                        }
+                    }
+                    &__wrap {
+                        display: inline-block;
+                    }
+                    &__messages {
+                        padding: 0;
+                        margin: 0;
+                        color: #000;
+                        font-weight: 600;
+                    }
+                }
+                // End: Advisories
+                &__properties {
+                    float: right;
+                    text-align: left;
+                    width: 50%;
+                    padding: 8px 0;
+                    &__list {
+                        padding: 0;
+                        margin-top: 10px;
+                        float: none;
+                        vertical-align: top;
+                        list-style: none;
+                        li {
+                            display: inline-block;
+                            margin-left: 15px;
+                            &:first-child {
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                    //End: properties__list
+                }
+                // End: properties
+            }
+            // End: segment
+            .connection-separator {
+                text-align: center;
+                position: relative;
+                margin: 10px;
+                &:before {
+                    border-top: 1px dashed #ccc;
+                    content: '';
+                    margin: 0 auto;
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    width: 100%;
+                    z-index: 1;
+                }
+                span {
+                    color: #666;
+                    background-color: #fff;
+                    font-size: 1.1rem;
+                    position: relative;
+                    z-index: 5;
+                    padding: 0 10px;
+                }
+                .icon {
+                    z-index: 4;
+                    position: relative;
+                    vertical-align: -4px;
+                    padding: 0 10px;
+                    margin-left: 0px;
+                }
+            }
+        }
+        // End: flight-detail__segment
+    }
+    // End: popover--flight-detail
+    &--traveler {
+        width: 720px;
+        h3 {
+            color: #3c3c3c;
+            float: left;
+            font-size: 1.4rem;
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+            width: auto;
+        }
+        h4 {
+            text-align: left;
+            margin: 0 10px;
+            float: left;
+            line-height: 32px;
+            font-size: 1.5rem;
+            color: #013159;
+        }
+        h5 {
+            color: #3c3c3c;
+            font-size: 1.4rem;
+            margin: 0 0 10px 0;
+        }
+        h6 {
+            color: #3c3c3c;
+            font-size: 1.2rem;
+            font-weight: normal;
+            margin: 0 0 5px 0;
+        }
+        hr {
+            clear: both;
+        }
+        th {
+            text-align: right;
+            padding-right: 4px;
+        }
+        .customer-detail {
+            background-color: white;
+            border: 1px solid lightgrey;
+            font-size: 1.1rem;
+            margin: 0;
+            padding: 15px;
+            &--pnr-summary {
+                margin-bottom: 0;
+            }
+            &--seats {
+                margin: 10px 0 5px;
+            }
+            .tools {
+                float: right;
+                .icon {
+                    margin: 7px 10px 0 5px;
+                }
+            }
+            &__left-side {
+                border-right: 1px solid lightgrey;
+            }
+            .table-container {
+                padding-bottom: 10px;
+                overflow-x: auto;
+            }
+            // End: table-container
+            .table {
+                width: 100%;
+                &__head {
+                    th {
+                        padding-left: 8px;
+                        font-weight: 600;
+                        font-weight: normal;
+                        text-align: left;
+                    }
+                }
+                &__content {
+                    td {
+                        text-align: left;
+                        border-bottom: 1px solid #ccc;
+                    }
+                    .icon {
+                        &.icons-airplane-red {
+                            margin-left: 3px;
+                            vertical-align: -1px;
+                        }
+                        &.icons-cog-micro {
+                            margin-left: 3px;
+                        }
+                    }
+                }
+            }
+            .vertical-divider {
+                border-right: 1px solid lightgrey;
+                padding-right: 4px;
+                margin-right: 4px;
+            }
+            .space-after {
+                padding-left: 4px;
+            }
+        }
+        // End: customer-detail
+    }
+    // End: popover--traveler
+    &--upgrades {
+        width: 720px;
+        a {
+            cursor: pointer;
+        }
+        &__option {
+            clear: left;
+            margin-bottom: 10px;
+            .total {
+                float: right !important;
+                margin: 0 10px;
+                line-height: 32px;
+                font-size: 1.4rem;
+                color: #013159;
+            }
+        }
+    }
+    // End: popover--upgrades
+    &--upgrade-certificates {
+        width: 720px;
+        //.module__header
+        .module {
+            &__header {}
+            &__sub-header,
+            &__sub-content {
+                width: 98%;
+                margin-left: 10px;
+            }
+            &__sub-content {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    // End: popover--upgrade-certificate
+    &--upgrade-standby {
+        .modal-upgrade-standby {
+            .modal-dialog {
+                width: auto;
+            }
+        }
+    }
+    // End: popover--upgrade-standby
+    &--uto {
+        width: auto;
+        min-width: 520px;
+        .table-container {
+            width: 100%;
+            table {
+                width: 100%;
+            }
+        }
+        .module__sub-header {
+            padding: 8px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            border: 0;
+            border-radius: 0;
+        }
+        &__option {
+            clear: left;
+            margin-bottom: 10px;
+            .align-center span {
+                vertical-align: middle;
+            }
+            .total {
+                float: right !important;
+                margin: 0 10px;
+                line-height: 32px;
+                font-size: 1.4rem;
+                color: #013159;
+            }
+            .lof-holder {
+                width: 60px;
+            }
+            .edit-icons {
+                margin: 5px 0 0 -5px;
+                float: left;
+                .icon {
+                    vertical-align: -4px;
+                    margin-left: 10px;
+                    &:last-child {
+                        margin-left: 10px;
+                        margin-top: 2px;
+                    }
+                }
+                .icons-pencil {
+                    margin: 0px 0px 0px 10px;
+                }
+            }
+            &__charges {
+                padding: 0 25px 0 15px;
+                width: auto;
+            }
+            .table-container strong {
+                padding: 0 0 2px;
+            }
+            .lof-item {
+                height: 24px;
+                text-align: left;
+            }
+            a {
+                cursor: pointer;
+            }
+        }
+    }
+    &--mixed-upgrade-pending {
+        width: 155px;
+        .upgrade-wait-list {
+            color: #EDB72B;
+            vertical-align: -2px;
+            font-size: 1.8rem;
+            line-height: 1.7;
+        }
+    }
+    &--mixed-upgrade-confirmed {
+        width: 155px;
+        .upgrade-confirmed {
+            color: #228b22;
+            vertical-align: -2px;
+            font-size: 1.8rem;
+            line-height: 1.7;
+        }
+    }
+    &--mixed-upgrade-pending,
+    &--mixed-upgrade-confirmed {
+        font-size: 1.0rem;
+        .not-valid {
+            color: #cd202c;
+        }
+    }
+    &--rpu-detail,
+    &--gpu-detail {
+        width: 115px;
+    }
+    .waivefees-link {
+        cursor: pointer;
+    }
+    .fee-description {
+        text-align: left;
+    }
+    // End: Custom Popover Styles
+}
+
+// End: .popover  (BS)

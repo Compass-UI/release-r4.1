@@ -1,0 +1,105 @@
+.footer--fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1035;
+    background-color: #E2E2E2;
+    /*background-color: #fcfcfc;*/
+}
+
+.footer {
+
+    &--fare-lock-content {
+        width: 100%;
+
+        .risk-free-policy {
+            padding: 15px;
+            width: 75px;
+        }
+    }
+
+    &--fare-lock-banner {
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        padding: 10px 15px;
+
+
+        .icon {
+            &.icons-fare-lock {
+                height: 30px;
+                margin: -1px 0 0 5px !important;
+                vertical-align: -8px;
+            }
+        }
+
+        .btn {
+            padding: 5px 15px;
+
+            &.btn-open-fare-lock, &.btn-apply-fare-lock, &.btn-cancel-fare-lock {
+                height: 40px;
+
+                span {
+                }
+            }
+        }
+
+        .offer-button {
+            display: flex;
+
+            @media(min-width:1350px) {
+                width: 25%;
+            }
+
+            @media(min-width:1200px) and (max-width:1349px) {
+                width: 30%;
+            }
+
+            @media(min-width:992px) and (max-width:1199px) {
+                width: 40%;
+            }
+
+            @media(max-width:991px) {
+                width: 50%;
+            }
+
+            .btn-open-fare-lock {
+                width: calc(100% - 15px);
+            }
+        }
+
+        .apply-buttons {
+            display: flex;
+            width: 60%;
+            flex-grow: 1;
+            justify-content: flex-end;
+
+
+            @media(min-width:1350px) {
+                width: 75%;
+            }
+
+            @media(min-width:1200px) and (max-width:1349px) {
+                width: 70%;
+            }
+
+            @media(min-width:992px) and (max-width:1199px) {
+                width: 60%;
+            }
+
+            @media(max-width:991px) {
+                width: 50%;
+            }
+
+            .btn {
+                margin-left: 15px;
+            }
+
+            .btn-apply-fare-lock, .btn-cancel-fare-lock {
+                line-height: 30px;
+                width:140px;
+            }
+        }
+    }
+}  /* End: footer */

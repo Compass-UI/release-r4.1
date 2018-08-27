@@ -1,0 +1,89 @@
+.sidebar__wrapper {
+  padding-left:0 !important;
+  //padding-top:50px;
+}
+
+.sidebar {
+  	background:#fff;
+  	//padding:15px;
+  	padding:0 15px;
+
+  .travelers {
+
+	&__wrapper {
+	  //padding-right:0px;
+	}
+
+	.panel-body {
+	  padding: 0 5px;
+	}
+
+	&__icon-wrapper {
+	  float:right;
+	  margin-top: 0px;
+
+	  .icon {
+		margin-left: 5px;
+		cursor: pointer;
+	  }
+	} // icon-wrapper
+
+	&__list {
+
+	  .edit-icons {
+		position: absolute;
+		right: 5px;
+		top: 6px;
+
+		.icon {
+		  margin-right: 5px;
+		}
+	  }
+
+	  .item {
+		display:block;
+		border-bottom:1px solid #dadada;
+		float:none;
+		padding:5px;
+		position:relative;
+
+		&:last-child {
+		  border-bottom:0;
+		}
+
+		p {
+		  margin:3px;
+		}
+
+		.child-age-input {
+		  width: 35px;
+		  //height: 15px;
+		  text-align:center;
+		}
+
+		.icon {
+		  //vertical-align:-10px;
+		  &.icons-badge-mp {
+			vertical-align:-6px;
+		  }
+
+		  &.icons-drop-arrow-right {
+			vertical-align:0;
+		  }
+		  &.icons-trash-can-2 {
+			vertical-align:-4px;
+		  }
+
+		  &.icons-pencil {
+			vertical-align:-4px;
+		  }
+
+		} // End Icon
+
+	  } // End: item
+
+	}
+
+  } // End pnrsummary__travelers
+
+}

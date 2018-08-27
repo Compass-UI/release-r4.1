@@ -1,0 +1,514 @@
+.merchandise__container {
+  paddding:0;
+}
+.merchandise {
+  background: #fff;
+
+  &.module {
+    margin-bottom:0;
+  }
+
+  &__nav {
+    margin: 15px auto;
+
+    &--option {
+      margin: 5px;
+      color: #03c;
+      font-size:1.4rem;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+  } // End: Nav
+
+  &__popular-offers {
+    margin:15px auto 30px;
+
+    .offer {
+
+      img {
+        width:100%;
+      }
+
+      &__description {
+        display:block;
+        padding:8px 0;
+        background:#345a7a;
+
+        .add {
+          float:left;
+          margin:0 10px;
+        }
+
+        h3 {
+          color:#fff;
+          font-size:1.6rem;
+          margin:0;
+          padding-top:2px;
+        }
+
+
+
+      }
+
+      &--car {
+
+      }
+
+      &--baggage {
+
+      }
+
+      &--club {
+
+      }
+
+    } // End: Offer
+
+  } // End: merchandise__popular-offers
+
+  &__e-plus {
+    padding-bottom:30px;
+
+    .module__header {
+      margin-bottom:15px;
+    }
+
+    .tab-content {
+
+      .tab-pane {
+        padding-top:15px;
+
+      }
+
+    } // End: tab-content
+
+    &__sidebar {
+      background:#eeeeee;
+      padding:15px;
+      text-align:center;
+      margin-top:50px;
+
+      .uib-daypicker {
+        thead {
+          tr {
+            th {
+              .btn {
+                padding:3px 5px   ;
+              }
+            }
+          }
+        }
+
+        small {
+          font-size:85%;
+        }
+
+        .uib-day {
+          .btn {
+            padding:3px 5px !important;
+          }
+
+        }
+      }
+
+
+      .line {
+        border-bottom:1px solid #ccc;
+        padding:5px 0;
+
+        h4 {
+          font-size:1.4rem;
+          font-weight:bold;
+          margin:0 0 5px 0;
+        }
+
+        &--subscription-price {
+          .price {
+            font-size:1.3rem;
+            font-weight:bold;
+          }
+
+        }
+
+        &--total-price {
+          padding:15px 0;
+
+          h4 {
+            font-size:1.8rem;
+            font-weight:bold;
+          }
+
+          .price {
+            margin-top:10px;
+            font-size:20px;
+            font-weight:bold;
+            color:#46a546;
+          }
+        }
+
+        &--init-fee {
+          p {
+            font-size:1.3rem;
+            font-weight:bold;
+            margin:0px;
+          }
+        }
+
+        &--total-price {
+          border-bottom:0px;
+          text-align:center;
+
+          .checkbox {
+
+          }
+
+        }
+
+        &--purchase-btn {
+          border-bottom:0px;
+          text-align:center;
+        }
+
+        &--gift-box {
+          border-bottom:0px;
+
+          p {
+            display:table;
+            margin-bottom:0px;
+
+            input[type="checkbox"] {
+              display:table-cell;
+              vertical-align:-2px;
+            }
+
+            label {
+              display:table-cell;
+              padding-left:10px;
+              text-align:center;
+            }
+
+          }
+
+        }
+
+      }
+
+    } // End: Sidebar
+
+    &__purchase {
+
+      &__headline {
+
+        margin:35px auto;
+
+        .icon {
+          display:inline-block;
+          width:60px;
+
+          &.icon-region {
+            width: 60px;
+            height: 48px;
+            display: inline-block;
+            vertical-align:-10px;
+          }
+
+          &.icon-beneficiaries-subscription {
+            width: 48px;
+            height: 48px;
+            margin-right:12px;
+            display: inline-block;
+            vertical-align:-10px;
+          }
+
+        } // End: icon
+
+        .description {
+          display:inline-block;
+          padding-left:25px;
+
+          h3 {
+            font-size:1.4rem;
+            font-weight:bold;
+            margin:0px;
+            line-height:15px;
+          }
+
+        }
+
+      } //End: Headline
+
+      &__options {
+        text-align:center;
+        border-right: 1px solid #E1E1E1;
+        border-top: 1px solid #E1E1E1;
+        margin-bottom: 35px;
+
+        .options-wrapper {
+          list-style: none;
+          margin:0;
+          padding:0;
+          display: flex;
+          flex-direction:row;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          align-items: stretch;
+
+          li {
+            display: block;
+            z-index: 10;
+            float: left;
+            margin-left: 0;
+            margin-bottom: 6px;
+            cursor: pointer;
+            background-color: #fff;
+            border-bottom: 1px solid #E1E1E1;
+            -moz-box-shadow: 6px 3px 7px #E1E1E1;
+            -webkit-box-shadow: 6px 3px 7px #E1E1E1;
+            box-shadow: 6px 3px 7px #E1E1E1;
+
+            &:first-child {
+              border-left: 1px solid #DCDDDE;
+            }
+          }
+
+          .option {
+            width:25%;
+
+            &.active {
+              margin-top: -8px;
+              border-left: 1px solid #DCDDDE;
+              border-right: 1px solid #dcddde;
+              border-bottom: 1px solid #dcddde;
+              -moz-box-shadow: 6px 3px 7px #E1E1E1;
+              -webkit-box-shadow: 6px 3px 7px #E1E1E1;
+              box-shadow: 6px 3px 7px #E1E1E1;
+              margin-bottom: 0;
+              overflow: hidden;
+              background: #fff;
+              z-index: 20;
+              position: relative;
+
+              .option__header {
+                background:#567d8f;
+                z-index:400;
+
+                .icon {
+                  margin-top:15px;
+
+                  &-cards-checbok {
+                    background-position:-200px -50px;
+                  }
+
+                }
+
+              }
+
+              .option__content {
+                z-index:200;
+                padding-bottom:23px;
+              }
+
+            } // End: active tab styles
+
+            &--cont-usa {
+              width:25%;
+            }
+            &--n-c-america {
+              width:25%;
+            }
+            &--intra-asia {
+              width:25%;
+            }
+            &--global {
+              width:25%;
+            }
+            &--subscriber {
+              width:33.3333%;
+            }
+            &--one-companion {
+              width:33.3333%;
+            }
+            &--entire-res {
+              width:33.3333%;
+            }
+
+            &__header {
+              height:39px;
+              position:relative;
+
+              .icon {
+                margin-top:10px;
+                display:inline-block;
+
+                &-cards-checbok {
+                  width: 33px;
+                  height: 30px;
+                }
+
+              }
+
+            } // End: option__header
+
+            &__content-wrapper {
+
+            }
+
+            &__content {
+              border-top-right-radius: 8px;
+              -moz-border-radius-topright: 8px;
+              -webkit-border-top-right-radius: 8px;
+              border-top-left-radius: 8px;
+              -moz-border-radius-topleft: 8px;
+              -webkit-border-top-left-radius: 8px;
+              background-color: #f5f6f6;
+              margin:20px 10px 0 10px;
+              padding: 10px;
+              border-left: 2px solid #dcddde;
+              border-top: 2px solid #dcddde;
+              text-align: center;
+              position: relative;
+              height:221px;
+
+              p {
+                font-size:1.5rem;
+                color:#565656;
+                font-weight:600;
+
+                &.option__content__pricing {
+                  color:#565656;
+                  font-size:17px;
+                }
+              }
+
+              &__pricing {
+                width:100%;
+                position:absolute;
+                bottom:0px;
+                left:0;
+                color:#577e91;
+                padding-top:15px;
+                padding-bottom:15px;
+
+                .icon {
+                  display:inline-block;
+
+                  &-check-list {
+                    width: 18px;
+                    height: 18px;
+                    vertical-align:-4px;
+                    margin-right:5px;
+                  }
+
+                }
+
+              } // End: e-plus__content__pricing
+
+            }
+
+          } // End: option
+
+        } //End: options-wrapper
+
+      } // End: merchandise__e-plus__purchase__options
+
+    } // End: Purchase Tab
+
+  } // End: e-plus
+
+
+  &__purchase {
+    display: block;
+    margin: 15px;
+
+
+    &__message {
+      float: left;
+      display: inline-block;
+      width: 85%;
+      padding-left: 20px;
+    }
+
+    &__cards {
+      border-right: 1px solid #E1E1E1;
+      border-top: 1px solid #E1E1E1;
+      margin-bottom: 35px;
+      width: 98.2%;
+
+      .li {
+
+        :first-child {
+          border-left: 1px solid #dcddde;
+        }
+
+        &.list-item-header {
+          height: 39px;
+          position: relative;
+          text-align: center;
+        }
+      }
+
+      &__col175 {
+        width: 175px;
+      }
+    }
+
+  }
+
+  &__purchase-step2 {
+    width: 100%;
+    display: block;
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+    .table-header {
+      background: #ddddd9;
+      width: 100%;
+      margin-top: -17px;
+      display: block;
+      border-bottom: 2px solid #a7a7a6;
+      padding-left: 10px;
+
+      h3 {
+        font-size: 1.1666667em;
+        padding-top: 1.083333333em;
+        padding-bottom: 0.75em;
+      }
+    }
+
+    .table-wrapper {
+      display: block;
+      padding: 12px;
+      color: #565656;
+    }
+  }
+
+
+  &__search {
+    float: right;
+
+    &--img {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      position: relative;
+      left: -24px;
+      top: 7px;
+      background-color: Transparent;
+      background-repeat: no-repeat;
+      border: none;
+      cursor: pointer;
+      overflow: hidden;
+      outline: none;
+      /*background-image: url("./assets/merchandise/search_black_16x16.png");*/
+    }
+
+  }
+
+
+
+  &__main_content {
+    margin: 15px;
+  }
+}

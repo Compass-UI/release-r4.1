@@ -1,0 +1,393 @@
+// Start: Traveler Tally
+
+.traveler {
+
+     
+
+    &__selection-menu {
+        display:flex;
+        flex-direction: row;
+        justify-content:flex-start;
+        flex-wrap: wrap;
+        float:none;
+        margin:15px 0;
+        z-index:400;
+
+        @media(max-width:991px) {
+        }
+
+        .btn-style-2 {
+          border: 1px solid #9a9a9a;
+          padding-left:10px;
+          padding-right:10px;
+
+          &:not(:first-child) {
+              margin-left:5px;
+          }
+
+          &.active {
+                background-color: #2f6a9a;
+                border-top-color: #012a4c;
+                border-bottom-color: #2f6a9a;
+                color: #fff;
+          }
+        }
+
+      } // End: Traveler Selection
+
+   .phone-code {
+	    width:50px;
+	    display:inline-block !important;
+	}
+
+	.phone-number {
+	    width:135px;
+	    display:inline-block !important;
+	}
+	
+    //start: city dropdown
+	&__contact-information-city {
+
+        .caret{
+            color: #003399;
+            border-top: 4px solid;
+            border-right: 4px solid transparent;
+            border-left: 4px solid transparent;
+        }
+	
+	    .citydropdown {	
+	        position: absolute;
+	        top: 33px;
+	        right: 25px;	
+	    }
+       
+	}
+
+    // Start: Traveler Controls
+    &__controls {
+
+        &__list {
+            margin:0 auto;
+            padding:0;
+            list-style:none;
+            display:block;
+
+            li:nth-child(even) {
+                background:#fafafa;
+            }
+
+            .item {
+                padding:1px 0;
+                line-height:26px;
+
+                &:first-child {
+                    padding-top:0;
+                }
+
+                &__type {
+                    text-align:left;
+                    //width:140px;
+					cursor: pointer;
+                    display:inline-block;
+                    margin-left:3px;
+                    font-size:1.2rem;
+
+                }
+
+                &__quantity {
+                    display:inline-block;
+                    text-align:center;
+                    float:right;
+                    width:25px;
+                    height:25px !important;
+                    margin-right:15px;
+                    margin-bottom:0 !important;
+                    border-color:#bbb;
+                    background:#fafafa;
+                    color:#003399;
+                    opacity:1 !important;
+
+                    @media(max-width:1099px) {
+                        margin-right:5px;
+                    }
+                }
+
+                &__decrement-btn, &__increment-btn  {
+                    height:25px;
+                    width:25px;
+                    text-align:center;
+                    display:inline-block;
+                    font-size:1.8rem;
+                    border:1px solid #bbb;
+                    color:#003399;
+                    background:#fafafa;
+                    text-decoration:none;
+                    -webkit-border-radius: 2px;
+                    border-radius: 2px;
+                    float:right;
+                    margin-left:5px;
+                    line-height:23px;
+
+
+                    &:hover {
+                        background:#D3D3D3;
+                        text-decoration:none;
+                    }
+
+                    &:focus {
+                        text-decoration:none;
+                    }
+
+                } // End: increment / decrement btns
+
+            } // End: .item
+
+        } // End: Travelers__Controls__List
+
+    } // End: Traveler Controls
+
+    // Start: Traveler Special PTC
+    &__special-ptc {
+        display:table;
+        margin:8px 0;
+
+        &__checkbox {
+            display:table-cell;
+            vertical-align:middle;
+            width:25px;
+            padding-left:3px;
+
+            input[type="checkbox"]:checked:after {
+                position:absolute;
+                top:-1px;
+                left:2px;
+            }
+
+        }
+
+        &__description {
+            display:table-cell;
+            vertical-align:middle;
+            .description-text {
+                font-size:1.2rem;
+            }
+        }
+
+    }
+    // Start: Traveler Special PTC
+
+    // Start: Traveler Promo
+    &__promo {
+
+        position:relative;
+
+        .ui-select-dropdown {
+            // To Fix Offset on UI Select drop-down
+            margin-top:-3px !important;
+        }
+
+        &__choose-action {
+            margin-top:10px !important;
+        }
+
+        &__field {
+
+        }
+
+        &__promo-result{
+            margin-top: 15px;
+        }
+
+        label {
+            width:100%;
+        }
+
+        &__dropdown-container {
+            border:1px solid #ddd;
+        }
+
+        ul.promoList {
+            width: 100%;
+            max-height: 215px;
+            margin:0;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            box-shadow: none;
+            background: white;
+            max-height: 173px;
+        }
+
+        .form-group {
+            margin-bottom:8px;
+        }
+
+        input {
+            display: block;
+            width: 100%;
+            height: 26px;
+            padding: 4px 6px;
+            font-size:1.2rem;
+            line-height: 1.42857;
+            color: #003399;
+            background-color: #fafafa;
+            background-image: none;
+            border: 1px solid #003399;
+            border-radius: 3px;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+            -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+            -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+            transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+            position:relative;
+        }
+
+        .caret {
+            position: absolute;
+            right: 25px;
+            top: 55px;
+            pointer-events: none;
+        }
+
+    }
+    // End: Traveler Promo
+
+    // Start: Traveler Count
+    &__count {
+
+        &__list {
+            list-style:none;
+            padding:0;
+
+            .check {
+                display:table-cell;
+                vertical-align:middle;
+
+                input[type="checkbox"] {
+                    vertical-align:0;
+                }
+            }
+
+            .text {
+                display:table-cell;
+                vertical-align:middle;
+                padding-left:10px;
+            }
+        }
+    }
+    // End: Traveler Count
+    
+    // Traveler__Passenger-Table-Container 
+    &__passenger-table-container {
+
+        .passenger-table {
+           
+                width: 100%;
+                background-color: transparent !important;
+                border-collapse: collapse;
+                border-spacing: 0;
+                display: table;
+                border-spacing: 2px;
+                border-color: grey;
+
+            &__header {
+                border-bottom: 1px solid #9c9c9c;
+                display: table-row;
+
+                &__head-item-select {
+                    width: 8%;
+                }
+
+                th {
+                    text-align:left;
+                }
+
+                &__head-item {
+                    width: 27%;
+                    text-transform: none;
+                    font-weight: 400;
+                    padding: 0 0 5px;
+                    font-size:1.2rem;
+                    line-height: 1;
+
+                    &:last-child {
+                        width: 10%;
+                    }
+                }
+            }
+
+            &__row {            
+                
+
+                &__data {
+                    padding: 3px 0;
+                    border-bottom: 1px dotted #c0c0c0;
+
+                    .child-age-input {
+                        width: 35px;
+                        height: 20px;
+                        text-align: center;
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                    input { 
+                        margin: 0 !important;
+                    }                
+                }
+            }
+        }
+    }    
+    // Traveler__Passenger-Table-Container 
+
+    // Start: Traveler Revenue/Award Toggle
+    &__revenue-toggle {
+
+    }
+    // End: Traveler Revenue/Award Toggle
+
+    // Start: Traveler Country
+    &__country {
+        padding-top:3px;
+        label {
+            display:block;
+            width:100%;
+            //margin:0px auto;
+            select {
+                height:30px;
+            }
+
+            .form-control {
+                display: block;
+                width: 100%;
+                height: 26px;
+                padding: 4px 6px;
+                font-size:1.2rem;
+                line-height: 1.42857;
+                color: #003399;
+                background-color: #fafafa;
+                background-image: none;
+                border: 1px solid #003399;
+                border-radius: 3px;
+                -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+                box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+                -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+                -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+                transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+            }
+        }
+    }
+    // End: Traveler Country
+
+    // Start: advanced-filter-toggle
+    &__advanced-filter-toggle {
+        padding-top:20px;
+
+        .btn {
+            width: 180px;
+            height: 30px;
+        }
+
+    }
+    // End: advanced-filter-toggle
+
+}

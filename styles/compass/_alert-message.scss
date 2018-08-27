@@ -1,0 +1,131 @@
+﻿.alert-warning {
+    background-color: rgba(240, 140, 0, 0.35);
+    color: #F08C00;
+}
+.message-alert-wrapper {
+    position: absolute;
+    z-index: 999;
+    height: auto;
+    width: calc(100% - 30px);
+}
+.search-message-alert-wrapper {
+    position: absolute;
+    z-index: 999;
+    height: auto;
+    width: 94%;
+    margin-left: 10%;
+}
+.search-message-alert-wrapper-umnr {
+    position: fixed;
+    z-index: 999;
+    height: auto;
+    width: 80%;
+  //margin-left: 5%;
+}
+.changemp-section {
+    background-color: #3095B4;
+    margin: 0 0 0 300px;
+    width: 50%;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.4rem;
+    padding: 10px 0 10px 10px;
+	.item{
+	float: left;
+    width: 70%;
+    margin-left: 5px;
+	padding: 10px 5px 10px 5px;
+	}
+}
+.changemp-icon{
+    font-size: 21px;
+    float: left;
+    width: 10%;
+    height: 40px;
+    padding: 10px 5px 10px 5px;
+    margin-top: 8px;
+}
+
+.bsf-alert-message {
+    width: 85% !important;
+}
+
+.login-alert-wrapper {
+    font-size: 20px;
+}
+
+.message-alert {
+    width:100%;
+    height:70%;
+
+    .alert {
+        border-width:2px !important;
+        -webkit-box-shadow: 0 0 15px 1px rgba(0,0,0,0.33);
+        -moz-box-shadow: 0 0 15px 1px rgba(0,0,0,0.33);
+        box-shadow: 0 0 15px 1px rgba(0,0,0,0.33);
+    }
+
+    &:first-child {
+        .message-alert__block {
+            margin-top: 0;
+			display: flex;
+        }
+		.msg-color{
+		color: #3095B4;
+		}
+    }
+        
+    &__block {
+        margin-top: 10px;
+		display: flex;
+
+        .content {
+            width: 60%;
+            margin: 0 auto;
+            font-weight:500;
+            font-size:1.4rem;
+
+        }
+    }
+
+    &--codeshare {
+
+        .bright-blue {
+            color: #1676c6;
+            font-weight: 600;
+        }
+        }
+
+    &--cog {
+    }
+
+    &--rbf {
+        position:absolute; 
+        z-index:4; 
+        margin-left:60px;
+        margin-top:40px;
+    }
+
+    &--bsf {
+
+        .message-alert__block {
+
+        }
+    }
+
+    // &--umnr {
+    //         width:40%;
+    //         height:40%;
+    //         left:200px;
+    //         position:absolute;
+    //         height:40%;
+    // }
+
+    &--nonseamless {
+    }
+
+    &--pax-count {
+    }
+
+    &--pax-mismatch {}
+}

@@ -1,0 +1,447 @@
+.documentation {
+  background:#fff;
+  margin-top: 15px;
+
+  button {      
+      .icons-add-2 {
+        vertical-align:0;
+        margin:0;
+        padding:0;
+      }
+  }
+
+  &.module {
+    &__header {
+      padding-bottom:10px;
+    }
+  }
+
+  &__error-wrapper {
+      margin-top:10px 15px 0 15px;
+  }
+
+  &__expand-collapse-information {
+    padding:0;
+    margin-top:15px;
+
+    &__rule-categories, &__fare-rules {
+
+      .btn {
+        width:100%
+      }
+
+    }
+
+    &__additional-comments {
+
+      .form {
+
+      }
+
+      .add-comment {
+        padding:5px 6px 3px 6px;
+        border:1px solid #004499;
+      }
+
+      input[type="text"] {
+        background:#fff;
+      }
+
+    }
+
+  } // End: Expand Collapse Information Row
+
+  &__categories {
+
+    &__list {
+      padding:10px 0 0;
+      margin:0;
+      columns: 4;
+      column-count: 4;
+      column-gap:5px;
+      -moz-columns: 4;
+      -moz-column-count: 4;
+      -moz-column-gap: 5px;
+      -webkit-columns: 4;
+      -webkit-column-count: 4;
+      -webkit-column-gap: 5px;
+
+      .item {
+        height:32px;
+        line-height:32px;
+        padding-left:10px;
+        margin-bottom:5px;
+        border:1px solid #c0c0c0;
+        border-radius:3px;
+        list-style:none;
+        overflow:hidden; // IE10+ Fix
+
+        &.selected {
+          background-color: #FEF4DD;
+        }
+
+        input, label {
+          cursor:pointer;
+        }
+
+        .label-fare-rule-category input[type="radio"],input[type="checkbox"]{
+          vertical-align: -2px;
+          margin-right: 0;
+          margin-top: 0;
+        }
+
+        i {
+          display: inline-block;
+          line-height: 32px;
+          float: right;
+          margin-right: 11px;
+          cursor:pointer;
+        }
+
+        .popover {
+          white-space: nowrap;
+        }
+
+      }
+
+    }
+
+  } // End: rule-categories
+
+  &__fare-rules {
+
+    .table {
+      border:1px solid #ccc;
+      margin-top:5px;
+
+      &__head {
+        //border:1px solid #c0c0c0;
+        border-bottom:0;
+
+        tr {
+
+          th {
+            border-top: 0;
+            border-bottom: 1px solid #ccc;
+          }
+
+        }
+
+      }
+
+      &__content {
+        border:1px solid #c0c0c0;
+        border-top:0;
+
+        tr {
+
+          td {
+
+            &.checkbox {
+              margin-top: 0px !important;
+              margin-bottom:0px;
+
+              input[type="checkbox"] {
+                position:relative;
+                margin:0 auto;
+                width:13px;
+                height:13px;
+              }
+
+            }
+
+          }
+
+        }
+
+        .selected {
+          background-color: #FEF4DD;
+        }
+      }
+
+    }
+
+  } // End: __fare-rules
+
+  &__compare-rule-categories {
+    float: right;
+    margin-right: 16px;
+    margin-top: 10px;
+  } // End: __compare-rule-categories
+
+  &__ticketing-terms {
+    clear:both;
+
+    h4 {
+      color:#003399;
+      padding:10px 0 0 0;
+      font-size:1.5rem;
+    }
+
+    .additionalComment-true, .additionalRemark-true {
+      text-decoration: line-through;
+      color: grey;
+    }
+
+    &__advisements {
+
+      &__fare-rules-list, &__disclosures-list, &__additional-comments-list {
+        list-style: none;
+        padding: 0 0 0 15px;
+        margin: 0;
+
+
+        li {
+          margin-bottom: 2px;
+
+          .check {
+            display: table-cell;
+            vertical-align: middle;
+          }
+
+          .advisement {
+            display: table-cell;
+            vertical-align: middle;
+            padding-top: 1px;
+            padding-left: 15px;
+          }
+        }
+
+        &.other-fare-rules {
+    
+            .fare-rule-tooltip {
+            cursor: pointer;
+            margin: 0 5px;
+          }
+
+          .popover {
+
+            .arrow {
+
+              &:after {
+                bottom: 1px;
+                border-left-color: transparent !important;
+              }
+            }
+
+            .popover-title {
+              font-size: 12px !important;
+              text-align: left;
+              font-weight: normal;
+            }
+
+            .popover-content {
+              background-color: #fff;
+
+              ul {
+                padding: 0;
+                list-style-type: none;
+                background-color: #fff;
+
+                li {
+                  padding: 2px 15px;
+                  width: 100%;
+                  text-align: left !important;
+                }
+
+                li:nth-of-type(even) {
+                  background-color: #fafafa;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .clear-button {
+      padding: 4px 10px;
+      margin-left: 15px;
+      margin-top: 11px;
+    }
+
+  } // End: __ticketing-terms
+
+  &__rules-compare {
+      margin:15px 0 15px 0;
+
+    .item {
+      flex-wrap: wrap;
+      background-color:#fafafa;
+      border:1px solid #dcdcdc;
+      border-radius:4px;
+      position:relative;
+      margin: 0 5px 0 5px;
+
+      &:first-child {
+        margin-left:15px;
+      }
+
+      &:last-child {
+        margin-right:15px;
+      }
+
+      .module__sub-header {
+          font-size:1.2rem;
+          line-height:13px;
+          padding:10px 5px;
+
+          .fare-basis {
+              color:#000;
+              font-weight:bold;
+          }
+      }
+
+      &__content {
+        padding:10px 10px;
+        clear:left;
+
+        &--padding {
+          padding:10px 10px 50px;
+          clear:left;
+        }
+
+        &--maximum-height {
+          max-height: 319px;
+          overflow-y: scroll;
+        }
+
+        h4 {
+          color:#003399;
+          padding:0;
+          margin:5px 0 10px;
+          font-size:1.3rem;
+        }
+
+        .advisements {
+          list-style: none;
+          padding:0;
+          margin:0;
+
+          li {
+            display:block;
+            margin-bottom:2px;
+            border-bottom:1px solid #dcdcdc;
+            padding:4px 0 5px;
+
+            &:last-child {
+              border-bottom:0;
+            }
+
+            .check {
+              display:table-cell;
+              vertical-align:middle;
+            }
+
+            .advisement {
+              display:table-cell;
+              vertical-align:middle;
+              padding-top:1px;
+              padding-left:10px;
+            }
+
+          } // End: li
+
+        } // End: Advisements
+
+        .additional-comments {
+          position: absolute;
+          left: 0;
+          bottom: 11px;
+          margin: 0 10.5px;
+        }
+
+        .add-comment {
+          padding:5px 6px 3px 6px;
+          border:1px solid #004499;
+        }
+
+        .icons-add-2 {
+          vertical-align:0;
+        }
+
+        input[type="text"] {
+          background:#fff;
+        }
+
+        .categories {
+          font-size:1.1rem;
+          padding-left:15px;
+
+          ul {
+            padding:0;
+            margin:0 8px;
+          }
+
+          li {
+            margin-bottom:5px;
+            border-bottom:1px solid #fcf8e3;
+
+            .rule {
+              display:block;
+              padding:5px 0;
+              list-style-type: disc;
+              border-bottom:1px solid #c0c0c0;
+
+
+              &:first-child {
+                padding-top:0;
+              }
+
+              &:last-child {
+                border-bottom:0;
+              }
+            }
+
+          } // End: li
+
+        } // End: Categories
+
+      } // End: item__content
+
+    }
+
+  }
+
+  &__choose-action {
+    padding:15px 0 15px 0;
+    text-align:right;
+    margin-right: 15px;
+
+    a {
+      margin-left:15px;
+    }
+  }
+  .other-fare-rules-list {
+        flex-direction: column;
+        align-items: flex-start;
+    }  
+
+} // End: documentation
+
+.fare-advisement-modal {
+    display:flex !important;
+    align-items:center;
+
+  .modal-dialog {
+    width:90%;
+  }
+
+}
+
+/* Start: Fare Rules Modal */
+// .fare-rules-modal {
+//   .modal-dialog {
+//     width: 900px;
+//     .modal-content {
+//       height: 600px;
+//       min-width: 900px;
+//       min-height: 600px;
+//       overflow: auto;
+//       resize: both;
+//     }
+//   }
+// }
+/* End: Fare Rules Modal */
+
+

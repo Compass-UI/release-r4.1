@@ -1,0 +1,270 @@
+﻿.fare-lock {
+    // Start: fare-lock modifier classes
+    // Start: fare-lock--footer modifier
+    &--footer {
+        border-top: 1px solid #aaa;
+
+        &__collapse-panel {
+            padding: 15px 15px 5px;
+
+            .wrapper {
+                display: flex;
+            }
+        }
+
+        .fare-lock {
+
+            &__risk-free-policy {
+                justify-content: center;
+                padding-right: 15px;
+
+
+                @media(min-width:1350px) {
+                    width: 30%;
+                }
+
+                @media(min-width:1200px) and (max-width:1349px) {
+                    width: 35%;
+                }
+
+                @media(min-width:992px) and (max-width:1199px) {
+                    width: 40%;
+                }
+
+                @media(max-width:991px) {
+                    width: 50%;
+                }
+            }
+
+            &__offer-panel {
+                border: 1px solid #ccc;
+                height: 220px;
+                padding: 0px;
+
+                @media(min-width:1350px) {
+                    width: 70%;
+                }
+
+                @media(min-width:1200px) and (max-width:1349px) {
+                    width: 65%;
+                }
+
+                @media(max-width:1349px) {
+                    height: 250px;
+                }
+
+                @media(min-width:992px) and (max-width:1199px) {
+                    width: 60%;
+                }
+
+                @media(max-width:991px) {
+                    width: 50%;
+                }
+            }
+
+            &__option {
+                height: 50px;
+            }
+
+            &__conditions {
+                min-height: 50px;
+
+
+                @media(max-width:1349px) {
+                    height: 80px;
+                }
+            }
+        }
+    }
+    // End: fare-lock--footer modifier
+    // Start: fare-lock--popover
+    &--popover {
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .fare-lock {
+            &__logo {
+                .icons-fare-lock {
+                    margin:0 auto;
+                }
+            }
+
+            &__risk-free-policy {
+                width: 100%;
+                margin-bottom:15px;
+            }
+
+            &__offer-panel {
+                width: 100%;
+                padding: 0;
+
+                .minimize {
+                    display: none;
+                }
+            }
+
+            &__option {
+                height: 50px;
+                text-align:left;
+                margin-left:50px;
+
+                &__primary {}
+
+                &__secondary {
+                    padding-left:5px;
+                    padding-right:15px;
+
+                    &:first-child {
+                        margin-left:30px;
+                    }
+                }
+
+            }
+
+            &__conditions {
+                padding:0;
+                margin-top:10px;
+                @include font-size(12);
+
+                .terms-message {
+                    margin-top:15px;
+                }
+            }
+
+            &__actions {
+                margin-top:15px;
+                text-align:center;
+
+                .btn {
+                    margin-right:10px;
+                    &:last-child {
+                        margin-right:0;
+                    }
+                }
+            }
+        }
+    }
+    // End: fare-lock--popover
+    // End: fare-lock modifier classes
+    // Start: Universal Fare-Lock Styles
+    &__logo {
+        .icons-fare-lock {
+            height: 30px;
+            margin: 5px auto 0 auto;
+            display: block;
+        }
+    }
+
+    &__risk-free-policy {
+        display: flex;
+        flex-direction: column;
+
+        h4 {
+            margin: 10px 0 2px;
+        }
+    }
+    // End: fare-lock__risk-free-policy
+    &__offer-panel {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        padding: 0 15px;
+        border-radius: 4px;
+
+        .alert {
+            padding: 5px 15px;
+            width: 100%;
+            border-radius: 0;
+
+            .fa-exclamation {
+                margin-right: 8px;
+            }
+        }
+
+        .minimize {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 10px;
+
+            .fa.fa-times-circle {
+                font-size: 20px;
+                color: #333;
+
+                &:hover {
+                    color: #bbb;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    // End: fare-lock__offer-panel
+    &__option {
+        padding: 5px 15px;
+
+        &.purchase-fare {
+
+            @media(max-width:1349px) {
+                height: 35px;
+            }
+        }
+
+        label {
+            margin-bottom: 0;
+        }
+
+        &__primary {
+            font-size: 14px;
+            font-weight: 700;
+
+            input[type="radio"] {
+                vertical-align: -1px;
+            }
+        }
+
+        &__secondary {
+            font-size: 13px;
+            font-weight: 600;
+            padding-left: 50px;
+            padding-right: 20px;
+            margin-top: 5px;
+
+            input[type="radio"] {
+                vertical-align: -2px;
+            }
+        }
+    }
+    // End: fare-lock__option
+    &__conditions {
+        display: flex;
+        @include font-size(13);
+        padding: 0 15px;
+        flex-direction: column;
+        justify-content: center;
+
+        .auto-ticket-message {
+        }
+
+        .auto-cancel-message {
+            font-weight: bold;
+        }
+
+        .terms-message {
+            margin-top: 5px;
+        }
+    }
+    // End: fare-lock__condtions
+    &__terms-modal {
+        .ngdialog-content {
+            margin-top: 75px;
+            width: 700px !important;
+        }
+    }
+    // End: Universal Fare-Lock Styles
+} // End: .fare-lock component

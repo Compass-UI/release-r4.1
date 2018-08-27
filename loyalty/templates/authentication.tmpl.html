@@ -1,0 +1,144 @@
+<div class="compass-modal compass-modal__authentication mileageplus__search">
+    <section class="">
+        <header class="compass-modal__header">
+            <h3 data-bind="text: (showSuspendConfirmation() ? 'Cancel Confirmation - ' : 'Customer Authentication - ') + mpNumber() ">Customer Authentication</h3>
+            <a href="#" class="icon icons-close-3 ir" data-bind="click: function(){$('.ui-widget-overlay').trigger('click')}">Close</a>
+        </header>
+        <!--ko ifnot: showSuspendConfirmation-->
+        <section class="mileageplus__search__content flex clearfix" style="align-items: center; display: block; padding:15px 15px 0 15px;">
+            <!--ko if: showErrorMessage-->
+            <div class="prompt prompt-error">
+                <div class="" data-bind="text: errorMessage"></div>
+            </div>
+            <!--/ko-->
+            <!--ko if: showForgotSecurityQuestionsMessage-->
+            <div class="prompt prompt-error">
+                <div class="">
+                    Please log into .com with password. Go to manage profile page > Reset security questions
+                </div>
+            </div>
+            <!--/ko-->
+            <!--ko if: isAuthenticationVerified()-->
+            <div class="prompt prompt-success">
+                <div class="prompt-icon"></div>
+                <div class="prompt-message">
+                    Authenticated
+                </div>
+            </div>
+            <!--/ko-->
+            <!--ko if: isAccountLocked()-->
+            <div class="locked">
+                <div class="prompt prompt-error">
+                    <div class="">
+                        Unfortunately we have not been able to authenticate (verify)<br>
+                        your identity and your account has been locked.<br>
+                        <br>
+                        An email will be sent to the email address in your MileagePlus<br> profile with instructions on how to unlock your account.
+                    </div>
+                </div>
+            </div>
+            <!--/ko-->
+            <!--ko if: isAuthenticationNeeded()-->
+            <!--ko if: isSecurityQuestionsSetup()-->
+
+            <div class="mileageplus__search customername">
+                <span data-bind="text:profileOwnerName"></span>
+            </div>
+
+            <div class="cust-info form-group clearfix" style="padding: 10px;">
+                <p>
+                    In order to access your MileagePlus account your
+                    identity will need to be authenticated (verified).<br>
+                </p>
+                <p>
+                    We will ask you some security questions that you
+                    will need to answer correctly.<br>
+                </p>
+                <p>
+                    Failure to do so will result in your MileagePlus
+                    account being locked.
+                </p>
+
+                <!--ko if: isLastChance()-->
+                <div class="alert-error">
+                    <div class="alert-error-message">
+                        Failure to answer the next question correctly will result<br>
+                        in your account being locked.
+                    </div>
+                </div>
+                <!--/ko-->
+
+            </div>
+
+
+
+
+            <!--ko with: displayQuestion()-->
+            <div class="poll form-group clearfix">
+                <div class="title">
+                    <div class="title-text">Question <span data-bind="text: sequenceNumber"></span></div>
+                </div>
+
+                <div>
+                    <div class="poll-question"><span data-bind="text: text"></span></div>
+                    <div class="poll-options">
+                        <!--ko foreach: answers-->
+                        <label><input type="radio" name="color" data-bind="value: key, checked: $parents[1].selectedAnswerKey"><span data-bind="text: text"></span></label><br />
+                        <!--/ko-->
+                    </div>
+
+                    <!--ko if: $parent.selectedAnswerKey() === $data.unknownKey-->
+                    <div class="alert-error">
+                        <div class="alert-error-message">
+                            Selecting "Unknown" will be submitted as an incorrect
+                            answer. Confirm with the customer that this is their
+                            answer choice.
+                        </div>
+                    </div>
+                    <!--/ko-->
+                    <br>
+                    <div class="poll-btn-links">
+                        <a href="#" class="btn btn-warning" data-bind="css: {disabled: !$parent.selectedAnswerKey()}, click: $parent.onSubmitAnswerClick">Submit Answer</a>
+                        <span class="forgot-link">
+                            <a href="#" data-bind="click: $parent.onClickForgotSecurityQuestions.bind($data, $parents[1].newMileagePlus())" style="color: #337ab7;">Forgot Security Question</a>
+                        </span>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <!--/ko-->
+            <!--/ko-->
+            <!--ko ifnot: isSecurityQuestionsSetup-->
+            <div class="mileageplus-directions">
+                <div class="alert-error">
+                    <div class="alert-error-message">
+                        Security Questions have not been setup for this MP account.
+                    </div>
+                </div>
+
+            </div>
+            <!--/ko-->
+            <!--/ko-->
+        </section>
+        <!--/ko-->
+        <!--ko if: (isAuthenticationVerified() || isAccountLocked())-->
+        <div class="compass-modal__footer">
+            <a href="#" class="btn btn-danger disabled">Cancel</a>
+            <a href="#" class="btn btn-primary" data-bind="click: onContinueClick">Continue</a>
+        </div>
+        <!--/ko-->
+        <!--ko ifnot: (isAuthenticationVerified() || isAccountLocked())-->
+        <div class="compass-modal__footer">
+            <!--ko ifnot: showSuspendConfirmation-->
+            <a href="#" class="btn btn-danger" data-bind="click: onCancelQuestionsClick">Cancel</a>
+            <a href="#" class="disabled btn btn-primary">Continue</a>
+            <!--/ko-->
+            <!--ko if: showSuspendConfirmation-->
+            <p style="text-align:left"><b>Would you like to suspend the authentication process? Please click 'Yes' to confirm or 'No' to return to the question </b></p>
+            <a href="#" class="btn btn-danger" data-bind="click: onCancelSuspendConfimrationClick">No</a>
+            <a href="#" class="btn btn-primary" data-bind="click: function(){$('.ui-widget-overlay').trigger('click')}">Yes</a>            
+            <!--/ko-->
+        </div>
+        <!--/ko-->
+    </section>
+</div>

@@ -1,0 +1,284 @@
+.timatic {
+    background: #fff;
+
+    &.module {
+        // margin:0;
+        margin: 15px auto;
+
+        &__header {
+            margin-bottom: 0px;
+        }
+    }
+
+    .required-field-warning {
+        color: #fff;
+        font-size: 1.1rem;
+        margin-left: 15px;
+    }
+
+    &__error-prompt {
+    }
+
+    &__traveler-selection {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        float: none;
+        margin: 15px 0;
+        z-index: 400;
+
+        @media(max-width:991px) {
+        }
+
+        .btn-style-2 {
+            border: 1px solid #9a9a9a;
+
+            &:not(:first-child) {
+                margin-left: 5px;
+            }
+
+            @media(max-width:991px) {
+                padding: 0 25px;
+                margin: 5px;
+            }
+
+            &.active {
+                background-color: #2f6a9a;
+                border-top-color: #012a4c;
+                border-bottom-color: #2f6a9a;
+                color: #fff;
+            }
+        }
+    }
+    // End: Traveler Selection
+    &__passport-requirements {
+
+        &__apply-all {
+            margin: 15px 0 10px;
+        }
+
+        &__form {
+
+            .icon {
+                margin-left: 5px;
+
+                &:first-child {
+                }
+
+                &.icons-trash-can-2 {
+                    vertical-align: -4px;
+                    margin: 0 5px 0 10px;
+                }
+
+                &.icons-add-3 {
+                    vertical-align: -3px;
+                    margin: 0 5px;
+                }
+            }
+
+            .row {
+                margin-top: 10px;
+                margin-bottom: 15px;
+            }
+
+            .select-date {
+                display: inline-block;
+
+                &--day {
+                    width: 27%;
+                }
+
+                &--month {
+                    width: 34%
+                }
+
+                &--year {
+                    width: 31%
+                }
+            }
+
+            .duration-stay {
+                display: inline-block;
+                width: 50px;
+            }
+
+            .select-transit {
+                display: inline-block;
+            }
+        }
+
+        &__submit {
+            text-align: right;
+            margin: 10px 0 15px;
+            // margin:10px 20px 15px; //added by PRANNAY BALI
+        }
+    }
+
+    &__response {
+        margin: 0 0 15px;
+
+        .module__header {
+            margin-bottom: 15px;
+
+            .jump-menu {
+                width: auto;
+                float: right;
+                margin-right: 15px;
+                margin-top: 5px;
+            }
+        }
+
+        input[type="checkbox"] {
+            vertical-align: -3px;
+            margin-right: 5px;
+        }
+
+        label {
+            font-size: 1.1rem;
+        }
+
+        &__list {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+
+            .jump-link {
+                display: block;
+                height: 90px; /*same height as header*/
+                margin-top: -90px; /*same height as header*/
+                visibility: hidden;
+            }
+
+            &__disclosure {
+                border-bottom: 1px solid #a7a7a7;
+                margin-bottom: 0px;
+
+                &:nth-of-type(odd) {
+                    background-color: #f2f2f2;
+                }
+
+                &:last-of-type {
+                    border-bottom: 0;
+                }
+
+                .disclosure-check {
+                    display: table-cell;
+                    padding: 15px;
+                    width: 180px;
+                    vertical-align: top;
+                }
+
+                .disclosure-description {
+                    display: table-cell;
+                    vertical-align: middle;
+                    padding: 15px 0 20px;
+
+                    h4 {
+                        margin-top: 0;
+                        font-size: 1.6rem;
+                        color: #003399;
+                        padding-top: 3px;
+                    }
+
+                    h5 {
+                        font-size: 1.3rem;
+                        font-weight: 600;
+                        color: #5c5c5c;
+                    }
+
+                    label {
+                        display: block;
+                    }
+
+                    .field-item {
+                        &--date {
+                            display: block;
+
+                            input {
+                                width: 60px;
+                                display: inline-block;
+                                margin-right: 5px;
+                            }
+                        }
+
+                        &--permanent-resident-card-number {
+                            display: block;
+                            margin: 5px 0;
+
+                            input {
+                                display: inline-block;
+                                width: 150px;
+                            }
+                        }
+
+                        &--passport-date {
+                            display: block;
+                            margin: 5px 0;
+
+                            input {
+                                display: inline-block;
+                                width: 60px;
+                                margin-right: 5px;
+                            }
+                        }
+
+                        .calendar-control {
+                            display: inline-block;
+                            background-position: 0 -6392px;
+                            width: 18px;
+                            height: 19px;
+                            vertical-align: -6px;
+                        }
+                    }
+
+                    .prompt {
+                        background: #fafafa;
+                        border: 1px solid #003399;
+                        padding: 10px;
+                        font-weight: bold;
+                        color: #003399;
+                        display: inline-block;
+                        margin: 10px auto;
+                        font-size: 1.2rem;
+                        line-height: 14px;
+                        overflow: hidden;
+                        position: relative;
+                    }
+
+
+                    &--mismatch {
+                        margin-left: 40px;
+                    }
+
+                    &--taxes-section {
+
+                        .group {
+                            float: left;
+                            padding: 10px;
+                            overflow-y: auto;
+                            overflow: hidden;
+                            border-radius: 4px;
+                            box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.5), inset 0px -1px 2px 0px rgba(255, 255, 255, 0.6);
+                            margin-right: 10px;
+                            padding: 16px 20px;
+                            width: 235px;
+                            min-height: 112px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // End: Requirements
+    &__choose-action {
+        padding: 15px 0;
+        text-align: right;
+        clear: both;
+
+        a {
+            margin-left: 15px;
+        }
+    }
+    // End: Choose Action
+}

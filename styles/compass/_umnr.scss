@@ -1,0 +1,235 @@
+.umnr {
+
+    &__modal {
+        margin: 0px !important;
+    }
+
+    &__header {
+        margin: -1px;
+    }
+
+    .table {
+        &__header {
+            text-align: center;
+
+            tr {
+                border-bottom: none !important;
+
+                th {
+                    text-align: center !important;
+                    border-right: 1px solid #FFFFFF;
+                    background-color: #E6E6E6 !important;
+                    margin: 0px !important;
+                    /*padding: 0px !important;*/
+                    input[type= "checkbox"] {
+                        margin: 0px !important;
+                    }
+                }
+            }
+        }
+
+        &__content {
+            text-align: center;
+
+            tr {
+                border-bottom: 1px solid #ddd !important;
+
+                td {
+                    text-align: center !important;
+                    border: none !important;
+
+                    input[type= "checkbox"] {
+                        margin: 0px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    &__footer {
+        padding: 15px;
+        text-align: right;
+    }
+
+    .traveler__prompt-confirm {
+        text-decoration: none;
+        font-size: 1.2rem;
+        border-radius: 3px;
+        width: auto;
+        border: 1px solid pink;
+        color: #003399;
+        background: #fef4dd;
+        display: block;
+        cursor: pointer;
+        height: auto;
+        margin-bottom: 10px;
+
+        i {
+            margin: 6px;
+        }
+    }
+
+    .unaccompanied-minor-details {
+        &__flight1 {
+            .module {
+                &__header {
+                    a {
+                        i {
+                            border: 1px solid white;
+                            margin-right: 30px;
+                            height: 30px;
+                            width: 30px;
+                        }
+                    }
+                }
+            }
+            //border:1px solid red;
+            .umnr-dropOff {
+                //border:2px solid green;
+                border-right: 1px solid grey;
+                margin-bottom: 15px;
+
+                .copyData {
+                    vertical-align: -3px;
+                    margin-left: 5px;
+                }
+            }
+
+            .umnr-pickUp {
+                // border:2px solid red;
+                border-left: 1px solid grey;
+                margin-bottom: 15px;
+
+                .copyData {
+                    vertical-align: -3px;
+                    margin-left: 5px;
+                }
+            }
+        }
+
+        &__flight2 {
+            .umnr-dropOff {
+                border-right: 1px solid grey;
+                margin-bottom: 15px;
+            }
+
+            .umnr-pickUp {
+                border-left: 1px solid grey;
+                margin-bottom: 15px;
+            }
+
+            h3 {
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    .form {
+        border: 1px solid #ddd;
+        margin: 0 auto;
+        padding: 1em;
+        width: 70vw;
+    }
+
+    input.ng-dirty.ng-invalid,
+    input.ng-invalid.ng-touched {
+        color: #ac0b0b !important;
+        border: 1px solid #990100 !important;
+        background-color: #fed8d8 !important;
+    }
+    select.ng-dirty.ng-invalid,
+    select.ng-invalid.ng-touched {
+        color: #ac0b0b !important;
+        border: 1px solid #990100 !important;
+        background-color: #fed8d8 !important;
+    }
+
+
+    .error-message {
+        color: red;
+        display: block;
+    }
+
+    .dropOff-panel {
+        margin: 15px 0px;
+
+        .panel-body {
+            padding: 15px 0px !important;
+        }
+
+        .form-panel {
+            border-right: 1px solid #ebebeb;
+        }
+
+        .umnr-section {
+            //margin-bottom: 15px;
+            margin: 30px -15px 15px -15px;
+
+            &:last-child {
+                margin-bottom: 15px;
+            }
+
+            .umnr-info {
+                margin-bottom: 15px;
+                margin-left: -15px;
+            }
+
+            .umnr-traveler-info {
+                //border-bottom: 1px solid #ebebeb;
+                margin-bottom: 8px;
+                font-size: 13px;
+            }
+
+            .umnr-combo{
+                position: relative;
+
+                select, input {
+                    position: absolute;
+                }
+                input {
+                    outline: none;
+                    box-shadow: none;
+                    // border-right: none !important;
+                    border-radius: 0px;
+                    z-index: 1;
+                    width: 90%;
+
+                    &:focus{
+                        outline: none;
+                    }
+                }
+                select {
+                    width: 100%;
+                }
+            }
+        }
+
+        &__umnrinfo {
+            //margin: 5px 0px;
+            .dropOff-info {
+                //margin: 0px 45px 0 -30px;
+            }
+
+            .residential-info {
+                //margin: -15px 45px 0 -45px;
+                .street-address {
+                    //margin: 15px 0px;
+                }
+
+                .city-info {
+                    //margin: 0px;
+                }
+            }
+
+            .contact-info {
+                //margin: 0px 45px 0 -30px;
+                .phone-no {
+                    //margin: -15px 0px;
+                }
+            }
+        }
+    }
+} 
+.unaccompanied-minor-details-tooltip .tooltip-inner{
+    max-width:900px !important;
+}

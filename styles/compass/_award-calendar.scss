@@ -1,0 +1,210 @@
+﻿.award-calendar {
+
+    &__header {
+        display: block;
+
+        a.expand-collapse-trigger {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            line-height: 25px;
+            font-weight: bold;
+            font-size: 1.3rem;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            .expand-collapse-header {
+                line-height: 25px;
+            }
+
+            .trip-text {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    &__expand-collapse-content {
+        margin: 15px auto;
+
+        @media only screen and (max-width:1199px) {
+        }
+
+        .day-icon {
+            background-color: #fefefe;
+            background: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#f3f3f3));
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto 0;
+            float: left;
+            margin-right: 12px;
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            color: #fff;
+            border: 1px solid #ccc;
+        }
+
+
+        &__legend {
+
+            ul {
+                float: left;
+                list-style-image: none;
+                list-style-type: none;
+                padding: 0;
+                margin: 10px auto;
+
+                @media (max-width:1199px) {
+                    columns: 2;
+                    column-count: 2;
+                    column-gap: 10px;
+                    -moz-columns: 2;
+                    -moz-column-count: 2;
+                    -moz-column-gap: 10px;
+                    -webkit-columns: 2;
+                    -webkit-column-count: 2;
+                    -webkit-column-gap: 10px;
+                }
+
+                li {
+                    font-size: 11px;
+                    font-weight: bold;
+                    position: relative;
+                    margin: 10px 0 0;
+                    padding-left: 26px;
+                    text-transform: capitalize;
+
+                    &:first-child {
+                        margin-top: 0;
+                    }
+
+                    span {
+                        &.day-icon {
+                            background-color: #fefefe;
+                            background: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#f3f3f3));
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            left: 0;
+                            margin: auto 0;
+                            float: left;
+                            margin-right: 12px;
+                            display: inline-block;
+                            width: 15px;
+                            height: 15px;
+                            color: #fff;
+                            border: 1px solid #ccc;
+
+                            &.cabin-option-one {
+                                background-color: #f7f4ad;
+                                background-color: #faf2b1;
+                                background: -webkit-gradient(linear, left top, left bottom, from(#faf2b1), to(#eae3ab));
+                            }
+
+                            &.cabin-option-two {
+                                background-color: #62a9e3;
+                                background-color: #0cb0e4;
+                                background: -webkit-gradient(linear, left top, left bottom, from(#0cb0e4), to(#01a5d9));
+                            }
+
+                            &.cabin-option-one.cabin-option-two {
+                                background-color: #7ac24b;
+                                background-color: #4ec456;
+                                background: -webkit-gradient(linear, left top, left bottom, from(#4ec456), to(#43b94b));
+                            }
+
+                            &.cabin-option-one {
+                            }
+                        }
+                    }
+                }
+
+                @media only screen and (min-width:1199px) {
+                }
+
+                @media only screen and (max-width:1199px) {
+                    column-count: count;
+                }
+
+                @media only screen and (max-width:1199px) {
+                }
+
+                @media only screen and (max-width:1199px) {
+                }
+            }
+        }
+
+        .uib-datepicker {
+            .uib-daypicker {
+
+                thead {}
+                tbody {}
+                    
+                .uib-weeks {
+
+                }
+
+                .uib-day {
+
+                }
+            }
+        }
+    }
+
+    .uib-day .btn-default {
+        background-color: #fefefe;
+        background: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#f3f3f3));
+    }
+
+    .cabin-option-one .btn-default {
+        background-color: #f7f4ad;
+        background-color: #faf2b1;
+        background: -webkit-gradient(linear, left top, left bottom, from(#faf2b1), to(#eae3ab));
+
+    }
+
+    .cabin-option-two .btn-default {
+        background-color: #62a9e3;
+        background-color: #0cb0e4;
+        background: -webkit-gradient(linear, left top, left bottom, from(#0cb0e4), to(#01a5d9));    
+    }
+
+    .cabin-option-one.cabin-option-two .btn-default {
+        background-color: #7ac24b;
+        background-color: #4ec456;
+        background: -webkit-gradient(linear, left top, left bottom, from(#4ec456), to(#43b94b));
+    }
+
+	.award-calendar-first .glyphicon-chevron-right:before{
+		display: none !important;    
+	}
+
+	.award-calendar-second .glyphicon-chevron-left:before{
+		display: none !important;    
+	}
+
+	.award-calendar-first .pull-right{
+		/*display: none !important;*/
+		pointer-events: none !important;
+	}
+
+	.award-calendar-second .pull-left{
+		/*display: none !important;*/
+		pointer-events: none !important;
+	}
+
+	.award-calendar-first .uib-title{
+		pointer-events: none;
+	}
+
+	.award-calendar-second .uib-title{
+		pointer-events: none;
+	}
+
+}

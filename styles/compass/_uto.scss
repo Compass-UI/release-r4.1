@@ -1,0 +1,239 @@
+﻿.uto {
+	background: white;
+	height: 100%;
+	margin-bottom: 15px;
+	margin-top: 25px;
+
+	&-header {
+		overflow: visible;
+		
+		&_menu {
+			color: white;
+
+			&-button {
+				padding: 6px;
+				background: transparent;
+				border: none;
+
+				ul {
+					color: black;
+				}
+			}
+		}
+
+		&_input {
+			padding-top: 2px;
+			max-width: 98%;
+
+			.form-control {
+				width: 98%;
+			}
+
+			.btn-default {
+				background: white;
+			}
+
+			.btn-default-focus {
+				background: transparent;
+				outline: none;
+				outline-offset: 0;
+				box-shadow: none;
+			}
+		}		
+	}
+
+	&-content {
+		min-height: 100px;
+		position: relative;
+		.alert {
+			text-align: left;
+		}
+	 
+		li {
+		 list-style-type: disc;
+		 }
+		 .product_details {
+			 li {
+				 margin-left: 30px;
+			 }
+		 }
+	
+		.page-header {
+			margin-top: 0;
+
+			h2 {
+				font-weight: 600;
+			}
+		}		
+		.isolated-map-spinner {
+			top: 0;
+			left: 0;
+			position: absolute;
+			width: 100%;
+			background: rgba(255, 255, 255, 0.6);
+			z-index: 5;
+		
+			i {
+				color: #EDB72B;
+			}
+		}
+
+		.table {
+			&__head {
+				th {
+					font-weight: 700;
+					border-bottom: 4px solid #C5AB85;
+					border-left: 1px solid #FFFFFF;
+					vertical-align: middle;
+				}
+			}
+
+			&__body {
+				td:nth-child(3), td:last-child {
+					text-align: center;
+				}
+			}
+		}
+
+		.uib-tab {
+			background: #F2F2F2;
+
+			&.active > a, a:focus {
+				background: #337ab7 !important;
+				color: white !important;
+			}
+		}
+
+		.tab-content {
+			padding: 10px;
+
+			p {
+				white-space: pre-wrap;
+                line-height: 1.7;
+			}
+		}
+
+		&_panel {
+			border-top: 0;
+			border-right: 0;
+			border-left: 0;
+			box-shadow: none;
+			border-color: #bfbfbf;
+
+			h5 {
+				font-size: 1.4rem;
+				display: inline-block;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+
+			.panel-title > a:hover {
+				text-decoration: none;
+			}
+
+			.panel-heading {
+				background: transparent;
+				color: #039;
+				border: none;
+			}
+
+			.panel-body {
+				border: none !important;
+
+				p {
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		.section-title {
+			display: inline-block;
+		}
+		
+	}
+
+	&-footer {
+		padding: 15px;
+		text-align: right;
+	}
+
+	.transfer {
+		padding-bottom: 15px;
+	}
+	.hertz-list ul {
+margin-left: 30px;
+	}
+	.hotel-list li{
+	list-style-type: circle;
+}
+	.uto-hotel-img {
+		background-color: #FAFAFA; 
+		border-radius: 4px; 
+		object-fit: contain; 
+		text-align: center;
+	}
+
+	.uto-hotel-img img {
+		object-fit: contain; 
+		width: 180px;
+	}
+	.uto-hertz-img {
+		background-color: #000000; 
+		text-align: center; 
+		border-radius: 4px;
+	}
+
+	&__hertzhotel {
+		padding: 20px;
+		background-color: white;
+
+		.hertzhotel_border {
+			border: 1px solid #eeeeee;
+			margin-bottom: 20px;
+		}
+
+		.hertzhotel_header {
+			margin-bottom: 15px;
+		}
+
+		.hertzhotel_head {
+			padding-left: 15px;
+		}
+		.hertz_content {
+			text-align: left;
+		}
+		.hotel_content {
+			text-align: left;
+			margin-left:100px;
+			margin-bottom: 100px;
+		}
+
+		.hertzhotel_footer {
+			text-align: right;
+		}
+
+		.hertz_uto {
+			background-image: url(../assets/hertz_logo.svg);
+			background-repeat: no-repeat;
+			background-position: center;
+			margin: 0 0 12px 15px;
+			border-radius: 2px;
+			width: 439px;
+			height: 230px; 
+			background-size: cover;
+		}
+		.hotels_uto {
+			background-image: url(../assets/hotels.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			margin: 40px 0 12px 100px;
+			border-radius: 2px;
+			width: 240px;
+			height: 156px; 
+		}
+		
+	}
+}
